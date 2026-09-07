@@ -205,3 +205,29 @@ a:hover { color: var(--accent); }
 @media (max-width: 800px) {
   .grid { grid-template-columns: 1fr; }
 }
+
+
+/* delta module */
+.delta {
+  border: 2px solid var(--rule);
+  background: #fff;
+  padding: 1rem 1.15rem;
+  margin: 1.25rem 0 1.75rem;
+}
+.delta .delta-label {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+.delta ul { margin: 0.4rem 0 0; padding-left: 1.15rem; }
+.delta li { margin-bottom: 0.35rem; }
+.delta .none {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0.35rem 0 0;
+  font-style: italic;
+}
