@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Polymarket · Daily Dossier sidebar</title>
-  <meta name="description" content="Polymarket sidebar — priced deltas with FACT vs HOLD. Not a homepage lead. No trading advice." />
+  <title>Polymarket · Favored / Funny · Daily Dossier</title>
+  <meta name="description" content="Polymarket sidebar — Favored/edges + Funny/unique. Not a homepage lead. No trading advice." />
   <link rel="stylesheet" href="../css/style.css?v=ddbrand-20260907" />
   <link rel="icon" href="../img/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" href="../img/favicon-32.png" sizes="32x32" />
@@ -30,6 +30,19 @@
     .glossary { background:var(--panel); border:1px solid var(--line); border-radius:2px; padding:0.85rem 1rem; margin:0.75rem 0 1.25rem; max-width:42rem; }
     .glossary dt { font-weight:700; margin-top:0.5rem; }
     .glossary dd { margin:0.15rem 0 0.35rem; color:var(--muted); }
+    .lane-head {
+      display:flex; align-items:baseline; gap:0.75rem; flex-wrap:wrap;
+      border-bottom:1px solid var(--line-strong); padding-bottom:0.45rem; margin:1.5rem 0 0.85rem;
+    }
+    .lane-head .mark {
+      font-size:0.72rem; font-weight:800; letter-spacing:0.18em; text-transform:uppercase;
+    }
+    .lane-head .mark::before {
+      content:""; display:inline-block; width:0.45rem; height:0.45rem;
+      background:var(--priority); border-radius:50%; margin-right:0.45rem; vertical-align:0.05rem;
+    }
+    .lane-head .when { color:var(--muted); font-size:0.85rem; }
+    .empty { color:var(--muted); font-size:0.92rem; max-width:42rem; }
   </style>
 </head>
 <body>
@@ -39,7 +52,7 @@
         <img class="dd-mark" src="../img/dd-mark-80.png" width="80" height="80" alt="Daily Dossier" />
         <div class="brand-text">
           <h1>Daily Dossier</h1>
-          <p class="sub">Polymarket sidebar · Mon Sep 7, 2026 · not a homepage lead</p>
+          <p class="sub">Polymarket · Favored / Funny · Mon Sep 7, 2026 · sidebar not lead</p>
         </div>
       </div>
     </div>
@@ -55,8 +68,13 @@
     <a href="../archive/index.html">Archive</a>
   </nav>
   <main class="wrap">
-    <div class="banner"><strong>Polymarket desk</strong> · Sidebar signal only · FACT vs HOLD · <strong>No trading advice</strong> · never “market says X% chance”</div>
-    <p class="muted" style="margin:0.35rem 0 0.85rem"><a href="../index.html">← Today’s Dossier</a> · <a href="#how">How to read this ↓</a></p>
+    <div class="banner"><strong>Polymarket</strong> · Two lanes: Favored/edges · Funny/unique · <strong>No trading advice</strong> · never “market says X% chance”</div>
+    <p class="muted" style="margin:0.35rem 0 0.85rem">
+      <a href="../index.html">← Today</a> ·
+      <a href="#favored">Favored / edges</a> ·
+      <a href="#funny">Funny / unique</a> ·
+      <a href="#how">How to read ↓</a>
+    </p>
 
     <details class="glossary" id="how">
       <summary style="cursor:pointer;font-weight:750;letter-spacing:0.04em;text-transform:uppercase;font-size:0.82rem;color:var(--muted)">How to read this</summary>
@@ -75,83 +93,85 @@
         <dd>Polymarket International doesn’t decide outcomes; proposals/disputes can leave markets open after the event.</dd>
         <dt>HOLD</dt>
         <dd>We don’t know causation, or the number shouldn’t be treated as a forecast.</dd>
+        <dt>Edge (newsroom sense)</dt>
+        <dd>Interesting market structure or signal-vs-evidence gap — <em>not</em> a bet tip.</dd>
         <dt>Sidebar not homepage</dt>
         <dd>Market signal supports the dossier; spicy mids aren’t national leads alone.</dd>
       </dl>
     </details>
 
-    <article class="card-block lead" id="israel-airspace-2026-09-07">
-      <div class="tag">PM #2 family · UPDATE · captured ~4:21 PM CT</div>
-      <h2>Israel closes airspace by Sep 30? — mid slid to ~$0.585</h2>
-      <p>Big priced move vs morning Soft Publish prints. Still an open book — not a forecast of war or flights.</p>
+    <!-- ========== FAVORED / EDGES ========== -->
+    <section id="favored">
+      <div class="lane-head">
+        <span class="mark">Favored / edges</span>
+        <span class="when">Material deltas · contested mids · geo liquidity · oracle quirks · signal vs evidence</span>
+      </div>
 
-      <h3><span class="badge fact">FACT</span> Venue &amp; contract</h3>
-      <ul>
-        <li>Venue: Polymarket International</li>
-        <li>Contract: <em>Israel closes its airspace by September 30?</em></li>
-        <li class="mono">conditionId 0xcfbc2e5fbabb9e8a03bf234367244d4c97eaaf3ac33e2ba001541ee3e0e62416</li>
-        <li>Captured: 2026-09-07T21:21:09Z</li>
-        <li>endDate: 2026-10-01T03:59:00Z · still active</li>
-      </ul>
+      <article class="card-block lead" id="israel-airspace-2026-09-07">
+        <div class="tag">UPDATE · Israel airspace · ~4:21 PM CT</div>
+        <h2>Israel closes airspace by Sep 30? — mid ~$0.585</h2>
+        <p>Big priced move vs morning Soft Publish prints (~$0.80). Still an open book — newsroom signal edge, not a forecast.</p>
 
-      <h3><span class="badge fact">FACT</span> Book</h3>
-      <ul>
-        <li>Midpoint (YES): <strong>~$0.585</strong> · bid/ask $0.58 / $0.59 (spread 1¢)</li>
-        <li>Prior desk captures: ~$0.80–$0.805 (morning) → ~$0.785 → now ~$0.585 (−~15 to −22¢ vs peak)</li>
-        <li>Gamma oneDayPriceChange at capture: −0.15</li>
-        <li>vol24hr ~$340k · liqClob ~$73k (usable two-sided book)</li>
-      </ul>
+        <h3><span class="badge fact">FACT</span></h3>
+        <ul>
+          <li>Venue: Polymarket International · Contract: <em>Israel closes its airspace by September 30?</em></li>
+          <li class="mono">conditionId 0xcfbc2e5fbabb9e8a03bf234367244d4c97eaaf3ac33e2ba001541ee3e0e62416</li>
+          <li>Captured: 2026-09-07T21:21:09Z</li>
+          <li>Mid (YES) <strong>~$0.585</strong> · bid/ask $0.58/$0.59 (spread 1¢)</li>
+          <li>Prior: ~$0.80–$0.805 → ~$0.785 → ~$0.585 (−~15 to −22¢ vs peak)</li>
+          <li>Gamma oneDayPriceChange −0.15 · vol24hr ~$340k · liqClob ~$73k</li>
+          <li>endDate 2026-10-01T03:59:00Z · still active</li>
+          <li>Resolution: Yes only on a <strong>major</strong> civilian airspace closure by 11:59 PM ET that day — limited delays / weather-only / foreign airline bans alone do not count</li>
+        </ul>
 
-      <h3><span class="badge fact">FACT</span> Resolution (paraphrase)</h3>
-      <ul>
-        <li>Yes only if Israel initiates a <strong>major</strong> civilian airspace closure by 11:59 PM ET on the date — broad suspension across all or a majority of Israeli civilian airspace.</li>
-        <li>Limited delays / ground stops / isolated regional closures do <strong>not</strong> count.</li>
-        <li>Weather-only or foreign airline/country restrictions alone do <strong>not</strong> count.</li>
-      </ul>
+        <h3><span class="badge infer">INFERENCE</span> / <span class="badge hold">HOLD</span></h3>
+        <ul>
+          <li>Priced delta clears UPDATE band (≥~7¢).</li>
+          <li>Causation not established — no timed CAA/NOTAM primary in this pull.</li>
+          <li>Do not write “market says 58% chance.” No trading advice.</li>
+        </ul>
+      </article>
 
-      <h3><span class="badge infer">INFERENCE</span> / <span class="badge hold">HOLD</span></h3>
-      <ul>
-        <li>Material priced delta clears the UPDATE band (≥~7¢).</li>
-        <li>Causation <strong>not established</strong> — no timed CAA/NOTAM primary in this pull.</li>
-        <li>Do not write “market says 58% chance.” Do not treat mid as outcome. No trading advice.</li>
-      </ul>
-      <p class="disclaimer">Sidebar only — not a homepage lead.</p>
-    </article>
+      <article class="card-block" id="ceasefire-context">
+        <div class="tag">Oracle-timing quirk · US × Iran</div>
+        <h2>“Effective Ceasefire” by September 4? — still trading past end date</h2>
+        <ul>
+          <li><span class="badge fact">FACT</span> Mid ~$0.595 (+~12¢/day at last desk pull)</li>
+          <li><span class="badge hold">HOLD</span> End date already past while still trading → resolution / oracle-timing risk. Price may be about <em>certification timing</em>, not whether a ceasefire “is” happening.</li>
+        </ul>
+      </article>
 
-    <h2 class="sec">Also on the board</h2>
+      <article class="card-block" id="fed-sep-context">
+        <div class="tag">Contested mid · Fed September</div>
+        <h2>Near coin-flip on the September move</h2>
+        <ul>
+          <li><span class="badge fact">FACT</span> No change ~$0.475 vs +25 bps ~$0.515 — very thick books</li>
+          <li><span class="badge hold">HOLD</span> Near coin-flip is book shape, not a tip. No trading advice.</li>
+        </ul>
+      </article>
 
-    <article class="card-block" id="ceasefire-context">
-      <div class="tag">Context · US × Iran</div>
-      <h2>“Effective Ceasefire” by September 4?</h2>
-      <ul>
-        <li><span class="badge fact">FACT</span> Mid ~$0.595 (+~12¢/day at last desk pull)</li>
-        <li><span class="badge hold">HOLD</span> End date already past while still trading → <strong>resolution / oracle-timing risk</strong>. Price may be about certification timing, not whether a ceasefire “is” happening.</li>
-      </ul>
-    </article>
+      <article class="card-block" id="sachsen-2026-09-07">
+        <div class="tag">Resolved / oracle catching up · Sachsen</div>
+        <h2>AfD Sachsen-Anhalt — absolute majority closed No · most seats Yes</h2>
+        <ul>
+          <li><span class="badge fact">FACT</span> Election result was already out; what’s new is oracle plumbing</li>
+          <li><span class="badge fact">FACT</span> Absolute majority closed No · AfD most seats resolved Yes</li>
+          <li><span class="badge fact">FACT</span> Still open: vote-share / margin / Schulze MP path</li>
+          <li><span class="badge hold">HOLD</span> Remaining mids are not live election forecasts. Price ≠ outcome.</li>
+        </ul>
+      </article>
+    </section>
 
-    <article class="card-block" id="fed-sep-context">
-      <div class="tag">Context · Fed September</div>
-      <h2>Near coin-flip on the September move</h2>
-      <ul>
-        <li><span class="badge fact">FACT</span> No change ~$0.475 vs +25 bps ~$0.515 — very thick books</li>
-        <li><span class="badge hold">HOLD</span> Near coin-flip is a book shape, not a tip. No trading advice.</li>
-      </ul>
-    </article>
+    <!-- ========== FUNNY / UNIQUE ========== -->
+    <section id="funny">
+      <div class="lane-head">
+        <span class="mark">Funny / unique</span>
+        <span class="when">Weird · viral · delightful — short + scannable · still venue + timestamp</span>
+      </div>
+      <p class="empty">No funny/unique filings this cycle. Desk will drop weird/viral contracts here (Elon tweet counts, oddball culture, wild ladders) — still with venue + timestamp, still not a tip sheet.</p>
+    </section>
 
-    <article class="card-block" id="sachsen-2026-09-07">
-      <div class="tag">Family #1 / #3 · Sachsen UPDATE · ~10:14 AM CT</div>
-      <h2>AfD Sachsen-Anhalt books flip closed / resolved</h2>
-      <p>The election result was already out. What’s new is the <em>market plumbing</em>: some AfD seat contracts closed on Polymarket’s oracle path.</p>
-      <ul>
-        <li><span class="badge fact">FACT</span> Absolute majority of seats? <code>closed=true</code> · Yes=0 / No=1</li>
-        <li><span class="badge fact">FACT</span> Most seats? <code>closed=true</code> · AfD Yes=1 resolved</li>
-        <li><span class="badge fact">FACT</span> Still open: vote-share / margin / Schulze MP path (priced deltas)</li>
-        <li><span class="badge hold">HOLD</span> Remaining mids are not live election forecasts. Price ≠ outcome.</li>
-      </ul>
-      <p class="disclaimer">Full prior Soft Publish context on this page’s earlier filing — oracle flip only.</p>
-    </article>
-
-    <p class="muted" style="font-size:0.82rem;margin-top:1.25rem">Desk: Polymarket Analyst · Sidebar doctrine · Joe/Brother plain · no trading advice</p>
+    <p class="muted" style="font-size:0.82rem;margin-top:1.5rem">Desk: Polymarket Analyst · Sidebar doctrine · “Edge” = newsroom signal, not a bet · no trading advice</p>
   </main>
   <footer class="footer wrap">Daily Dossier · <a class="x-handle" href="https://x.com/DailyDossierHQ">@DailyDossierHQ</a> · <a href="https://github.com/billysnider-collab/Newsroom">Newsroom</a></footer>
 <!-- Cloudflare Web Analytics -->
