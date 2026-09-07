@@ -214,3 +214,38 @@ details summary { color: var(--text); }
   th, td { padding: 0.55rem 0.5rem; }
   .top h1 { font-size: 1.05rem; letter-spacing: 0.1em; }
 }
+
+
+/* Kill leftover light pockets from page-local styles */
+.rc, .how, .stub, .exec, .empty, .research-card,
+.terms-body, .memo-wrap .block, .memo-wrap .thesis {
+  background: var(--panel-2) !important;
+  border-color: var(--line) !important;
+  color: var(--text) !important;
+}
+.rc h3, .how strong { color: var(--text) !important; }
+.rc p, .how li { color: var(--muted); }
+.chip.fact { background: #1a222d !important; color: var(--text) !important; }
+.chip.infer { background: #221a1a !important; color: #e0c8c8 !important; border: none; }
+.chip.sec { background: #1c1c1c !important; color: var(--muted) !important; }
+.badge.edge { background: #1a222d !important; color: var(--text) !important; } /* was fintech blue */
+.badge.dfs { background: #1a1814 !important; color: var(--muted) !important; } /* was purple */
+.banner[style*="fff8e8"], .banner[style*="background:#fff"] {
+  background: var(--panel) !important;
+  border-color: var(--line) !important;
+  border-left: 3px solid var(--priority) !important;
+}
+/* inline HOLD/MODERATE pills on homepage */
+span[style*="background:#fde8e8"],
+span[style*="background:#fff3d6"] {
+  background: #2a1515 !important;
+  color: #e8b4b4 !important;
+}
+span[style*="background:#fff3d6"] {
+  background: #221e14 !important;
+  color: var(--warn) !important;
+}
+span[style*="background:#e3f6ea"] {
+  background: #152019 !important;
+  color: var(--good) !important;
+}
