@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Researched stocks · Finance</title>
+  <meta name="description" content="Completed Finance research memos — thesis, bull, bear, catalyst, what would change our mind. Empty shelf until Finance files." />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <style>
+    .memo-list { list-style:none; padding:0; margin:1rem 0; }
+    .memo-list li { background:#fff; border:1px solid var(--line); border-radius:12px; padding:0.9rem 1.1rem; margin:0.55rem 0; }
+    .memo-list .ticker { font-weight:800; letter-spacing:0.02em; }
+    .empty { background:#fff; border:2px dashed var(--line); border-radius:12px; padding:1.25rem 1.15rem; margin:1rem 0; }
+    .watch { background:#fff; border:1px solid var(--line); border-radius:12px; padding:1rem 1.15rem; margin:1.25rem 0; }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <h1>Daily Dossier</h1>
+      <p class="sub">Finance · Researched stocks</p>
+    </div>
+  </header>
+  <nav class="nav wrap" aria-label="Primary">
+    <a href="../../index.html">Today</a>
+    <a href="../../briefs/index.html">Briefs</a>
+    <a href="../../national/index.html">National</a>
+    <a href="../../quantum/index.html">Quantum</a>
+    <a href="../index.html" aria-current="page">Finance</a>
+    <a href="../../sports/index.html">Sports</a>
+    <a href="../../fantasy/index.html">Fantasy</a>
+    <a href="../../entertainment/index.html">Entertainment</a>
+    <a href="../../archive/index.html">Archive</a>
+  </nav>
+  <main class="wrap">
+    <div class="banner"><strong>Researched stocks</strong> · Completed memos from Finance · Not trading advice</div>
+    <p class="muted" style="margin:0.5rem 0 1rem"><a href="../index.html">← Market Intelligence Brief</a> · Archive of deep-dive memos (thesis / bull / bear / catalyst / what would change our mind).</p>
+
+    <section>
+      <h2 style="font-size:1.15rem;margin:0 0 0.35rem">Completed memos</h2>
+      <div class="empty" id="empty-shelf">
+        <p style="margin:0"><strong>Shelf is empty.</strong> Finance owns content — pages land here as memos file (first expected: <code>ORCL</code>, <code>ADBE</code> ahead of Thu 9/10 earnings).</p>
+        <p class="muted" style="margin:0.55rem 0 0">Path pattern: <code>/finance/research/TICKER/</code></p>
+      </div>
+      <ul class="memo-list" id="memo-list" hidden>
+        <!-- Filled when Finance ships memos, e.g.:
+        <li>
+          <span class="ticker">ORCL</span> · <time datetime="2026-09-09">Sep 9, 2026</time>
+          <div>One-line thesis here. <a href="ORCL/">Read memo →</a></div>
+        </li>
+        -->
+      </ul>
+    </section>
+
+    <section class="watch" id="watchlist">
+      <h2 style="font-size:1.05rem;margin:0 0 0.45rem">Watchlist (from latest brief)</h2>
+      <p style="margin:0">Names flagged in section 9 of the current Market Intelligence Brief — research setups, not completed memos.</p>
+      <p style="margin:0.65rem 0 0"><a href="../index.html#stocks"><strong>Open latest watchlist →</strong></a> (ORCL · ADBE · XOM/CVX · MU · KR as of Mon Sep 7)</p>
+    </section>
+
+    <p class="muted">Finance files memos to Web Builder. No new bot. Hub tease cards stay on Daily Dossier; this archive holds the deep reads.</p>
+  </main>
+  <footer class="wrap foot"><p>Daily Dossier · Finance research</p></footer>
+</body>
+</html>
