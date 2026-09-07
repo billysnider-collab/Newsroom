@@ -3,19 +3,44 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>XOM-CVX research · Finance · Sep 7, 2026</title>
+  <title>XOM-CVX · How long does the Hormuz oil premium last? · Finance</title>
   <meta name="description" content="This is a Hormuz-premium pair, not a “buy oil forever” call. Weekend tanker strikes and May-low transit data raise the near-term crude risk premium; the researc" />
   <link rel="stylesheet" href="../../css/style.css" />
   <style>
-    .badge { display:inline-block; font-size:0.68rem; font-weight:700; padding:0.12rem 0.4rem; border-radius:999px; margin-right:0.2rem; }
+    .badge { display:inline-block; font-size:0.68rem; font-weight:700; padding:0.15rem 0.45rem; border-radius:999px; margin-right:0.2rem; vertical-align:middle; }
     .badge.fact { background:#e8eef5; color:#1a3a5c; }
     .badge.infer { background:#f0e8fb; color:#5b2d8e; }
     .badge.lo { background:#f0f0f0; color:#5b6570; }
-    .memo { background:#fff; border:1px solid var(--line); border-radius:12px; padding:1rem 1.15rem; margin:1rem 0; }
-    .memo h1 { font-size:1.25rem; margin-top:0; }
-    .memo h2 { font-size:1.05rem; margin:1rem 0 0.4rem; }
-    .terms-jump { font-size:0.9rem; }
-  </style>
+    .thesis {
+      background:#fff; border:2px solid #0f1419; border-radius:12px;
+      padding:1rem 1.15rem; margin:0.85rem 0 1.1rem;
+    }
+    .thesis .label { font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); font-weight:700; }
+    .thesis p { margin:0.35rem 0 0; font-size:1.08rem; line-height:1.4; }
+    .split { display:grid; gap:0.85rem; grid-template-columns:1fr 1fr; margin:0.85rem 0; }
+    @media (max-width:720px) { .split { grid-template-columns:1fr; } }
+    .panel { background:#fff; border:1px solid var(--line); border-radius:12px; padding:0.9rem 1rem; }
+    .panel.bull { border-top:3px solid #0a7a3e; }
+    .panel.bear { border-top:3px solid #a11; }
+    .panel h2 { margin:0 0 0.45rem; font-size:1rem; }
+    .panel ul { margin:0; padding-left:1.1rem; }
+    .panel li { margin:0.35rem 0; }
+    .catalyst, .flip {
+      background:#fff; border:1px solid var(--line); border-radius:12px;
+      padding:0.9rem 1rem; margin:0.85rem 0;
+    }
+    .catalyst { border-left:4px solid var(--accent); }
+    .flip { border-left:4px solid #9a5b00; }
+    .catalyst h2, .flip h2 { margin:0 0 0.4rem; font-size:1rem; }
+    .meta { font-size:0.88rem; color:var(--muted); margin:0.35rem 0 0.75rem; }
+    .terms-fold { background:#fff; border:1px solid var(--line); border-radius:10px; margin:1.25rem 0; padding:0.55rem 0.9rem; }
+    .terms-fold summary { cursor:pointer; font-weight:700; list-style:none; }
+    .terms-fold summary::-webkit-details-marker { display:none; }
+    .terms-fold summary::before { content:"▸ "; color:var(--accent); }
+    .terms-fold[open] summary::before { content:"▾ "; }
+    .terms-fold dt { font-weight:700; margin-top:0.55rem; }
+    .terms-fold dd { margin:0.15rem 0 0.35rem; color:var(--muted); }
+</style>
 </head>
 <body>
   <header class="top">
@@ -36,49 +61,68 @@
     <a href="../../archive/index.html">Archive</a>
   </nav>
   <main class="wrap">
-    <div class="banner"><strong>XOM-CVX</strong> · Researched memo · Not a buy/sell recommendation</div>
-    <p class="muted" style="margin:0.45rem 0"><a href="../">← Researched stocks</a> · <a href="../watchlist/">Watchlist</a> · <a href="../index.html#terms" class="terms-jump">Coming to terms ↓</a></p>
-    <article class="memo">
-<h1>XOM / CVX — ExxonMobil &amp; Chevron | Watchlist → Researched</h1>
-<p><strong>As of:</strong> Mon Sep 7, 2026  </p>
-<p><strong>Status:</strong> Not a buy/sell recommendation (pair framing)</p>
-<h2>Thesis</h2>
-<p>This is a Hormuz-premium pair, not a “buy oil forever” call. Weekend tanker strikes and May-low transit data raise the near-term crude risk premium; the research question is how long physical shipping risk stays elevated vs how fast the tape mean-reverts when traffic normalizes.</p>
-<h2>Bull</h2>
-<ul>
+    <p class="meta"><a href="../">← All researched stocks</a> · <a href="../watchlist/">Watchlist</a> · <a href="../../index.html">Finance briefing</a> · <a href="#terms">Coming to terms ↓</a></p>
+    <div class="banner"><strong>XOM-CVX</strong> · Research memo · Not a buy/sell recommendation</div>
+
+    <p style="font-size:1.15rem;font-weight:700;margin:0.5rem 0 0.25rem;letter-spacing:-0.01em">How long does the Hormuz oil premium last?</p>
+
+    <section class="thesis">
+      <div class="label">Thesis — the one idea to hold</div>
+      <p>This is a Hormuz-premium pair, not a “buy oil forever” call. Weekend tanker strikes and May-low transit data raise the near-term crude risk premium; the research question is how long physical shipping risk stays elevated vs how fast the tape mean-reverts when traffic normalizes.</p>
+    </section>
+
+    <div class="split">
+      <section class="panel bull">
+        <h2>Bull — why it could work</h2>
+        <ul>
 <li><strong><span class="badge fact">FACT</span>:</strong> Exxon Q2 2026: $14.5B earnings / $3.48 GAAP EPS; FCF $17.2B; $9.4B distributions; record Permian; Guyana FPSO startup plan 4Q26; Middle East disruptions called out (Exxon IR Jul 31, 2026).</li>
 <li><strong><span class="badge fact">FACT</span>:</strong> OPEC+ held October output unchanged (wires); Brent ~$97 / WTI ~$92 area Mon (secondary oil wraps).</li>
 <li><strong><span class="badge infer">INFERENCE</span>:</strong> Sustained disruption + buyback/dividend floors support cash-flow quality vs less-capitalized energy names.</li>
 </ul>
-<h2>Bear</h2>
-<ul>
+      </section>
+      <section class="panel bear">
+        <h2>Bear — what breaks it</h2>
+        <ul>
 <li><strong><span class="badge infer">INFERENCE</span>:</strong> Risk premium fades on escort success / traffic rebound → earnings and multiples compress.</li>
 <li><strong><span class="badge fact">FACT</span></strong> risk language: company cautionary statements on geo/price/volume volatility.</li>
 <li><strong><span class="badge infer">INFERENCE</span>:</strong> Street Hold clusters with limited upside in prior aggregator snapshots — may already price mid-cycle oil, not permanent shock.</li>
 </ul>
-<h2>Catalyst + date</h2>
-<ul>
+      </section>
+    </div>
+
+    <section class="catalyst">
+      <h2>Catalyst — what to watch, when</h2>
+      <ul>
 <li>Daily: Hormuz ship counts / restricted-zone announcements (ongoing).</li>
 <li><strong><span class="badge fact">FACT</span>:</strong> XOM dividend $1.03 payable Sep 10, 2026 (cash event, not thesis change).</li>
 <li>Next earnings dates: <strong><span class="badge lo">UNKNOWN</span></strong> this pass — do not invent.</li>
 </ul>
-<h2>What would change our mind</h2>
-<ul>
+    </section>
+
+    <section class="flip">
+      <h2>What would change our mind</h2>
+      <ul>
 <li>Toward bear: sustained sub-$60–70 Brent with no volume growth / clear Hormuz normalization.</li>
 <li>Toward bull: prolonged elevated prices + Guyana on plan + buyback continuity (XOM).</li>
 </ul>
-<h2>Labels</h2>
-<p>Q2 financials and dividend date = <strong><span class="badge fact">FACT</span></strong> (company IR). Which ticker wins and duration of premium = <strong><span class="badge infer">INFERENCE</span></strong>. Pair framing = research structure, not a trade ticket.</p>
-<details class="terms-fold" id="terms"><summary>Coming to terms</summary><div class="terms-body">
-<h2 style="font-size:1.05rem">Coming to terms</h2>
-<ul>
-<li><strong>Hormuz premium:</strong> Extra oil price from Strait of Hormuz shipping risk.</li>
-<li><strong>FCF:</strong> Cash from operations minus capex.</li>
-<li><strong>FPSO:</strong> Floating production vessel — offshore oil production kit (Guyana growth path).</li>
-</ul>
-    </article>
-    <p class="muted">Source: Finance desk memo <code>XOM-CVX-2026-09-07.md</code>. Hub tease cards stay on Daily Dossier; this page is the deep read.</p>
+    </section>
+
+    <p class="muted" style="font-size:0.88rem">Q2 financials and dividend date = <strong><span class="badge fact">FACT</span></strong> (company IR). Which ticker wins and duration of premium = <strong><span class="badge infer">INFERENCE</span></strong>. Pair framing = research structure, not a trade ticket.</p>
+
+    <details class="terms-fold" id="terms">
+      <summary>Coming to terms — words that make this stick</summary>
+      <div class="terms-body">
+        <p class="muted" style="margin-top:0.35rem">Learn these, then the thesis clicks faster.</p>
+        <dl>
+<dt>Hormuz premium</dt><dd>Extra oil price from Strait of Hormuz shipping risk.</dd>
+<dt>FCF</dt><dd>Cash from operations minus capex.</dd>
+<dt>FPSO</dt><dd>Floating production vessel — offshore oil production kit (Guyana growth path).</dd>
+</dl>
+      </div>
+    </details>
+
+    <p class="muted">Source: Finance <code>XOM-CVX-2026-09-07.md</code>. Labels show evidence weight — not a tip.</p>
   </main>
-  <footer class="wrap foot"><p>Daily Dossier · XOM-CVX research</p></footer>
+  <footer class="wrap foot"><p>Daily Dossier · XOM-CVX</p></footer>
 </body>
 </html>
