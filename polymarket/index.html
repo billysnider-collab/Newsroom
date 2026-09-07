@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Polymarket · Current edges + fun · Daily Dossier</title>
   <!-- pack aae3e47 live-only -->
-  <meta name="description" content="Polymarket sidebar — current Favored/edges + Funny/unique only. No expired face cards. No trading advice." />
+  <meta name="description" content="Polymarket in plain English — sharp situations + crowd-pleasers. Hints, not tips. No trading advice." />
   <link rel="stylesheet" href="../css/style.css?v=ddbrand-20260907" />
   <link rel="icon" type="image/png" href="../img/favicon-32.png" sizes="32x32" />
   <link rel="apple-touch-icon" href="../img/apple-touch-icon.png" />
@@ -42,6 +42,16 @@
     details.fold { background:var(--panel); border:1px solid var(--line); border-radius:2px; padding:0.65rem 0.95rem; margin:1rem 0; max-width:42rem; }
     details.fold summary { cursor:pointer; font-weight:750; font-size:0.82rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--muted); list-style:none; }
     details.fold summary::-webkit-details-marker { display:none; }
+    .hint {
+      margin:0.55rem 0 0.35rem; padding:0.55rem 0.75rem;
+      border-left:2px solid var(--muted); color:var(--cream, #e8e4d9);
+      font-size:0.95rem; line-height:1.45; max-width:40rem;
+      background:rgba(232,228,217,0.04);
+    }
+    .hint strong { letter-spacing:0.04em; font-size:0.78rem; text-transform:uppercase; color:var(--muted); display:block; margin-bottom:0.2rem; }
+    .price-plain { font-size:1.05rem; margin:0.35rem 0 0.55rem; }
+    .price-plain .num { font-weight:750; }
+    .fine { font-size:0.78rem; color:var(--muted); }
   </style>
 </head>
 <body>
@@ -51,7 +61,7 @@
         <img class="dd-mark" src="../img/dd-mark-80.png" width="80" height="80" alt="Daily Dossier" />
         <div class="brand-text">
           <h1>Daily Dossier</h1>
-          <p class="sub">Polymarket · current only · live pack 4:30 PM CT · Mon Sep 7, 2026</p>
+          <p class="sub">Polymarket · plain English · live pack ~4:30 PM CT · Mon Sep 7, 2026</p>
         </div>
       </div>
     </div>
@@ -67,219 +77,209 @@
     <a href="../archive/index.html">Archive</a>
   </nav>
   <main class="wrap">
-    <div class="banner"><strong>Polymarket</strong> · Current edges + fun · expired/resolved off the face · <strong>No trading advice</strong></div>
+    <div class="banner"><strong>Polymarket</strong> · What’s moving (and what’s weird) · <strong>No trading advice</strong> — just what the board is saying</div>
     <p class="muted" style="margin:0.35rem 0 0.85rem">
       <a href="../index.html">← Today</a> ·
-      <a href="#favored">Favored / edges</a> ·
-      <a href="#funny">Funny / unique</a> ·
-      <a href="#how">How to read ↓</a>
+      <a href="#favored">Sharp situations</a> ·
+      <a href="#funny">Crowd-pleasers</a> ·
+      <a href="#how">Coming to terms ↓</a>
+    </p>
+
+    <p style="max-width:42rem;line-height:1.5;margin:0 0 1rem">
+      Think of these like sports lines for news. A price near <strong>$0.50</strong> means the crowd is roughly split.
+      Near <strong>$0.80</strong> means “most people think yes.” Near <strong>$0.05</strong> means “almost nobody thinks yes.”
+      We flag moves and weird books — <em>not</em> what you should buy.
     </p>
 
     <details class="glossary" id="how">
-      <summary style="cursor:pointer;font-weight:750;letter-spacing:0.04em;text-transform:uppercase;font-size:0.82rem;color:var(--muted)">How to read this</summary>
+      <summary style="cursor:pointer;font-weight:750;letter-spacing:0.04em;text-transform:uppercase;font-size:0.82rem;color:var(--muted)">Coming to terms ↓</summary>
       <dl>
-        <dt>Mid / midpoint</dt>
-        <dd>Halfway between best bid and best ask — more robust than last trade.</dd>
-        <dt>Spread</dt>
-        <dd>Ask minus bid; the honest error bar. Wide spread = noisy “probability.”</dd>
-        <dt>Priced delta</dt>
-        <dd>How much the mid moved over a window — we flag big ones.</dd>
-        <dt>Liquidity / depth</dt>
-        <dd>Dollars sitting near the mid; thin books can be moved by one trader.</dd>
-        <dt>Resolution language</dt>
-        <dd>The exact Yes/No rules; misreads cause fake “mispricing.”</dd>
-        <dt>UMA / oracle</dt>
-        <dd>Polymarket International doesn’t decide outcomes; proposals/disputes can leave markets open after the event.</dd>
-        <dt>HOLD</dt>
-        <dd>We don’t know causation, or the number shouldn’t be treated as a forecast.</dd>
-        <dt>Edge (newsroom sense)</dt>
-        <dd>Interesting market structure or signal-vs-evidence gap — <em>not</em> a bet tip.</dd>
-        <dt>Current only</dt>
-        <dd>Face = still-open books with a live end date. Expired / resolved → quiet shelf.</dd>
+        <dt>Price (mid)</dt>
+        <dd>Rough “crowd odds” for Yes, in dollars from $0 to $1. $0.60 ≈ “about 60% of the crowd’s money is on Yes.” Not a crystal ball.</dd>
+        <dt>Spread (bid vs ask)</dt>
+        <dd>Gap between what buyers will pay and sellers will take. Tight (1¢) = clean read. Wide (10¢+) = the number is mushy — don’t trust one figure.</dd>
+        <dt>Move today (d1)</dt>
+        <dd>How much that mid jumped or dropped in about a day. Big move = something got people’s attention.</dd>
+        <dt>Liquidity</dt>
+        <dd>How much money is parked near the price. High = harder to shove around. Low = one loud trader can fake a “signal.”</dd>
+        <dt>Resolution text</dt>
+        <dd>The fine print for what actually counts as Yes. Misreading it is how people invent fake drama.</dd>
+        <dt>FACT vs HOLD</dt>
+        <dd><strong>FACT</strong> = we measured it. <strong>HOLD</strong> = we won’t pretend we know <em>why</em>, or that the number is a forecast.</dd>
+        <dt>Hint</dt>
+        <dd>A plain-English “notice this” — still not a bet tip.</dd>
       </dl>
     </details>
 
     <section id="favored">
       <div class="lane-head">
         <span class="mark">Favored / edges</span>
-        <span class="when">Still-open books · material deltas · contested mids · usable liquidity</span>
+        <span class="when">Sharp situations — big news, contested books, real money</span>
       </div>
 
       <article class="card-block lead" id="israel-airspace-2026-09-07">
-        <div class="tag">LIVE · Israel airspace · captured ~4:30 PM CT</div>
-        <h2>Israel closes airspace by Sep 30? — book stressed</h2>
-        <p>Still open through early Oct. Big slide from ~80¢ earlier today — treat any single “probability” as noisy while the book is this wide.</p>
+        <div class="tag">LIVE · Israel airspace · ~4:30 PM CT</div>
+        <h2>Will Israel close its airspace by Sep 30?</h2>
+        <p class="price-plain">Crowd on Yes: roughly the <span class="num">mid-50s to low-70s</span> depending which number you look at — <strong>and the book is messy</strong>.</p>
+        <p>Earlier today this was sitting near <strong>80¢</strong> (crowd very Yes). It sold off hard. But buyers and sellers are far apart (~63¢ vs ~80¢), so you can’t point at one clean “odds” number right now.</p>
+        <div class="hint"><strong>Hint</strong>Treat this as “people got nervous / confused,” not “Israel is about to shut the skies.” Until someone publishes a real closure order, the move is noise until the book tightens.</div>
         <h3><span class="badge fact">FACT</span></h3>
         <ul>
-          <li>Venue: Polymarket International</li>
-          <li>Contract: <em>Israel closes its airspace by September 30?</em></li>
-          <li class="mono">conditionId 0xcfbc2e5fbabb9e8a03bf234367244d4c97eaaf3ac33e2ba001541ee3e0e62416</li>
-          <li>Captured: 2026-09-07T21:30:46Z · closed=false</li>
-          <li>Gamma YES ~0.565 (d1 −0.17) · CLOB mid ~0.715 but bid/ask $0.63/$0.80 → <strong>spread 17¢</strong></li>
-          <li>vol24hr ~$354k · liq ~$70k</li>
-          <li>endDate: 2026-10-01T03:59:00Z · still active</li>
-          <li>Yes only on a <strong>major</strong> civilian airspace closure — limited delays don’t count</li>
+          <li>Still open through early Oct (ends ~Oct 1)</li>
+          <li>One feed shows ~56.5¢ after a big drop; another mid looks higher — bid/ask gap about <strong>17¢</strong></li>
+          <li>~$354k traded in 24h · ~$70k sitting near the price</li>
+          <li>Yes only if there’s a <strong>major</strong> civilian airspace shutdown — ordinary delays don’t count</li>
+          <li class="fine mono">cid 0xcfbc2e5f…62416 · captured 2026-09-07T21:30:46Z</li>
         </ul>
         <h3><span class="badge hold">HOLD</span></h3>
         <ul>
-          <li>Material selloff from ~80¢ earlier; causation unknown.</li>
-          <li>Wide spread = don’t quote a clean probability. No trading advice.</li>
+          <li>We don’t know what caused the selloff. Wide spread = don’t quote a single probability. No trading advice.</li>
         </ul>
       </article>
 
       <article class="card-block" id="fed-sep-2026">
-        <div class="tag">LIVE · Fed September · pair</div>
-        <h2>Near coin-flip on the September move</h2>
+        <div class="tag">LIVE · Fed · September meeting</div>
+        <h2>Will the Fed hold rates — or cut 0.25%?</h2>
+        <p class="price-plain">Basically a <span class="num">coin flip</span>: hold ~<strong>47.5¢</strong> · cut 25 bps ~<strong>51.5¢</strong>.</p>
+        <p>Two thick books, penny-tight spreads. Tons of money on both sides. The crowd is arguing — not stampeding.</p>
+        <div class="hint"><strong>Hint</strong>When both sides have deep books and the prices sit near 50/50, the “story” is the disagreement itself. Wait for the Sep FOMC if you care about the outcome — not for a tip from us.</div>
         <h3><span class="badge fact">FACT</span></h3>
         <ul>
-          <li>Venue: Polymarket International · resolution = upper bound of target fed funds range after Sep FOMC</li>
-          <li><strong>No change</strong> mid ~$0.475 · bid/ask $0.47/$0.48 · liq ~$670k · end 2026-09-16</li>
-          <li class="mono">cid 0xa3b36b2d…ec9a</li>
-          <li><strong>+25 bps</strong> mid ~$0.515 · bid/ask $0.51/$0.52 · liq ~$637k · end 2026-09-16</li>
-          <li class="mono">cid 0x876506d8…5d0d</li>
-          <li>Captured: 2026-09-07T21:30:46Z</li>
+          <li>Resolves on the upper bound of the fed funds target range after the September meeting</li>
+          <li>No change: ~$0.475 (bid/ask 47–48¢) · ~$670k liquidity · ends Sep 16</li>
+          <li>+25 bps: ~$0.515 (bid/ask 51–52¢) · ~$637k liquidity · ends Sep 16</li>
+          <li class="fine mono">captured 2026-09-07T21:30:46Z</li>
         </ul>
         <h3><span class="badge hold">HOLD</span></h3>
         <ul>
-          <li>Contested thick books — interesting structure, not a tip. No trading advice.</li>
+          <li>Interesting structure, not a forecast. No trading advice.</li>
         </ul>
       </article>
 
       <article class="card-block" id="israel-iran-ceasefire-oct31">
-        <div class="tag">LIVE · Israel × Iran ceasefire · through Oct 31</div>
-        <h2>Ceasefire continues through October 31?</h2>
-        <p>Replaces the expired Sep-4 “effective ceasefire begins” card. Still open through Halloween.</p>
+        <div class="tag">LIVE · Israel × Iran · through Oct 31</div>
+        <h2>Does the ceasefire still hold through Halloween?</h2>
+        <p class="price-plain">Crowd on Yes: about <span class="num">76–77¢</span> (up ~7¢ on the day).</p>
+        <p>This replaced the old “ceasefire by Sep 4” card, which already expired. New question: is it <em>still</em> in effect through Oct 31?</p>
+        <div class="hint"><strong>Hint</strong>High Yes price = crowd mostly expects the pause to last into fall. Watch actual fighting / official statements — the market is a mood check, not a NOTAM.</div>
         <h3><span class="badge fact">FACT</span></h3>
         <ul>
-          <li>Venue: Polymarket International</li>
-          <li>Contract: <em>Israel x Iran ceasefire continues through October 31?</em></li>
-          <li class="mono">conditionId 0xc3d57087…b44d</li>
-          <li>Captured: 2026-09-07T21:30:46Z</li>
-          <li>YES mid <strong>~$0.765</strong> · bid/ask $0.76/$0.77 · d1 +0.07 · liq ~$82k</li>
-          <li>endDate: 2026-10-31T20:29:00Z · still active</li>
-          <li>Yes if ceasefire still in effect through date (IRST); breaks on resumed hostilities per contract text</li>
+          <li>Mid ~$0.765 · tight 1¢ spread · ~$82k liquidity</li>
+          <li>Ends 2026-10-31 · still open</li>
+          <li>Breaks to No if hostilities resume per the contract’s definition (IRST calendar)</li>
+          <li class="fine mono">cid 0xc3d57087…b44d · captured 2026-09-07T21:30:46Z</li>
         </ul>
         <h3><span class="badge hold">HOLD</span></h3>
         <ul>
-          <li>Newsroom structure edge only. No trading advice.</li>
+          <li>Mood / structure only. No trading advice.</li>
         </ul>
       </article>
 
       <article class="card-block" id="lula-brazil-2026">
         <div class="tag">LIVE · Brazil 2026</div>
-        <h2>Lula wins 2026 Brazil presidential election?</h2>
+        <h2>Does Lula win Brazil’s presidential race?</h2>
+        <p class="price-plain">Crowd on Yes: about <span class="num">58–59¢</span> — favored, not a lock.</p>
+        <p>Deep book (~$326k parked). Includes a possible runoff. Ends early October.</p>
+        <div class="hint"><strong>Hint</strong>Think “slight favorite on the board,” not destiny. Election markets swing with polls and debates — this is a snapshot.</div>
         <h3><span class="badge fact">FACT</span></h3>
         <ul>
-          <li>Venue: Polymarket International</li>
-          <li>Contract: <em>Lula wins 2026 Brazil presidential election?</em></li>
-          <li class="mono">conditionId 0xdf8e2dc5…d4a8</li>
-          <li>Captured: 2026-09-07T21:30:46Z</li>
-          <li>YES mid <strong>~$0.585</strong> · bid/ask $0.58/$0.59 · liq ~$326k</li>
-          <li>endDate: 2026-10-04T00:00:00Z · still active</li>
-          <li>Yes if listed candidate wins, including any second round</li>
+          <li>Mid ~$0.585 · bid/ask 58–59¢ · ~$326k liquidity</li>
+          <li>Ends 2026-10-04 · still open</li>
+          <li>Yes if the listed candidate wins, including any second round</li>
+          <li class="fine mono">cid 0xdf8e2dc5…d4a8 · captured 2026-09-07T21:30:46Z</li>
         </ul>
         <h3><span class="badge hold">HOLD</span></h3>
         <ul>
-          <li>Election book — structure note only. No trading advice.</li>
+          <li>Snapshot only. No trading advice.</li>
         </ul>
       </article>
 
-      <p class="empty">More current edges land here when the desk files them. Expired / past-end-date books stay off this face.</p>
+      <p class="empty">More sharp situations land here when the desk files them.</p>
     </section>
 
     <section id="funny">
       <div class="lane-head">
         <span class="mark">Funny / unique</span>
-        <span class="when">Weird · viral · delightful — still-open only · venue + timestamp</span>
+        <span class="when">Crowd-pleasers — weird, viral, delightful (still open)</span>
       </div>
 
       <article class="card-block" id="elon-tweets-sep1-8-2026">
-        <div class="tag">FUN · Elon tweet derby · captured ~4:30 PM CT</div>
-        <h2>Will Elon post 180–199 tweets Sep 1–8?</h2>
-        <p>Hottest bracket in the September tweet-count ladder. Ends tomorrow afternoon CT.</p>
+        <div class="tag">FUN · Elon tweet derby · ends tomorrow</div>
+        <h2>Will Elon post 180–199 times this week (Sep 1–8)?</h2>
+        <p class="price-plain">Hottest bracket is basically a <span class="num">coin flip at ~48¢</span> — and it jumped hard today (+~28¢).</p>
+        <p>Only main posts / quotes / reposts count. Replies don’t. Window is Eastern Time. Book is thinner than the news cards above — treat as entertainment.</p>
+        <div class="hint"><strong>Hint</strong>People are gambling on how loud his account is this week. Fun scoreboard energy — not a deep signal.</div>
         <h3><span class="badge fact">FACT</span></h3>
         <ul>
-          <li>Venue: Polymarket International</li>
-          <li>Hot bracket: <em>Will Elon Musk post 180-199 tweets…?</em> (Sep 1–8 cluster)</li>
-          <li class="mono">conditionId 0xc405ac9f98edc585086e565cddfa5d5be251f4eb0f5a7606fa414d5939172c59</li>
-          <li>Captured: 2026-09-07T21:30:46Z</li>
-          <li>YES mid <strong>~$0.4795</strong> · bid/ask $0.479/$0.48 · d1 +0.28 · vol24hr ~$76k · liq ~$7.9k</li>
-          <li>endDate: 2026-09-08T16:00:00Z · still open</li>
-          <li>Counts @elonmusk main / quote / reposts only; replies don’t count; window ET</li>
+          <li>Mid ~$0.4795 · penny spread · ~$76k volume today · only ~$7.9k liquidity (thin)</li>
+          <li>Ends 2026-09-08 ~11am CT · still open</li>
+          <li class="fine mono">cid 0xc405ac9f…2c59 · captured 2026-09-07T21:30:46Z</li>
         </ul>
         <h3><span class="badge hold">HOLD</span></h3>
         <ul>
-          <li>Thin book — fun label, not deep signal. No trading advice.</li>
+          <li>Thin fun book. Count rules live in the fine print. No trading advice.</li>
         </ul>
       </article>
 
       <article class="card-block" id="aliens-confirm-before-2027">
-        <div class="tag">FUN · Aliens · captured ~4:30 PM CT</div>
-        <h2>Will the US confirm aliens exist before 2027?</h2>
-        <p>Longshot with a surprisingly thick book. The word “confirm” does a lot of work here.</p>
+        <div class="tag">FUN · Aliens</div>
+        <h2>Will the US “confirm” aliens exist before 2027?</h2>
+        <p class="price-plain">Crowd on Yes: about <span class="num">3.7¢</span> — longshot — but there’s a ton of money parked (~$800k+).</p>
+        <p>The trap word is <strong>confirm</strong>. It has to be a definitive statement from POTUS, Cabinet, Joint Chiefs, or a federal agency — not a podcast guest or a leak.</p>
+        <div class="hint"><strong>Hint</strong>Cheap Yes tickets look sexy on longshots; the fine print is where these usually die. Read “confirm,” not “rumor.”</div>
         <h3><span class="badge fact">FACT</span></h3>
         <ul>
-          <li>Venue: Polymarket International</li>
-          <li>Contract: <em>Will the US confirm that aliens exist before 2027?</em></li>
-          <li class="mono">conditionId 0x747dc809fb79e1b05be09c42d6179459a58de2ef3e40f02484a4e1260f741f75</li>
-          <li>Captured: 2026-09-07T21:30:46Z</li>
-          <li>YES mid <strong>~$0.0375</strong> · bid/ask $0.037/$0.038 · liq ~$823k</li>
-          <li>endDate: 2027-01-01T04:59:00Z · still open</li>
-          <li>Yes if POTUS / Cabinet / JCS / federal agency definitively states ET life or tech by Dec 31, 2026</li>
+          <li>Mid ~$0.0375 · tight spread · ends Jan 1, 2027</li>
+          <li class="fine mono">cid 0x747dc809…1f75 · captured 2026-09-07T21:30:46Z</li>
         </ul>
         <h3><span class="badge hold">HOLD</span></h3>
         <ul>
-          <li>Longshot + “confirm” language landmine; longshot bias at extremes. No trading advice.</li>
+          <li>Longshot + language landmine. Extremes warp intuition. No trading advice.</li>
         </ul>
       </article>
 
       <article class="card-block" id="openai-agi-announce-before-2027">
-        <div class="tag">FUN · OpenAI AGI · captured ~4:30 PM CT</div>
-        <h2>OpenAI announces it has achieved AGI before 2027?</h2>
-        <p>About what OpenAI <em>says</em> — and how the contract defines AGI — not whether AGI “is real.”</p>
+        <div class="tag">FUN · OpenAI · AGI announce</div>
+        <h2>Does OpenAI announce it has AGI before 2027?</h2>
+        <p class="price-plain">Crowd on Yes: about <span class="num">22–23¢</span> (up a bit today).</p>
+        <p>This is about what OpenAI <em>says</em> — and how the contract defines AGI — not whether AGI “is real” in some cosmic sense.</p>
+        <div class="hint"><strong>Hint</strong>You’re betting on a press release / blog post meeting lawyerly wording — not on sci-fi becoming true overnight.</div>
         <h3><span class="badge fact">FACT</span></h3>
         <ul>
-          <li>Venue: Polymarket International</li>
-          <li>Contract: <em>OpenAI announces it has achieved AGI before 2027?</em></li>
-          <li class="mono">conditionId 0x454005ba2b2a2f3bfeb354e18d8c0cb82136009c8f39589645f9cf2af25f0d25</li>
-          <li>Captured: 2026-09-07T21:30:46Z</li>
-          <li>YES mid <strong>~$0.225</strong> · bid/ask $0.22/$0.23 · d1 +0.04 · liq ~$24k</li>
-          <li>endDate: 2026-12-31 · still open</li>
-          <li>Yes if OpenAI announces it created AGI by Dec 31, 2026 ET</li>
+          <li>Mid ~$0.225 · ~$24k liquidity · ends Dec 31, 2026</li>
+          <li class="fine mono">cid 0x454005ba…0d25 · captured 2026-09-07T21:30:46Z</li>
         </ul>
         <h3><span class="badge hold">HOLD</span></h3>
         <ul>
-          <li>Announcement + definition — not a metaphysics claim. No trading advice.</li>
+          <li>Announcement contract, not metaphysics. No trading advice.</li>
         </ul>
       </article>
 
       <article class="card-block" id="openai-best-model-sep-2026">
-        <div class="tag">FUN · OpenAI vs arena · end of Sep</div>
-        <h2>OpenAI has best AI model end of Sep 2026?</h2>
+        <div class="tag">FUN · OpenAI · arena ranking</div>
+        <h2>Does OpenAI have the #1 AI model at end of September?</h2>
+        <p class="price-plain">Crowd on Yes: about <span class="num">10–11¢</span> — crowd mostly doubts it — down a bit today.</p>
+        <p>Scoreboard is arena.ai’s Text Arena Overall rank, checked Sep 30 at noon Eastern. Not vibes — a specific leaderboard snapshot.</p>
+        <div class="hint"><strong>Hint</strong>Low Yes price = most money thinks someone else sits on top that day. Fun tech scoreboard; still not advice.</div>
         <h3><span class="badge fact">FACT</span></h3>
         <ul>
-          <li>Venue: Polymarket International</li>
-          <li>Contract: <em>OpenAI has best AI model end of Sep 2026?</em></li>
-          <li class="mono">conditionId 0xbce02d9a…142e0</li>
-          <li>Captured: 2026-09-07T21:30:46Z</li>
-          <li>YES mid <strong>~$0.105</strong> · bid/ask $0.101/$0.109 · d1 −0.04 · liq ~$39k</li>
-          <li>endDate: 2026-10-01T03:59:00Z · still open</li>
-          <li>Yes = highest arena.ai Text Arena Overall rank checked Sep 30, 2026 12:00 PM ET</li>
+          <li>Mid ~$0.105 · ~$39k liquidity · ends ~Oct 1</li>
+          <li class="fine mono">cid 0xbce02d9a…142e0 · captured 2026-09-07T21:30:46Z</li>
         </ul>
         <h3><span class="badge hold">HOLD</span></h3>
         <ul>
-          <li>Fun ladder / ranking contract. No trading advice.</li>
+          <li>Ranking snapshot contract. No trading advice.</li>
         </ul>
       </article>
 
-      <p class="empty">More weird / viral / delightful books land here when the desk files them. Still-open only.</p>
+      <p class="empty">More weird / viral books land here when the desk files them.</p>
     </section>
 
     <details class="fold">
-      <summary>Quiet · expired / resolved (not the board face)</summary>
+      <summary>Quiet · expired / resolved (not on this board)</summary>
       <ul style="margin:0.5rem 0 0;padding-left:1.2rem;color:var(--muted);font-size:0.9rem;line-height:1.45">
-        <li>US×Iran “Effective Ceasefire” by Sep 4 — past end date (oracle-timing quirk) — scrubbed from face; replaced by Oct 31 continues card</li>
-        <li>Sachsen-Anhalt AfD — resolved / oracle catching up — scrubbed from face</li>
+        <li>US×Iran “ceasefire by Sep 4” — date already passed → off the face (replaced by the Oct 31 “still holding?” card)</li>
+        <li>Sachsen-Anhalt AfD race — resolved / oracle catching up → off the face</li>
       </ul>
     </details>
 
