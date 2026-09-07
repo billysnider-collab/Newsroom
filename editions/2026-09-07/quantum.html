@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quantum — The Newsroom</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body>
+  <header class="masthead wrap">
+    <p class="kicker">Verified intelligence · Not a headline aggregator</p>
+    <h1>The Newsroom</h1>
+    <p class="dateline">Desk · Quantum · Brother-test rewrite · Soft Publish A+B</p>
+  </header>
+        <nav class="nav wrap" aria-label="Primary">
+    <a href="../../index.html">Front (live)</a>
+    <a href="../../archive/index.html">Archive</a>
+    <a href="index.html">Edition home</a>
+    <a href="national.html">National</a>
+    <a href="quantum.html" aria-current="page">Quantum</a>
+    <a href="sports.html">Sports</a>
+    <a href="../../entertainment/index.html">Entertainment (live)</a>
+    <a href="../../finance/index.html">Finance (live)</a>
+    <a href="../../polymarket/index.html">Polymarket (live)</a>
+    <a href="../../about/index.html">Standards</a>
+  </nav>
+  <div class="wrap"><p class="caveat" style="margin-top:1rem">Archived edition · Monday, September 7, 2026 · National denser-lock cycle · grades frozen as shipped</p></div>
+  <main class="wrap article-body">
+    <h1 class="page-title">Quantum</h1>
+    <p class="lede">Plain English first. Technical detail sits below the fold. IBM stays off this page (Monitor only).</p>
+
+    <aside class="standards" style="margin-top:0">
+      <strong>Terms (first use):</strong>
+      <em>Logical error</em> = a mistake that gets through the error-correction shield and could corrupt the answer.
+      <em>Calibration</em> = retuning the machine so controls stay accurate.
+      <em>Injected drift</em> = fake, deliberate messiness used in a lab test — not every real-world mess.
+      <em>Preprint</em> = a paper posted online before peer review finishes.
+      <em>Postselection</em> = throwing away bad runs so only the good ones count — can make results look better than everyday use.
+    </aside>
+
+    <article class="story-block">
+      <p class="meta"><span class="badge soft">Soft Publish</span> Google RL-QEC on Willow</p>
+      <h2>Google: the chip retunes itself while it still runs</h2>
+
+      <h3 class="subhead">In plain English</h3>
+      <p>Google showed a way for its quantum chip (<strong>Willow</strong>) to retune itself from its own error signals <em>while still running</em> — less “stop the computer to fix it.” After expert tuning, they saw about <strong>20% fewer logical errors</strong>. In a lab test with fake drift, stability improved up to about <strong>3.5×</strong> when the software that watches errors adapted too.</p>
+      <p><strong>What this is not:</strong> “AI solved quantum error correction.” Fake lab drift is not the same as every real-world problem.</p>
+
+      <h3 class="subhead">Why it matters</h3>
+      <p>Big quantum machines lose time when they have to stop and retune. Cutting that downtime is useful even if the underlying codes stay the same.</p>
+
+      <h3 class="subhead">What we don’t know yet</h3>
+      <ul>
+        <li>How well this holds up against all natural (not injected) drift</li>
+        <li>Whether this is a new code — it isn’t; it’s better runtime control</li>
+      </ul>
+
+      <details class="tech-fold">
+        <summary>For the technical reader</summary>
+        <p>In-situ reinforcement learning steers &gt;1,000 control parameters from QEC detection events during compute — calibration unified with runtime. Policy-gradient RL on a detector-rate surrogate; d=5/7 surface + d=5 colour on Willow. Record LERs 7.72e-4 (surface d=7) / 8.19e-3 (colour d=5) = multi-ingredient. Control-alone stability under injected drift: 2.4×.</p>
+        <p class="sources">Nature 655, 879–884 (2026-07-08) <a href="https://www.nature.com/articles/s41586-026-10759-2">s41586-026-10759-2</a> · Zenodo 10.5281/zenodo.17566521</p>
+      </details>
+
+      <div class="editor-take"><strong>Editor’s take:</strong> Soft Publish with mandatory caveats. Brother test first; jargon below the fold.</div>
+    </article>
+
+    <article class="story-block">
+      <p class="meta"><span class="badge soft">Soft Publish</span> Quantinuum C₄-Helix</p>
+      <h2>Quantinuum: protected operations that beat raw qubits</h2>
+
+      <h3 class="subhead">In plain English</h3>
+      <p>Quantinuum showed <strong>protected two-qubit operations</strong> that beat ordinary (“raw”) physical qubits — not just storing information longer. Think: doing work under a shield, not only holding still under a shield.</p>
+      <p><strong>What this is not:</strong> a finished universal quantum computer, and not a naked “breakthrough.” It’s a company <strong>preprint</strong> (not fully peer-reviewed yet). They still haven’t shown the full toolkit (no T/magic gates yet).</p>
+
+      <h3 class="subhead">Why it matters</h3>
+      <p>Error correction has to do more than remember — it has to compute. This is an early architecture demo on that path, not the end of the path.</p>
+
+      <h3 class="subhead">What we don’t know yet</h3>
+      <ul>
+        <li>Independent labs haven’t deeply reproduced this yet (thin outside coverage)</li>
+        <li>Ambitious early-fault-tolerance targets in the paper are still mostly simulations</li>
+      </ul>
+
+      <details class="tech-fold">
+        <summary>For the technical reader</summary>
+        <p>[[20,2,6]] memory + 2-logical Clifford under correction + heterogeneous GHZ to d=5 surface — beats physical baselines without postselection (headline comparisons). ε≈4.6e-5/LQ/cycle; Clifford ε_C≈2.8e-4 vs physical ~1.2e-3; GHZ LB ~99.925% vs physical ~99.54%. Helios 98-qubit (Nature machine paper Jun 17, 2026).</p>
+        <p class="sources"><a href="https://arxiv.org/pdf/2609.03194">arXiv:2609.03194</a> · Helios Nature 10.1038/s41586-026-10676-4</p>
+      </details>
+
+      <div class="editor-take"><strong>Editor’s take:</strong> Soft Publish as primary-sourced technical. No naked breakthrough. Don’t overclaim early fault tolerance.</div>
+    </article>
+
+    <p class="caveat"><strong>IBM — Monitor only, off this page.</strong> Media “70 logical qubits” claims were misleading vs the paper (error detection + throwing away bad runs). Not printed here.</p>
+  </main>
+  <footer class="footer wrap">The Newsroom · Quantum</footer>
+</body>
+</html>
