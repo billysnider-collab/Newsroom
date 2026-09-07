@@ -196,3 +196,12 @@ a:hover { color: var(--accent); }
   font-size: 0.95rem;
   margin-top: 0.75rem;
 }
+
+
+/* national-lead hierarchy */
+.grid { grid-template-columns: 1.75fr 1fr; }
+.rail .section-label { color: var(--muted); border-bottom-color: #b8b0a4; }
+.rail .story h2 { font-size: 1.15rem; }
+@media (max-width: 800px) {
+  .grid { grid-template-columns: 1fr; }
+}
