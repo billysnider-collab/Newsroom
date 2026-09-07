@@ -4,42 +4,50 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ADBE · Does Creative still monetize under AI — with a new CEO? · Finance</title>
-  <meta name="description" content="Adobe is a same-week, opposite failure-mode to Oracle: not “does AI backlog exist?” but “does Creative software still monetize under AI substitution — with a ne" />
+  <meta name="description" content="Adobe is a same-week, opposite failure-mode to Oracle: not “does AI backlog exist?” but “does Creative software still monetize under AI substitution — with" />
   <link rel="stylesheet" href="../../css/style.css" />
   <style>
-    .badge { display:inline-block; font-size:0.68rem; font-weight:700; padding:0.15rem 0.45rem; border-radius:999px; margin-right:0.2rem; vertical-align:middle; }
-    .badge.fact { background:#e8eef5; color:#1a3a5c; }
-    .badge.infer { background:#f0e8fb; color:#5b2d8e; }
-    .badge.lo { background:#f0f0f0; color:#5b6570; }
-    .thesis {
-      background:#fff; border:2px solid #0f1419; border-radius:12px;
-      padding:1rem 1.15rem; margin:0.85rem 0 1.1rem;
-    }
-    .thesis .label { font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); font-weight:700; }
-    .thesis p { margin:0.35rem 0 0; font-size:1.08rem; line-height:1.4; }
-    .split { display:grid; gap:0.85rem; grid-template-columns:1fr 1fr; margin:0.85rem 0; }
-    @media (max-width:720px) { .split { grid-template-columns:1fr; } }
-    .panel { background:#fff; border:1px solid var(--line); border-radius:12px; padding:0.9rem 1rem; }
-    .panel.bull { border-top:3px solid #0a7a3e; }
-    .panel.bear { border-top:3px solid #a11; }
-    .panel h2 { margin:0 0 0.45rem; font-size:1rem; }
-    .panel ul { margin:0; padding-left:1.1rem; }
-    .panel li { margin:0.35rem 0; }
-    .catalyst, .flip {
-      background:#fff; border:1px solid var(--line); border-radius:12px;
-      padding:0.9rem 1rem; margin:0.85rem 0;
-    }
-    .catalyst { border-left:4px solid var(--accent); }
-    .flip { border-left:4px solid #9a5b00; }
-    .catalyst h2, .flip h2 { margin:0 0 0.4rem; font-size:1rem; }
-    .meta { font-size:0.88rem; color:var(--muted); margin:0.35rem 0 0.75rem; }
-    .terms-fold { background:#fff; border:1px solid var(--line); border-radius:10px; margin:1.25rem 0; padding:0.55rem 0.9rem; }
-    .terms-fold summary { cursor:pointer; font-weight:700; list-style:none; }
-    .terms-fold summary::-webkit-details-marker { display:none; }
-    .terms-fold summary::before { content:"▸ "; color:var(--accent); }
-    .terms-fold[open] summary::before { content:"▾ "; }
-    .terms-fold dt { font-weight:700; margin-top:0.55rem; }
-    .terms-fold dd { margin:0.15rem 0 0.35rem; color:var(--muted); }
+  .memo-wrap { width: min(100% - 1.5rem, 42rem); margin-inline: auto; padding-bottom: 2.5rem; }
+  .crumb { font-size: 0.82rem; color: var(--muted); margin: 0.85rem 0 1rem; line-height: 1.4; }
+  .crumb a { color: var(--muted); }
+  .ticker-row { display:flex; flex-wrap:wrap; align-items:baseline; gap:0.5rem 0.75rem; margin:0 0 0.35rem; }
+  .ticker { font-size: 0.8rem; font-weight:800; letter-spacing:0.06em; text-transform:uppercase; color:var(--accent); }
+  .disclaimer { font-size:0.78rem; color:var(--muted); }
+  .hook { font-size:1.45rem; font-weight:750; letter-spacing:-0.02em; line-height:1.25; margin:0.4rem 0 1.1rem; }
+  .block { background:#fff; border:1px solid var(--line); border-radius:14px; padding:1.15rem 1.25rem; margin:0 0 1rem; }
+  .block.thesis { border:2px solid var(--ink); }
+  .kicker { font-size:0.7rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted); margin:0 0 0.55rem; }
+  .thesis-body { font-size:1.05rem; line-height:1.55; margin:0; }
+  .block p { margin:0 0 0.75rem; line-height:1.55; }
+  .block p:last-child { margin-bottom:0; }
+  .point { display:grid; grid-template-columns:auto 1fr; gap:0.55rem 0.65rem; padding:0.7rem 0; border-top:1px solid var(--line); align-items:start; }
+  .point:first-of-type { border-top:none; padding-top:0; }
+  .point:last-child { padding-bottom:0; }
+  .point .body { margin:0; line-height:1.5; font-size:0.98rem; }
+  .chip { font-size:0.65rem; font-weight:800; letter-spacing:0.04em; padding:0.22rem 0.45rem; border-radius:6px; line-height:1; margin-top:0.2rem; white-space:nowrap; }
+  .chip.fact { background:#e8eef5; color:#1a3a5c; }
+  .chip.infer { background:#f3eafc; color:#5b2d8e; }
+  .chip.sec { background:#f0f0f0; color:#5b6570; }
+  .when { font-size:1.05rem; font-weight:700; margin:0 0 0.45rem; line-height:1.35; }
+  .watch { margin:0; color:var(--muted); font-size:0.95rem; line-height:1.45; }
+  .flip-list { list-style:none; padding:0; margin:0; }
+  .flip-list li { padding:0.65rem 0; border-top:1px solid var(--line); line-height:1.5; font-size:0.98rem; }
+  .flip-list li:first-child { border-top:none; padding-top:0; }
+  .flip-list .dir { font-weight:750; }
+  .flip-list .dir.bear { color:#a11; }
+  .flip-list .dir.bull { color:#0a7a3e; }
+  .terms-fold { background:#fff; border:1px solid var(--line); border-radius:14px; padding:0.85rem 1.15rem; margin:1.25rem 0 0.75rem; }
+  .terms-fold summary { cursor:pointer; font-weight:700; list-style:none; font-size:0.95rem; }
+  .terms-fold summary::-webkit-details-marker { display:none; }
+  .terms-fold summary::before { content:"▸ "; color:var(--accent); }
+  .terms-fold[open] summary::before { content:"▾ "; }
+  .terms-fold dl { margin:0.75rem 0 0; }
+  .terms-fold dt { font-weight:750; margin-top:0.75rem; font-size:0.95rem; }
+  .terms-fold dt:first-child { margin-top:0; }
+  .terms-fold dd { margin:0.2rem 0 0; color:var(--muted); line-height:1.45; font-size:0.95rem; }
+  .footnote { font-size:0.8rem; color:var(--muted); margin-top:1.25rem; line-height:1.4; }
+  /* calm: stack always — two columns made eyes dart */
+  .stack { display:flex; flex-direction:column; gap:1rem; }
 </style>
 </head>
 <body>
@@ -60,64 +68,80 @@
     <a href="../../entertainment/index.html">Entertainment</a>
     <a href="../../archive/index.html">Archive</a>
   </nav>
-  <main class="wrap">
-    <p class="meta"><a href="../">← All researched stocks</a> · <a href="../watchlist/">Watchlist</a> · <a href="../../index.html">Finance briefing</a> · <a href="#terms">Coming to terms ↓</a></p>
-    <div class="banner"><strong>ADBE</strong> · Research memo · Not a buy/sell recommendation</div>
+  <main class="memo-wrap">
+    <p class="crumb"><a href="../">Researched stocks</a> · <a href="../../index.html">Finance briefing</a></p>
 
-    <p style="font-size:1.15rem;font-weight:700;margin:0.5rem 0 0.25rem;letter-spacing:-0.01em">Does Creative still monetize under AI — with a new CEO?</p>
+    <div class="ticker-row">
+      <span class="ticker">ADBE</span>
+      <span class="disclaimer">Research only — not a buy/sell tip</span>
+    </div>
+    <h1 class="hook">Does Creative still monetize under AI — with a new CEO?</h1>
 
-    <section class="thesis">
-      <div class="label">Thesis — the one idea to hold</div>
-      <p>Adobe is a same-week, opposite failure-mode to Oracle: not “does AI backlog exist?” but “does Creative software still monetize under AI substitution — with a new CEO?” The multiple already looks like growth is gone; Thursday’s ARR quality decides whether that’s priced or premature.</p>
+    <section class="block thesis">
+      <div class="kicker">The one idea</div>
+      <p class="thesis-body">Adobe is a same-week, opposite failure-mode to Oracle: not “does AI backlog exist?” but “does Creative software still monetize under AI substitution — with a new CEO?” The multiple already looks like growth is gone; Thursday’s ARR quality decides whether that’s priced or premature.</p>
     </section>
 
-    <div class="split">
-      <section class="panel bull">
-        <h2>Bull — why it could work</h2>
-        <ul>
-<li><strong><span class="badge fact">FACT</span>:</strong> Board named Anil Chakravarthy president &amp; CEO effective Dec 1, 2026; Shantanu Narayen → executive chair (Adobe Newsroom Sep 3).</li>
-<li><strong><span class="badge fact">FACT</span>:</strong> Closed $266.51 on Sep 4 (−6.73%); trailing P/E ~15.2x / forward ~10.3x on aggregator prints (stockanalysis) — <span class="badge fact">FACT</span> those are secondary multiples, not a valuation conclusion.</li>
-<li><strong><span class="badge infer">INFERENCE</span>:</strong> If net-new Digital Media ARR and Firefly/AI attach stabilize, a Hold-consensus name can re-rate without a hero narrative.</li>
-</ul>
+    <div class="stack">
+      <section class="block">
+        <div class="kicker">Bull — why it could work</div>
+      <div class="point">
+        <span class="chip fact">FACT</span>
+        <p class="body">Board named Anil Chakravarthy president &amp; CEO effective Dec 1, 2026; Shantanu Narayen → executive chair (Adobe Newsroom Sep 3).</p>
+      </div>
+      <div class="point">
+        <span class="chip fact">FACT</span>
+        <p class="body">Closed $266.51 on Sep 4 (−6.73%); trailing P/E ~15.2x / forward ~10.3x on aggregator prints (stockanalysis) — those are secondary multiples, not a valuation conclusion.</p>
+      </div>
+      <div class="point">
+        <span class="chip infer">INFER</span>
+        <p class="body">If net-new Digital Media ARR and Firefly/AI attach stabilize, a Hold-consensus name can re-rate without a hero narrative.</p>
+      </div>
       </section>
-      <section class="panel bear">
-        <h2>Bear — what breaks it</h2>
-        <ul>
-<li><strong><span class="badge fact">FACT</span>:</strong> Hard selloff into succession week (Sep 4 tape).</li>
-<li><strong><span class="badge infer">INFERENCE</span> / secondary:</strong> Street split — Hold dominant; some Underweight framing around AI substitution of Creative Cloud (sell-side wraps — secondary until call).</li>
-<li><strong><span class="badge infer">INFERENCE</span>:</strong> Soft net-new ARR or guide cut keeps the multiple compressed; cheap ≠ undervalued if the franchise is being substituted.</li>
-</ul>
+      <section class="block">
+        <div class="kicker">Bear — what breaks it</div>
+      <div class="point">
+        <span class="chip fact">FACT</span>
+        <p class="body">Hard selloff into succession week (Sep 4 tape).</p>
+      </div>
+      <div class="point">
+        <span class="chip infer">INFER</span>
+        <p class="body">Street split — Hold dominant; some Underweight framing around AI substitution of Creative Cloud (sell-side wraps — secondary until call).</p>
+      </div>
+      <div class="point">
+        <span class="chip infer">INFER</span>
+        <p class="body">Soft net-new ARR or guide cut keeps the multiple compressed; cheap ≠ undervalued if the franchise is being substituted.</p>
+      </div>
       </section>
     </div>
 
-    <section class="catalyst">
-      <h2>Catalyst — what to watch, when</h2>
-      <p><strong><span class="badge fact">FACT</span>:</strong> Q3 FY2026 earnings <strong>Thu Sep 10, 2026</strong> (Adobe Newsroom / IR). CEO effective <strong>Dec 1, 2026</strong>.  &lt;/p&gt;&lt;p&gt;Watch: net-new ARR, AI/Firefly monetization, guide, any Chakravarthy appearance as incoming CEO.</p>
+    <section class="block">
+      <div class="kicker">When it matters</div>
+      <p class="when">Q3 FY2026 earnings Thu Sep 10, 2026 (Adobe Newsroom / IR). CEO effective Dec 1, 2026.</p>
+      <p class='watch'><strong>Watch:</strong> net-new ARR, AI/Firefly monetization, guide, any Chakravarthy appearance as incoming CEO.</p>
     </section>
 
-    <section class="flip">
-      <h2>What would change our mind</h2>
-      <ul>
-<li>Toward bear: soft net-new ARR or cut guidance.</li>
-<li>Toward bull: clear AI ARR acceleration + stable Creative retention metrics.</li>
+    <section class="block">
+      <div class="kicker">What would change our mind</div>
+<ul class="flip-list">
+<li><span class="dir bear">Toward bear</span> — soft net-new ARR or cut guidance.</li>
+<li><span class="dir bull">Toward bull</span> — clear AI ARR acceleration + stable Creative retention metrics.</li>
 </ul>
     </section>
 
-    <p class="muted" style="font-size:0.88rem">Succession names/dates and earnings date = <strong><span class="badge fact">FACT</span></strong> (Adobe IR). Competitive AI outcome = <strong><span class="badge infer">INFERENCE</span></strong>. Buy/sell = not offered.</p>
-
     <details class="terms-fold" id="terms">
       <summary>Coming to terms — words that make this stick</summary>
-      <div class="terms-body">
-        <p class="muted" style="margin-top:0.35rem">Learn these, then the thesis clicks faster.</p>
-        <dl>
-<dt>ARR</dt><dd>Annual recurring revenue — subscription dollars that renew/expand.</dd>
-<dt>Forward P/E</dt><dd>Price ÷ expected next-year earnings — cheap can still be a value trap.</dd>
-<dt>Executive chair</dt><dd>Board leadership after handing off day-to-day CEO duties.</dd>
-</dl>
-      </div>
+      <dl>
+<dt>ARR</dt>
+<dd>Annual recurring revenue — subscription dollars that renew/expand.</dd>
+<dt>Forward P/E</dt>
+<dd>Price ÷ expected next-year earnings — cheap can still be a value trap.</dd>
+<dt>Executive chair</dt>
+<dd>Board leadership after handing off day-to-day CEO duties.</dd>
+      </dl>
     </details>
 
-    <p class="muted">Source: Finance <code>ADBE-2026-09-07.md</code>. Labels show evidence weight — not a tip.</p>
+    <p class="footnote">FACT = company/official. INFER = judgment. Source: <code>ADBE-2026-09-07.md</code></p>
   </main>
   <footer class="wrap foot"><p>Daily Dossier · ADBE</p></footer>
 </body>
