@@ -169,3 +169,30 @@ a:hover { color: var(--accent); }
 
 .article-body p { margin: 0 0 1rem; max-width: 42rem; }
 .article-body ul { max-width: 42rem; }
+
+.story-block {
+  border-top: 2px solid var(--rule);
+  padding-top: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+.story-block h2 { margin-top: 0; }
+.subhead {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 1.25rem 0 0.4rem;
+  border-bottom: 1px solid #d9d2c6;
+  padding-bottom: 0.25rem;
+}
+.story-block ul { margin: 0.35rem 0 0.75rem; padding-left: 1.2rem; }
+.story-block li { margin-bottom: 0.35rem; }
+.sources a { word-break: break-all; }
+.editor-take {
+  background: var(--soft);
+  border: 1px solid #d4cdc0;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  margin-top: 0.75rem;
+}

@@ -10,7 +10,7 @@
   <header class="masthead wrap">
     <p class="kicker">Verified intelligence · Not a headline aggregator</p>
     <h1>The Newsroom</h1>
-    <p class="dateline">Quantum section · Soft Publish A+B · IBM off-page</p>
+    <p class="dateline">Quantum · Soft Publish A+B · IBM off-page · Denser lock</p>
   </header>
   <nav class="nav wrap" aria-label="Primary">
     <a href="../index.html">Front</a>
@@ -21,27 +21,75 @@
   </nav>
   <main class="wrap article-body">
     <h1 class="page-title">Quantum</h1>
-    <p class="lede">QC slate locked: Google + Helix soft Publish · IBM MONITOR only — reject FT / “70 logical qubits” headline packages.</p>
+    <p class="lede">Verification Detail Pack 2/3 · Editor denser lock. Reject FT / “70 logical qubits” headline packages.</p>
 
-    <article class="story" style="margin-bottom:2rem">
-      <p class="meta"><span class="badge soft">Soft Publish</span> A · Google RL-QEC on Willow</p>
+    <article class="story-block">
+      <p class="meta"><span class="badge soft">Soft Publish</span> High · Google RL-QEC on Willow</p>
       <h2>Google RL-QEC on Willow (Nature)</h2>
-      <p>~20% logical error rate cut / up to 3.5× stability under injected drift. Peer-reviewed Nature; systems-bottleneck national angle.</p>
-      <p class="caveat">Mandatory: NOT “AI solves QEC.” Calibration control; injected drift ≠ all natural drift.</p>
+
+      <h3 class="subhead">Development / What changed</h3>
+      <p>In-situ reinforcement learning steers &gt;1,000 control parameters from QEC detection events during compute — calibration unified with runtime (not stop-the-world retune).</p>
+
+      <h3 class="subhead">Simple</h3>
+      <p>The chip retunes from error beeps while still running.</p>
+
+      <h3 class="subhead">Technical</h3>
+      <p>Policy-gradient RL on a detector-rate surrogate; d=5/7 surface codes + d=5 colour code on Willow.</p>
+
+      <h3 class="subhead">What we know (numbers)</h3>
+      <ul>
+        <li>~20% LER cut vs expert calibration</li>
+        <li>Up to <strong>3.5×</strong> LER stability = RL + decoder steering under <strong>injected</strong> drift (control-alone 2.4×)</li>
+        <li>Record LERs 7.72e-4 (surface d=7) / 8.19e-3 (colour d=5) = multi-ingredient</li>
+      </ul>
+
+      <h3 class="subhead">What we don’t / REJECT</h3>
+      <ul>
+        <li>“AI solves QEC”</li>
+        <li>Injected drift ≠ all natural drift</li>
+        <li>New code claim = false</li>
+      </ul>
+
+      <h3 class="subhead">Why it matters</h3>
+      <p>FTQC calibration-downtime bottleneck — orthogonal to inventing better codes.</p>
+
+      <h3 class="subhead">Sources</h3>
+      <p class="sources">Nature 655, 879–884 (2026-07-08) <a href="https://www.nature.com/articles/s41586-026-10759-2">s41586-026-10759-2</a> · Zenodo 10.5281/zenodo.17566521</p>
+
+      <div class="editor-take"><strong>Editor’s take:</strong> Soft Publish with mandatory caveats — calibration control, not “AI solves QEC.”</div>
     </article>
 
-    <article class="story" style="margin-bottom:2rem">
-      <p class="meta"><span class="badge soft">Soft Publish</span> B · Quantinuum C₄-Helix</p>
-      <h2>Quantinuum C₄-Helix</h2>
-      <p>Corrected logic that beats physical baselines — not memory-only. Primary: arXiv:2609.03194.</p>
-      <p class="caveat">No naked “breakthrough.” Company preprint + thin independence — don’t overclaim early-FT.</p>
+    <article class="story-block">
+      <p class="meta"><span class="badge soft">Soft Publish</span> High vs PDF · Quantinuum C₄-Helix</p>
+      <h2>Quantinuum C₄-Helix on Helios</h2>
+
+      <h3 class="subhead">Development / What changed</h3>
+      <p>Early-FT <em>architecture</em> demo (not memory-only): [[20,2,6]] memory + 2-logical Clifford under correction + heterogeneous GHZ to d=5 surface — beats physical baselines <strong>without postselection</strong> (headline comparisons).</p>
+
+      <h3 class="subhead">Simple</h3>
+      <p>Corrected logical operations that beat the physical qubit baselines — not a memory-only stunt.</p>
+
+      <h3 class="subhead">Technical</h3>
+      <p>ε≈4.6e-5/LQ/cycle; Clifford ε_C≈2.8e-4 vs physical ~1.2e-3; GHZ lower bound ~99.925% vs physical ~99.54%. Helios 98-qubit machine (Nature machine paper Jun 17, 2026 confirmed).</p>
+
+      <h3 class="subhead">What we don’t / REJECT</h3>
+      <ul>
+        <li>No T/magic demonstrated</li>
+        <li>Company-only preprint; thin independent media</li>
+        <li>Early-FT 10⁻⁶–10⁻⁸ targets = simulations</li>
+        <li>Naked “breakthrough” / “universal FT computer”</li>
+      </ul>
+
+      <h3 class="subhead">Why it matters</h3>
+      <p>Architecture progress toward early fault tolerance — still not a finished FT stack.</p>
+
+      <h3 class="subhead">Sources</h3>
+      <p class="sources"><a href="https://arxiv.org/pdf/2609.03194">arXiv:2609.03194</a> · Helios Nature 10.1038/s41586-026-10676-4</p>
+
+      <div class="editor-take"><strong>Editor’s take:</strong> Soft Publish as primary-sourced technical. No naked breakthrough. Don’t overclaim early-FT.</div>
     </article>
 
-    <article class="story">
-      <p class="meta"><span class="badge hold">Monitor · Off page</span> C · IBM doped Clifford</p>
-      <h2>IBM doped Clifford (watch list)</h2>
-      <p>Not printed. Classical-hardness follow-up only. Reject FT / “70 logical qubits” packages.</p>
-    </article>
+    <p class="caveat"><strong>IBM doped Clifford — MONITOR only, off-page.</strong> Error detection + postselection; ScienceDaily “70 logical qubits” = false/misleading; v1 geometry classically simulated → revised 64+12 / F₂≥0.349.</p>
   </main>
   <footer class="footer wrap">The Newsroom · Quantum</footer>
 </body>
