@@ -3,19 +3,55 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Entertainment — Daily Dossier</title>
-  <meta name="description" content="Stories of the day + What’s on tonight — Mon Sep 7, 2026 Labor Day." />
+  <title>Entertainment — NOW / Stories · Daily Dossier</title>
+  <meta name="description" content="What’s on tonight + stories that matter — not a trade dump. Mon Sep 7, 2026." />
   <link rel="stylesheet" href="../css/style.css?v=xbrand-20260907" />
   <style>
-    .badge { display:inline-block; font-size:0.68rem; font-weight:700; padding:0.12rem 0.4rem; border-radius:999px; margin-right:0.25rem; }
-    .badge.hold { background:#2a1515; color:#a11; }
+    .lane { margin: 1.25rem 0 1.75rem; }
+    .lane-head {
+      display: flex; align-items: baseline; gap: 0.75rem; flex-wrap: wrap;
+      border-bottom: 1px solid var(--line-strong);
+      padding-bottom: 0.45rem; margin-bottom: 0.9rem;
+    }
+    .lane-head .mark {
+      font-size: 0.72rem; font-weight: 800; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--text);
+    }
+    .lane-head .mark::before {
+      content: ""; display: inline-block; width: 0.45rem; height: 0.45rem;
+      background: var(--priority); border-radius: 50%; margin-right: 0.45rem; vertical-align: 0.05rem;
+    }
+    .lane-head .when { color: var(--muted); font-size: 0.85rem; }
+    .kick {
+      background: var(--panel-2); border: 1px solid var(--line); border-left: 3px solid var(--priority);
+      border-radius: 2px; padding: 0.9rem 1.05rem; margin: 0 0 0.75rem;
+    }
+    .kick h3 { margin: 0 0 0.25rem; font-size: 1.05rem; }
+    .kick .meta { color: var(--muted); font-size: 0.88rem; margin: 0 0 0.45rem; }
+    .subnav { display:flex; flex-wrap:wrap; gap:0.5rem 1rem; margin:0.5rem 0 0.25rem; font-size:0.82rem; font-weight:700; letter-spacing:0.04em; text-transform:uppercase; }
+    .subnav a { color: var(--muted); text-decoration: none; }
+    .subnav a:hover { color: var(--text); }
+    details.fold {
+      background: var(--panel); border: 1px solid var(--line); border-radius: 2px;
+      padding: 0.65rem 0.95rem; margin: 0.75rem 0;
+    }
+    details.fold summary {
+      cursor: pointer; font-weight: 750; font-size: 0.82rem; letter-spacing: 0.06em;
+      text-transform: uppercase; list-style: none; color: var(--muted);
+    }
+    details.fold summary::-webkit-details-marker { display: none; }
+    details.fold summary::before { content: "▸ "; color: var(--priority); }
+    details.fold[open] summary::before { content: "▾ "; }
+    details.fold[open] summary { color: var(--text); margin-bottom: 0.65rem; }
+    .quiet { margin-top: 2rem; padding-top: 0.5rem; border-top: 1px solid var(--line); }
+    .why { margin: 0.35rem 0 0; line-height: 1.45; font-size: 0.95rem; }
   </style>
 </head>
 <body>
   <header class="top">
     <div class="wrap">
       <h1>Daily Dossier</h1>
-      <p class="sub">Entertainment · Monday, September 7, 2026 · Labor Day</p>
+      <p class="sub">Entertainment · Mon Sep 7, 2026 · Labor Day · CT</p>
     </div>
   </header>
   <nav class="nav wrap" aria-label="Primary">
@@ -25,95 +61,141 @@
     <a href="../quantum/index.html">Quantum</a>
     <a href="../finance/index.html">Finance</a>
     <a href="../sports/index.html">Sports</a>
-<a href="index.html" aria-current="page">Entertainment</a>
+    <a href="index.html" aria-current="page">Entertainment</a>
     <a href="../archive/index.html">Archive</a>
   </nav>
   <main class="wrap">
-    <div class="banner"><strong>Entertainment</strong> · Stories of the day + What’s on tonight · FACT only · not buzz</div>
+    <div class="banner"><strong>Entertainment</strong> · What to watch <em>now</em> · stories that matter · not a trade dump</div>
+    <p class="subnav">
+      <a href="#now">Watch tonight</a>
+      <a href="#stories">Stories</a>
+      <a href="#quiet">Quiet shelves</a>
+    </p>
 
-    <h2 class="sec" id="stories">Stories of the day · Mon Sep 7</h2>
-    <div class="cards">
-      <article class="card list-card">
-        <div class="tag">Variety</div>
-        <h3>Inbetweeners lead cast locked; Netflix film in U.K. production</h3>
-        <p><a class="more" href="https://variety.com/2026/film/global/the-inbetweeners-lead-cast-confirmed-netflix-reunion-movie-1236853766/" rel="noopener" target="_blank">Variety →</a></p>
-      </article>
-      <article class="card list-card">
-        <div class="tag">Deadline</div>
-        <h3>Spider-Noir canceled after one season on Prime Video</h3>
-        <p><a class="more" href="https://deadline.com/2026/09/spider-noir-canceled-prime-video-marvel-characters-series-1237068437/" rel="noopener" target="_blank">Deadline →</a></p>
-      </article>
-      <article class="card list-card">
-        <div class="tag">Deadline</div>
-        <h3>MobLand renewed Season 3 (Hardy / Brosnan / Mirren)</h3>
-        <p><a class="more" href="https://deadline.com/2026/09/mobland-renewed-season-3-tom-hardy-mirren-brosnan-1237066505/" rel="noopener" target="_blank">Deadline →</a></p>
-      </article>
-      <article class="card list-card">
-        <div class="tag">Variety</div>
-        <h3>Spider-Man: Brand New Day No. 1 sixth weekend</h3>
-        <ul>
-          <li>~$23M thru Labor Day Mon · ~$923M domestic</li>
-        </ul>
-        <p><a class="more" href="https://variety.com/2026/film/box-office/spiderman-brand-new-day-box-office-sixth-weekend-1236852435/" rel="noopener" target="_blank">Variety →</a></p>
-      </article>
-      <article class="card list-card">
-        <div class="tag">Deadline · Creative Arts Emmys Night 2</div>
-        <h3>Cardellini first Emmy; Reiner posthumous; Gilpin Guest Actress</h3>
-        <ul>
-          <li>Cardellini — DTF St. Louis · Reiner — The Bear · Gilpin — Widow’s Bay</li>
-        </ul>
-        <p><a class="more" href="https://deadline.com/2026/09/linda-cardellini-emmy-winner-dtf-st-louis-1237069032/" rel="noopener" target="_blank">Deadline →</a></p>
-      </article>
-      <article class="card list-card">
-        <div class="tag">Variety</div>
-        <h3>Jim Thornton fired as Wheel of Fortune announcer</h3>
-        <ul>
-          <li>Sony; interim for Sep 14</li>
-        </ul>
-        <p><a class="more" href="https://variety.com/2026/tv/news/wheel-of-fortune-announcer-jim-thornton-fired-sony-1236852104/" rel="noopener" target="_blank">Variety →</a></p>
-      </article>
-      <article class="card list-card">
-        <div class="tag">Variety · Lumière</div>
-        <h3>Toho France · Indonesia co-prod fund · Cinépolis–Unifrance expand</h3>
-        <p><a class="more" href="https://variety.com/2026/film/news/toho-europe-indonesia-film-fund-cinepolis-pact-lumiere-summit-1236853717/" rel="noopener" target="_blank">Variety →</a></p>
-      </article>
-      <article class="card list-card">
-        <div class="tag">The Wrap</div>
-        <h3>You Can See Everything — A24 October theatrical lock</h3>
-        <ul>
-          <li>Fielder / Oppenheim</li>
-        </ul>
-        <p><a class="more" href="https://www.thewrap.com/creative-content/movies/nathan-fielder-elizabeth-holmes-documentary-trailer-release-date-a24/" rel="noopener" target="_blank">The Wrap →</a></p>
-      </article>
-    </div>
+    <!-- NOW -->
+    <section class="lane" id="now">
+      <div class="lane-head">
+        <span class="mark">Watch tonight</span>
+        <span class="when">Labor Day · max a few picks · why you’d care</span>
+      </div>
 
-    <h2 class="sec" id="tonight">What’s on tonight · Mon Sep 7 · Labor Day · CT</h2>
-    <p class="muted">Labor Day specials night; regular fall Mondays not started.</p>
-    <div class="board">
-      <table>
-        <thead><tr><th>Show</th><th>Network / stream</th><th>Time (CT)</th></tr></thead>
-        <tbody>
-          <tr><td>SMU @ Florida State</td><td>ESPN</td><td>6:30 PM</td></tr>
-          <tr><td>America’s Tailgate</td><td>CBS</td><td>7:00 PM</td></tr>
-          <tr><td>Beat Shazam S8 finale</td><td>FOX</td><td>7:00 PM</td></tr>
-          <tr><td>MLB: Cardinals @ Giants</td><td>NBC</td><td>~7:00 PM</td></tr>
-          <tr><td>WWE Raw</td><td>Netflix</td><td>7:00 PM</td></tr>
-          <tr><td>Top of the World</td><td>CNN</td><td>7:00 PM</td></tr>
-          <tr><td>History’s Greatest Mysteries S7 finale</td><td>History</td><td>7:00 PM</td></tr>
-          <tr><td>All American</td><td>The CW</td><td>7:00 PM</td></tr>
-          <tr><td>Librarians: The Next Chapter S2 finale</td><td>TNT</td><td>8:00 PM</td></tr>
-          <tr><td>O.J. Unseen premiere</td><td>ID / HBO Max</td><td>8:00 PM</td></tr>
-          <tr><td>Hitler’s DNA</td><td>History</td><td>8:00 PM</td></tr>
-          <tr><td>It’s Always Sunny</td><td>FX</td><td>8:00 PM</td></tr>
-          <tr><td>POV: Remake</td><td>PBS</td><td>9:00 PM (local)</td></tr>
-          <tr><td>Fan Level Midnight: The Office (6-ep)</td><td>Peacock</td><td>Drop Sep 7</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="muted" style="font-size:0.85rem">Sources: <a href="http://www.thefutoncritic.com/listings/2026/09/07/" rel="noopener" target="_blank">Futon Critic</a> · <a href="https://www.tvline.com/2251083/what-to-watch-week-of-september-6-2026-tv-shows-movies/" rel="noopener" target="_blank">TVLine</a></p>
-    <p><span class="badge hold">HOLD</span> Last Meals S2 · FOX 1% Club / Quiz With Balls tonight — off hub</p>
+      <div class="kick">
+        <h3>SMU @ Florida State · ESPN</h3>
+        <p class="meta">6:30 PM CT · only CFB on the board · also on Sports lead</p>
+        <p class="why"><strong>Why:</strong> Primetime ACC — ranked SMU at Doak. If you’re watching one thing tonight, this is the national sports TV.</p>
+      </div>
+      <div class="kick">
+        <h3>STL @ SF · NBC / Peacock</h3>
+        <p class="meta">~7:10 PM CT · national MLB</p>
+        <p class="why"><strong>Why:</strong> Monday Night Baseball on a holiday — easy couch card while CFB runs.</p>
+      </div>
+      <div class="kick">
+        <h3>WWE Raw · Netflix</h3>
+        <p class="meta">7:00 PM CT · weekly drop</p>
+        <p class="why"><strong>Why:</strong> Steady Labor Day stream if you want wrestling over network specials.</p>
+      </div>
+      <div class="kick">
+        <h3>O.J. Unseen · premiere</h3>
+        <p class="meta">8:00 PM CT · ID / HBO Max</p>
+        <p class="why"><strong>Why:</strong> New true-crime premiere — only “new story” on the cable/stream list tonight, not another finale rerun.</p>
+      </div>
+
+      <details class="fold">
+        <summary>Full tonight grid (everything else)</summary>
+        <div class="board" style="margin-top:0.55rem">
+          <table>
+            <thead><tr><th>Show</th><th>Where</th><th>CT</th></tr></thead>
+            <tbody>
+              <tr><td>America’s Tailgate</td><td>CBS</td><td>7:00</td></tr>
+              <tr><td>Beat Shazam S8 finale</td><td>FOX</td><td>7:00</td></tr>
+              <tr><td>Top of the World</td><td>CNN</td><td>7:00</td></tr>
+              <tr><td>History’s Greatest Mysteries S7 finale</td><td>History</td><td>7:00</td></tr>
+              <tr><td>All American</td><td>The CW</td><td>7:00</td></tr>
+              <tr><td>Librarians: The Next Chapter S2 finale</td><td>TNT</td><td>8:00</td></tr>
+              <tr><td>Hitler’s DNA</td><td>History</td><td>8:00</td></tr>
+              <tr><td>It’s Always Sunny</td><td>FX</td><td>8:00</td></tr>
+              <tr><td>POV: Remake</td><td>PBS</td><td>9:00 local</td></tr>
+              <tr><td>Fan Level Midnight: The Office (6-ep)</td><td>Peacock</td><td>Drop Sep 7</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="muted" style="font-size:0.82rem;margin:0.5rem 0 0">Futon Critic · TVLine · HOLD: Last Meals S2 / FOX quiz shows off hub</p>
+      </details>
+    </section>
+
+    <!-- STORIES -->
+    <section class="lane" id="stories">
+      <div class="lane-head">
+        <span class="mark">Stories that matter</span>
+        <span class="when">Top of the pile · one why each · not equal-weight headlines</span>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="tag">Cancel · Prime</div>
+          <h3>Spider-Noir dead after one season</h3>
+          <p class="why">Marvel TV still swinging the axe — one-and-done on Prime. Biggest “what happened” in the trade pile today.</p>
+          <p><a class="more" href="https://deadline.com/2026/09/spider-noir-canceled-prime-video-marvel-characters-series-1237068437/" rel="noopener" target="_blank">Deadline →</a></p>
+        </article>
+        <article class="card">
+          <div class="tag">Box office</div>
+          <h3>Brand New Day still No. 1 · ~$923M domestic</h3>
+          <p class="why">~$23M through Labor Day Mon — sixth weekend on top. The theatrical story that still moves money.</p>
+          <p><a class="more" href="https://variety.com/2026/film/box-office/spiderman-brand-new-day-box-office-sixth-weekend-1236852435/" rel="noopener" target="_blank">Variety →</a></p>
+        </article>
+        <article class="card">
+          <div class="tag">Renewal</div>
+          <h3>MobLand Season 3 locked (Hardy / Brosnan / Mirren)</h3>
+          <p class="why">Prestige crime stays on the board — cast returning is the signal, not a rumor cycle.</p>
+          <p><a class="more" href="https://deadline.com/2026/09/mobland-renewed-season-3-tom-hardy-mirren-brosnan-1237066505/" rel="noopener" target="_blank">Deadline →</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- QUIET -->
+    <section class="quiet" id="quiet">
+      <div class="lane-head">
+        <span class="mark">Quiet shelves</span>
+        <span class="when">Trade / awards / niche — not competing with tonight</span>
+      </div>
+
+      <details class="fold" open>
+        <summary>More stories (scan)</summary>
+        <div class="cards" style="margin-top:0.5rem">
+          <article class="card list-card">
+            <div class="tag">Variety</div>
+            <h3>Inbetweeners lead cast locked · Netflix U.K. production</h3>
+            <p><a class="more" href="https://variety.com/2026/film/global/the-inbetweeners-lead-cast-confirmed-netflix-reunion-movie-1236853766/" rel="noopener" target="_blank">Variety →</a></p>
+          </article>
+          <article class="card list-card">
+            <div class="tag">Creative Arts Emmys</div>
+            <h3>Cardellini first Emmy · Reiner posthumous · Gilpin Guest Actress</h3>
+            <p><a class="more" href="https://deadline.com/2026/09/linda-cardellini-emmy-winner-dtf-st-louis-1237069032/" rel="noopener" target="_blank">Deadline →</a></p>
+          </article>
+          <article class="card list-card">
+            <div class="tag">Variety</div>
+            <h3>Jim Thornton fired as Wheel of Fortune announcer</h3>
+            <p class="muted" style="margin:0.25rem 0">Sony · interim for Sep 14</p>
+            <p><a class="more" href="https://variety.com/2026/tv/news/wheel-of-fortune-announcer-jim-thornton-fired-sony-1236852104/" rel="noopener" target="_blank">Variety →</a></p>
+          </article>
+          <article class="card list-card">
+            <div class="tag">The Wrap</div>
+            <h3>You Can See Everything — A24 October theatrical</h3>
+            <p class="muted" style="margin:0.25rem 0">Fielder / Oppenheim</p>
+            <p><a class="more" href="https://www.thewrap.com/creative-content/movies/nathan-fielder-elizabeth-holmes-documentary-trailer-release-date-a24/" rel="noopener" target="_blank">The Wrap →</a></p>
+          </article>
+          <article class="card list-card">
+            <div class="tag">Lumière</div>
+            <h3>Toho France · Indonesia fund · Cinépolis–Unifrance</h3>
+            <p><a class="more" href="https://variety.com/2026/film/news/toho-europe-indonesia-film-fund-cinepolis-pact-lumiere-summit-1236853717/" rel="noopener" target="_blank">Variety →</a></p>
+          </article>
+        </div>
+      </details>
+    </section>
+
+    <p class="muted" style="font-size:0.82rem;margin-top:1.25rem">Desk: file <strong>Watch tonight</strong> (≤4 with why) + <strong>Stories that matter</strong> (≤3 with why) + quiet shelves. No equal-weight headline walls.</p>
   </main>
-  <footer class="footer wrap">Daily Dossier · Entertainment · Mon Sep 7, 2026</footer>
+  <footer class="footer wrap">Daily Dossier · Entertainment · NOW / Stories · Mon Sep 7, 2026</footer>
 <!-- Cloudflare Web Analytics -->
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "de79f2c03d32458e811a918f0cfe1890"}'></script>
 <!-- End Cloudflare Web Analytics -->
