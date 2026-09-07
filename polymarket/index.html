@@ -52,6 +52,28 @@
     .price-plain { font-size:1.05rem; margin:0.35rem 0 0.55rem; }
     .price-plain .num { font-weight:750; }
     .fine { font-size:0.78rem; color:var(--muted); }
+    .horoscope {
+      background:var(--panel-2); border:1px solid var(--line); border-radius:2px;
+      padding:1.1rem 1.2rem; margin:1.25rem 0; max-width:42rem;
+      border-left:3px solid var(--muted);
+    }
+    .horoscope h2 { margin:0.15rem 0 0.35rem; font-size:1.15rem; }
+    .horoscope .tagline { color:var(--muted); font-size:0.88rem; margin:0 0 0.85rem; }
+    .horoscope dl { margin:0; }
+    .horoscope dt {
+      font-weight:750; margin-top:0.75rem; font-size:0.92rem;
+      letter-spacing:0.02em;
+    }
+    .horoscope dt:first-of-type { margin-top:0.15rem; }
+    .horoscope dd {
+      margin:0.2rem 0 0; color:var(--cream, #e8e4d9);
+      font-size:0.95rem; line-height:1.45;
+    }
+    .horoscope .sign { color:var(--muted); font-weight:600; font-size:0.82rem; }
+    .horoscope .disclaimer {
+      margin:1rem 0 0; padding-top:0.75rem; border-top:1px solid var(--line);
+      font-size:0.82rem; color:var(--muted); line-height:1.4;
+    }
   </style>
 </head>
 <body>
@@ -82,6 +104,7 @@
       <a href="../index.html">← Today</a> ·
       <a href="#favored">Sharp situations</a> ·
       <a href="#funny">Crowd-pleasers</a> ·
+      <a href="#horoscope">Market horoscope</a> ·
       <a href="#how">Coming to terms ↓</a>
     </p>
 
@@ -273,6 +296,30 @@
       </article>
 
       <p class="empty">More weird / viral books land here when the desk files them.</p>
+    </section>
+
+
+    <section id="horoscope" class="horoscope" aria-label="Market horoscope">
+      <div class="tag">FUN · Market horoscope · Mon Sep 7</div>
+      <h2>Today’s market horoscope</h2>
+      <p class="tagline">Playful newspaper vibes for the board — <strong>not</strong> real astrology, <strong>not</strong> “Polymarket says it will happen,” <strong>not</strong> trading advice.</p>
+      <dl>
+        <dt><span class="sign">♈ Aries · conflict skies</span></dt>
+        <dd>Israel airspace-by-Sep-30 got dumped from the ~80¢ neighborhood toward a messy mid-50s/60s book. The chart says <em>tension, not clarity</em>. Don’t marry the number while the spread’s stressed.</dd>
+
+        <dt><span class="sign">♉ Taurus · patience / rates</span></dt>
+        <dd>Fed September is a coin-flip — no-change ~47.5¢ vs +25 bps ~51.5¢. The stars say <em>wait for the meeting</em>, not vibes.</dd>
+
+        <dt><span class="sign">♎ Libra · uneasy peace</span></dt>
+        <dd>Israel–Iran ceasefire through Oct 31 sits ~76.5¢. Horoscope reads <em>fragile balance</em> — a contract on whether the pause holds, not whether everyone feels peaceful.</dd>
+
+        <dt><span class="sign">♐ Sagittarius · big trips / Brazil</span></dt>
+        <dd>Lula ~58.5¢ into the Oct election window. Wanderlust meets incumbency — fun to watch, still just a mid.</dd>
+
+        <dt><span class="sign">♒ Aquarius · weird future stuff</span></dt>
+        <dd>Elon might land in the 180–199 tweet bracket (~48¢, ends soon). Aliens-before-2027 ~3.8¢. OpenAI “we have AGI” ~22.5¢. The water-bearer says <em>main-character energy</em> — laugh, don’t bet the farm.</dd>
+      </dl>
+      <p class="disclaimer">For fun only. Prices are noisy signals with distortions — not destinies. No trading advice.</p>
     </section>
 
     <details class="fold">
