@@ -19,24 +19,37 @@
       <p class="sub">Quantum · Mon Sep 7, 2026 · brother-test opens</p>
     </div>
   </header>
-  <nav class="nav wrap" aria-label="Primary">
+    <nav class="nav wrap" aria-label="Primary">
     <a href="../index.html">Today</a>
     <a href="../briefs/index.html">Briefs</a>
     <a href="../national/index.html">National</a>
     <a href="index.html" aria-current="page">Quantum</a>
+    <a href="../finance/index.html">Finance</a>
     <a href="../sports/index.html">Sports</a>
-    <a href="../fantasy/index.html">Fantasy</a>
     <a href="../entertainment/index.html">Entertainment</a>
     <a href="../archive/index.html">Archive</a>
   </nav>
   <main class="wrap">
-    <div class="banner"><strong>Quantum</strong> · Six dossier cards today · not Soft Publish chrome</div>
 
-    
-    
-    
-    
-    <article class="open" id="google-willow">
+    <div class="banner"><strong>Quantum</strong> · Six cards today · separate headlines, one race</div>
+    <p class="muted" style="font-size:0.9rem;margin:0.25rem 0 0.75rem"><a href="#thread">How these connect ↓</a> · <a href="#terms">Coming to terms ↓</a></p>
+
+    <section class="open" id="thread" style="margin-bottom:1.25rem">
+      <div class="tag">The thread · why these cards belong together</div>
+      <h2>Separate news. Same fight.</h2>
+      <p>Each lab is chasing a different headline — a gate here, a code there, a calibration trick. What makes Quantum unique on this dossier is that <strong>they’re all working the same problem from different angles: discovering how to build the machine, and breaking what still fails</strong> (noise, drift, invisible errors, fake scorekeeping).</p>
+      <p style="margin-bottom:0.35rem"><strong>How today’s six lock together:</strong></p>
+      <ol style="margin:0;padding-left:1.2rem;line-height:1.5">
+        <li><strong>D-Wave + Yale</strong> — make mistakes <em>visible</em> (erasures) so later codes can fix them.</li>
+        <li><strong>IonQ</strong> — twist an already-protected qubit continuously (the hard “non-Clifford” direction).</li>
+        <li><strong>IBM / Lidar</strong> — run error correction on chips that aren’t textbook grids — and call out metrics that can fake progress.</li>
+        <li><strong>USTC/Pan</strong> — move and entangle protected patches (surgery), not just park memory.</li>
+        <li><strong>Quantinuum</strong> — pack two protected qubits densely + cheap Clifford logic; bridge toward harder ingredients.</li>
+        <li><strong>Google Willow</strong> — retune while the computer keeps running (calibration that doesn’t stop the show).</li>
+      </ol>
+      <p style="margin:0.75rem 0 0;color:var(--muted);font-size:0.92rem">Read any card alone for the news. Read them as a set to see the field pushing the same frontier: quieter errors, smarter codes, real logical operations — without the hype.</p>
+    </section>
+<article class="open" id="google-willow">
       <div class="tag">Card 6 · Google Willow · Mon Sep 7</div>
       <h2>OPEN — Retune while the music keeps playing</h2>
       <p>Quantum chips drift out of tune. Usually you stop the show to retune. Google taught an AI to retune from the same error beeps the computer already listens to — so the music can keep playing.</p>
@@ -204,6 +217,40 @@
       </ul>
       <p><strong>Primary:</strong> <a href="https://www.nature.com/articles/s41586-026-10822-y" rel="noopener" target="_blank">Nature, 5 Aug 2026</a> (DOI 10.1038/s41586-026-10822-y)</p>
     </article>
+
+    <details id="terms" style="background:#fff;border:1px solid var(--line);border-radius:12px;padding:0.75rem 1rem;margin:1.5rem 0 1rem">
+      <summary style="cursor:pointer;font-weight:700;list-style:none">Coming to terms — living Quantum glossary <span style="font-weight:500;color:var(--muted)">(grows over time)</span></summary>
+      <div style="margin-top:0.75rem">
+        <p class="muted" style="margin:0 0 0.65rem;font-size:0.9rem">Plain English for the words that keep showing up. This list is meant to grow as new cards land.</p>
+        <dl>
+          <dt style="font-weight:700;margin-top:0.55rem">Qubit</dt>
+          <dd style="margin:0.15rem 0 0.35rem;color:var(--muted)">The basic unit of quantum information — fragile compared with a normal computer bit.</dd>
+          <dt style="font-weight:700;margin-top:0.55rem">Noise / errors</dt>
+          <dd style="margin:0.15rem 0 0.35rem;color:var(--muted)">Random flips and leaks that corrupt quantum states. The whole field is a fight against noise.</dd>
+          <dt style="font-weight:700;margin-top:0.55rem">QEC (quantum error correction)</dt>
+          <dd style="margin:0.15rem 0 0.35rem;color:var(--muted)">Spreading one “logical” qubit across many physical qubits so you can detect and fix mistakes.</dd>
+          <dt style="font-weight:700;margin-top:0.55rem">Logical qubit</dt>
+          <dd style="margin:0.15rem 0 0.35rem;color:var(--muted)">The protected information after error correction — what you’d actually want to compute with.</dd>
+          <dt style="font-weight:700;margin-top:0.55rem">Surface code</dt>
+          <dd style="margin:0.15rem 0 0.35rem;color:var(--muted)">A popular grid-like error-correcting layout. Many experiments target it; not every chip is wired for it.</dd>
+          <dt style="font-weight:700;margin-top:0.55rem">Clifford vs non-Clifford</dt>
+          <dd style="margin:0.15rem 0 0.35rem;color:var(--muted)">Clifford = the “easy” gate set for codes. Non-Clifford (magic) = the hard extras real algorithms need.</dd>
+          <dt style="font-weight:700;margin-top:0.55rem">Erasure error</dt>
+          <dd style="margin:0.15rem 0 0.35rem;color:var(--muted)">A mistake the machine can <em>see</em> (like knowing a photon was lost) — usually easier to fix than a silent flip.</dd>
+          <dt style="font-weight:700;margin-top:0.55rem">Pauli error</dt>
+          <dd style="margin:0.15rem 0 0.35rem;color:var(--muted)">A silent bit/phase flip — invisible until you check carefully.</dd>
+          <dt style="font-weight:700;margin-top:0.55rem">Lattice surgery</dt>
+          <dd style="margin:0.15rem 0 0.35rem;color:var(--muted)">Joining/splitting error-corrected patches to move or entangle logical information — compute, not just memory.</dd>
+          <dt style="font-weight:700;margin-top:0.55rem">Calibration / drift</dt>
+          <dd style="margin:0.15rem 0 0.35rem;color:var(--muted)">Hardware slowly goes out of tune. Retuning usually stops work; “live” calibration tries to tune without stopping.</dd>
+          <dt style="font-weight:700;margin-top:0.55rem">Below threshold</dt>
+          <dd style="margin:0.15rem 0 0.35rem;color:var(--muted)">The regime where bigger codes actually make errors <em>rarer</em> — the milestone hype often claims early.</dd>
+          <dt style="font-weight:700;margin-top:0.55rem">HOLD</dt>
+          <dd style="margin:0.15rem 0 0.35rem;color:var(--muted)">Our tag for “don’t over-read this result” — open questions, caveats, or what the paper does <em>not</em> prove.</dd>
+        </dl>
+      </div>
+    </details>
+
   </main>
   <footer class="footer wrap">Daily Dossier · Quantum · Mon Sep 7, 2026</footer>
 </body>
