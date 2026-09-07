@@ -231,3 +231,23 @@ a:hover { color: var(--accent); }
   margin: 0.35rem 0 0;
   font-style: italic;
 }
+
+/* technical fold */
+.tech-fold {
+  margin: 1rem 0;
+  border: 1px solid #d4cdc0;
+  background: #faf8f4;
+  padding: 0.35rem 0.75rem 0.75rem;
+  font-family: var(--sans);
+  font-size: 0.88rem;
+}
+.tech-fold summary {
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  padding: 0.5rem 0;
+  color: var(--caveat);
+}
+.tech-fold[open] summary { margin-bottom: 0.5rem; }
