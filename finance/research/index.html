@@ -4,18 +4,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Researched stocks · Finance</title>
-  <meta name="description" content="Completed Finance research memos — Sep 7 five live." />
+  <meta name="description" content="Fast scan of completed Finance memos — one idea per ticker, then deep read." />
   <link rel="stylesheet" href="../../css/style.css" />
   <style>
-    .memo-list { list-style:none; padding:0; margin:1rem 0; }
-    .memo-list li { background:#fff; border:1px solid var(--line); border-radius:12px; padding:0.9rem 1.1rem; margin:0.55rem 0; }
-    .memo-list .ticker { font-weight:800; }
-    .watch { background:#fff; border:1px solid var(--line); border-radius:12px; padding:1rem 1.15rem; margin:1.25rem 0; }
-    .stub { background:#f7f7f5; border:1px solid var(--line); border-radius:12px; padding:0.85rem 1rem; margin:1.25rem 0; color:var(--muted); font-size:0.92rem; }
+    .research-card { text-decoration:none; color:inherit; display:block; }
+    .research-card:hover { border-color:#0f1419; text-decoration:none; }
+    .how { background:#fff; border:1px solid var(--line); border-radius:12px; padding:0.9rem 1.1rem; margin:0.85rem 0 1.1rem; font-size:0.92rem; }
+    .how ol { margin:0.35rem 0 0; padding-left:1.2rem; }
+    .cta-row { display:flex; flex-wrap:wrap; gap:0.75rem; margin:0.75rem 0 1rem; }
+    .cta-row a { font-weight:700; }
   </style>
 </head>
 <body>
-  <header class="top"><div class="wrap"><h1>Daily Dossier</h1><p class="sub">Finance · Researched stocks</p></div></header>
+  <header class="top">
+    <div class="wrap">
+      <h1>Daily Dossier</h1>
+      <p class="sub">Finance · Researched stocks</p>
+    </div>
+  </header>
   <nav class="nav wrap" aria-label="Primary">
     <a href="../../index.html">Today</a>
     <a href="../../briefs/index.html">Briefs</a>
@@ -28,24 +34,59 @@
     <a href="../../archive/index.html">Archive</a>
   </nav>
   <main class="wrap">
-    <div class="banner"><strong>Researched stocks</strong> · Completed memos · Not trading advice</div>
-    <p class="muted" style="margin:0.5rem 0 1rem"><a href="../index.html">← Market Intelligence Brief</a></p>
-    <section>
-      <h2 style="font-size:1.15rem;margin:0 0 0.35rem">Completed memos</h2>
-      <ul class="memo-list">
-        <li><span class="ticker">ORCL</span> · <time datetime="2026-09-07">Sep 7, 2026</time><div>Oracle is the cleanest near-term test of whether AI-infra demand converts into cash — or stays a backlog story funded by dilution. Contracted demand looks enormous; free-cash conversion does not. <a href="ORCL/">Read memo →</a></div></li>
-        <li><span class="ticker">ADBE</span> · <time datetime="2026-09-07">Sep 7, 2026</time><div>Adobe is a same-week, opposite failure-mode to Oracle: not “does AI backlog exist?” but “does Creative software still monetize under AI substitution — with a new CEO?” The multiple already looks like growth is gone; Thursday’s ARR quality decides whether that’s priced or premature. <a href="ADBE/">Read memo →</a></div></li>
-        <li><span class="ticker">XOM-CVX</span> · <time datetime="2026-09-07">Sep 7, 2026</time><div>This is a Hormuz-premium pair, not a “buy oil forever” call. Weekend tanker strikes and May-low transit data raise the near-term crude risk premium; the research question is how long physical shipping risk stays elevated vs how fast the tape mean-reverts when traffic normalizes. <a href="XOM-CVX/">Read memo →</a></div></li>
-        <li><span class="ticker">MU</span> · <time datetime="2026-09-07">Sep 7, 2026</time><div>Micron is an AI-memory tightness story colliding with a classic cycle-peak trap. The shortage/HBM demand looks real in company numbers; the research question is whether peak earnings power is a plateau or a cliff — especially after a vertical move through ~$1,000. <a href="MU/">Read memo →</a></div></li>
-        <li><span class="ticker">KR</span> · <time datetime="2026-09-07">Sep 7, 2026</time><div>Kroger is a consumer/inflation optics name into the same Friday as CPI — not a “cheap defensive” slogan. The live question is identical-sales and margin quality vs Walmart price competition, with energy-driven food/cost pressure as a second-order input. <a href="KR/">Read memo →</a></div></li>
-      </ul>
-    </section>
-    <section class="watch">
-      <h2 style="font-size:1.05rem;margin:0 0 0.45rem">Research database / watchlist</h2>
-      <p style="margin:0">Every ticker Finance flags accumulates here — date first seen, reason, status.</p>
-      <p style="margin:0.65rem 0 0"><a href="watchlist/"><strong>Open research watchlist →</strong></a></p>
-    </section>
-    <p class="stub"><strong>Connections — coming later.</strong> Cross-ticker mapping deferred.</p>
+    <div class="banner"><strong>Researched stocks</strong> · One idea per ticker · Not trading advice</div>
+    <p class="muted" style="margin:0.45rem 0"><a href="../index.html">← Finance briefing</a></p>
+
+    <div class="how">
+      <strong>How to use this (fast)</strong>
+      <ol>
+        <li>Read the one-line question on each card — that’s the neuron hook.</li>
+        <li>Open the memo: thesis first, then bull vs bear side-by-side.</li>
+        <li>Skim catalyst date + “what would change our mind.”</li>
+        <li>Tap <em>Coming to terms</em> only if a word blocks you.</li>
+      </ol>
+    </div>
+
+    <div class="cta-row">
+      <a href="watchlist/">Watchlist / database →</a>
+      <span class="muted">Growing log of every flagged name</span>
+    </div>
+
+    <h2 class="sec">Completed memos · Sep 7</h2>
+    <div class="cards">
+        <a class="card research-card" href="ORCL/">
+          <div class="tag">ORCL · researched · Sep 7</div>
+          <h3>Does AI backlog turn into cash — or stay a dilution story?</h3>
+          <p style="margin:0.35rem 0 0;color:var(--muted);font-size:0.9rem;line-height:1.35">Oracle is the cleanest near-term test of whether AI-infra demand converts into cash — or stays a backlog story funded by dilution. Contracted demand looks enormous; free-cash conve…</p>
+          <p style="margin:0.55rem 0 0;font-weight:700;font-size:0.88rem">Open memo →</p>
+        </a>
+        <a class="card research-card" href="ADBE/">
+          <div class="tag">ADBE · researched · Sep 7</div>
+          <h3>Does Creative still monetize under AI — with a new CEO?</h3>
+          <p style="margin:0.35rem 0 0;color:var(--muted);font-size:0.9rem;line-height:1.35">Adobe is a same-week, opposite failure-mode to Oracle: not “does AI backlog exist?” but “does Creative software still monetize under AI substitution — with a new CEO?” The multiple…</p>
+          <p style="margin:0.55rem 0 0;font-weight:700;font-size:0.88rem">Open memo →</p>
+        </a>
+        <a class="card research-card" href="XOM-CVX/">
+          <div class="tag">XOM-CVX · researched · Sep 7</div>
+          <h3>How long does the Hormuz oil premium last?</h3>
+          <p style="margin:0.35rem 0 0;color:var(--muted);font-size:0.9rem;line-height:1.35">This is a Hormuz-premium pair, not a “buy oil forever” call. Weekend tanker strikes and May-low transit data raise the near-term crude risk premium; the research question is how lo…</p>
+          <p style="margin:0.55rem 0 0;font-weight:700;font-size:0.88rem">Open memo →</p>
+        </a>
+        <a class="card research-card" href="MU/">
+          <div class="tag">MU · researched · Sep 7</div>
+          <h3>HBM shortage plateau — or classic cycle peak?</h3>
+          <p style="margin:0.35rem 0 0;color:var(--muted);font-size:0.9rem;line-height:1.35">Micron is an AI-memory tightness story colliding with a classic cycle-peak trap. The shortage/HBM demand looks real in company numbers; the research question is whether peak earnin…</p>
+          <p style="margin:0.55rem 0 0;font-weight:700;font-size:0.88rem">Open memo →</p>
+        </a>
+        <a class="card research-card" href="KR/">
+          <div class="tag">KR · researched · Sep 7</div>
+          <h3>Comps &amp; margins vs Walmart on CPI morning</h3>
+          <p style="margin:0.35rem 0 0;color:var(--muted);font-size:0.9rem;line-height:1.35">Kroger is a consumer/inflation optics name into the same Friday as CPI — not a “cheap defensive” slogan. The live question is identical-sales and margin quality vs Walmart price co…</p>
+          <p style="margin:0.55rem 0 0;font-weight:700;font-size:0.88rem">Open memo →</p>
+        </a>
+    </div>
+
+    <p class="muted" style="margin-top:1.25rem"><strong>Connections — coming later.</strong> Cross-ticker mapping deferred.</p>
   </main>
   <footer class="wrap foot"><p>Daily Dossier · Finance research</p></footer>
 </body>
