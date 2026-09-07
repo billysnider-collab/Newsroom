@@ -50,7 +50,7 @@
         <img class="dd-mark" src="../img/dd-mark-80.png" width="80" height="80" alt="Daily Dossier" />
         <div class="brand-text">
           <h1>Daily Dossier</h1>
-          <p class="sub">Polymarket · current only · Mon Sep 7, 2026</p>
+          <p class="sub">Polymarket · current only · live pack 4:30 PM CT · Mon Sep 7, 2026</p>
         </div>
       </div>
     </div>
@@ -105,33 +105,81 @@
       </div>
 
       <article class="card-block lead" id="israel-airspace-2026-09-07">
-        <div class="tag">LIVE · Israel airspace · captured ~4:21 PM CT</div>
-        <h2>Israel closes airspace by Sep 30? — mid ~$0.585</h2>
-        <p>Still open through early Oct. Big slide vs morning ~$0.80 prints — newsroom signal edge, not a forecast.</p>
+        <div class="tag">LIVE · Israel airspace · captured ~4:30 PM CT</div>
+        <h2>Israel closes airspace by Sep 30? — book stressed</h2>
+        <p>Still open through early Oct. Big slide from ~80¢ earlier today — treat any single “probability” as noisy while the book is this wide.</p>
         <h3><span class="badge fact">FACT</span></h3>
         <ul>
           <li>Venue: Polymarket International</li>
           <li>Contract: <em>Israel closes its airspace by September 30?</em></li>
           <li class="mono">conditionId 0xcfbc2e5fbabb9e8a03bf234367244d4c97eaaf3ac33e2ba001541ee3e0e62416</li>
-          <li>Captured: 2026-09-07T21:21:09Z</li>
-          <li>Mid (YES) <strong>~$0.585</strong> · bid/ask $0.58/$0.59 (1¢) · vol24hr ~$340k · liq ~$73k</li>
-          <li>Prior desk: ~$0.80 → ~$0.785 → ~$0.585</li>
-          <li>endDate: 2026-10-01T03:59:00Z · <strong>still active</strong></li>
-          <li>Yes only on a <strong>major</strong> civilian airspace closure — limited delays / weather-only / foreign bans alone do not count</li>
+          <li>Captured: 2026-09-07T21:30:46Z · closed=false</li>
+          <li>Gamma YES ~0.565 (d1 −0.17) · CLOB mid ~0.715 but bid/ask $0.63/$0.80 → <strong>spread 17¢</strong></li>
+          <li>vol24hr ~$354k · liq ~$70k</li>
+          <li>endDate: 2026-10-01T03:59:00Z · still active</li>
+          <li>Yes only on a <strong>major</strong> civilian airspace closure — limited delays don’t count</li>
         </ul>
         <h3><span class="badge hold">HOLD</span></h3>
         <ul>
-          <li>Priced delta clears UPDATE band — causation not established (no CAA/NOTAM primary).</li>
-          <li>Do not write “market says 58% chance.” No trading advice.</li>
+          <li>Material selloff from ~80¢ earlier; causation unknown.</li>
+          <li>Wide spread = don’t quote a clean probability. No trading advice.</li>
         </ul>
       </article>
 
-      <article class="card-block" id="fed-sep-context">
-        <div class="tag">LIVE · Fed September</div>
+      <article class="card-block" id="fed-sep-2026">
+        <div class="tag">LIVE · Fed September · pair</div>
         <h2>Near coin-flip on the September move</h2>
+        <h3><span class="badge fact">FACT</span></h3>
         <ul>
-          <li><span class="badge fact">FACT</span> No change ~$0.475 vs +25 bps ~$0.515 — very thick books</li>
-          <li><span class="badge hold">HOLD</span> Book shape, not a tip. No trading advice.</li>
+          <li>Venue: Polymarket International · resolution = upper bound of target fed funds range after Sep FOMC</li>
+          <li><strong>No change</strong> mid ~$0.475 · bid/ask $0.47/$0.48 · liq ~$670k · end 2026-09-16</li>
+          <li class="mono">cid 0xa3b36b2d…ec9a</li>
+          <li><strong>+25 bps</strong> mid ~$0.515 · bid/ask $0.51/$0.52 · liq ~$637k · end 2026-09-16</li>
+          <li class="mono">cid 0x876506d8…5d0d</li>
+          <li>Captured: 2026-09-07T21:30:46Z</li>
+        </ul>
+        <h3><span class="badge hold">HOLD</span></h3>
+        <ul>
+          <li>Contested thick books — interesting structure, not a tip. No trading advice.</li>
+        </ul>
+      </article>
+
+      <article class="card-block" id="israel-iran-ceasefire-oct31">
+        <div class="tag">LIVE · Israel × Iran ceasefire · through Oct 31</div>
+        <h2>Ceasefire continues through October 31?</h2>
+        <p>Replaces the expired Sep-4 “effective ceasefire begins” card. Still open through Halloween.</p>
+        <h3><span class="badge fact">FACT</span></h3>
+        <ul>
+          <li>Venue: Polymarket International</li>
+          <li>Contract: <em>Israel x Iran ceasefire continues through October 31?</em></li>
+          <li class="mono">conditionId 0xc3d57087…b44d</li>
+          <li>Captured: 2026-09-07T21:30:46Z</li>
+          <li>YES mid <strong>~$0.765</strong> · bid/ask $0.76/$0.77 · d1 +0.07 · liq ~$82k</li>
+          <li>endDate: 2026-10-31T20:29:00Z · still active</li>
+          <li>Yes if ceasefire still in effect through date (IRST); breaks on resumed hostilities per contract text</li>
+        </ul>
+        <h3><span class="badge hold">HOLD</span></h3>
+        <ul>
+          <li>Newsroom structure edge only. No trading advice.</li>
+        </ul>
+      </article>
+
+      <article class="card-block" id="lula-brazil-2026">
+        <div class="tag">LIVE · Brazil 2026</div>
+        <h2>Lula wins 2026 Brazil presidential election?</h2>
+        <h3><span class="badge fact">FACT</span></h3>
+        <ul>
+          <li>Venue: Polymarket International</li>
+          <li>Contract: <em>Lula wins 2026 Brazil presidential election?</em></li>
+          <li class="mono">conditionId 0xdf8e2dc5…d4a8</li>
+          <li>Captured: 2026-09-07T21:30:46Z</li>
+          <li>YES mid <strong>~$0.585</strong> · bid/ask $0.58/$0.59 · liq ~$326k</li>
+          <li>endDate: 2026-10-04T00:00:00Z · still active</li>
+          <li>Yes if listed candidate wins, including any second round</li>
+        </ul>
+        <h3><span class="badge hold">HOLD</span></h3>
+        <ul>
+          <li>Election book — structure note only. No trading advice.</li>
         </ul>
       </article>
 
@@ -147,22 +195,20 @@
       <article class="card-block" id="elon-tweets-sep1-8-2026">
         <div class="tag">FUN · Elon tweet derby · captured ~4:30 PM CT</div>
         <h2>Will Elon post 180–199 tweets Sep 1–8?</h2>
-        <p>Hottest bracket in the September tweet-count ladder. Neighboring bins still in play — ends tomorrow afternoon CT.</p>
+        <p>Hottest bracket in the September tweet-count ladder. Ends tomorrow afternoon CT.</p>
         <h3><span class="badge fact">FACT</span></h3>
         <ul>
           <li>Venue: Polymarket International</li>
-          <li>Cluster: <em>Elon Musk # tweets September 1 - September 8, 2026?</em></li>
-          <li>Hot bracket: <em>Will Elon Musk post 180-199 tweets…?</em></li>
+          <li>Hot bracket: <em>Will Elon Musk post 180-199 tweets…?</em> (Sep 1–8 cluster)</li>
           <li class="mono">conditionId 0xc405ac9f98edc585086e565cddfa5d5be251f4eb0f5a7606fa414d5939172c59</li>
-          <li>Captured: 2026-09-07T21:30:01Z</li>
-          <li>YES mid <strong>~$0.4795</strong> · bid/ask $0.479/$0.48 · d1 +~$0.28 · vol24hr ~$76k · liq ~$7.9k</li>
-          <li>Neighbors: 200–219 ~$0.405 · 220–239 ~$0.095</li>
+          <li>Captured: 2026-09-07T21:30:46Z</li>
+          <li>YES mid <strong>~$0.4795</strong> · bid/ask $0.479/$0.48 · d1 +0.28 · vol24hr ~$76k · liq ~$7.9k</li>
           <li>endDate: 2026-09-08T16:00:00Z · still open</li>
+          <li>Counts @elonmusk main / quote / reposts only; replies don’t count; window ET</li>
         </ul>
         <h3><span class="badge hold">HOLD</span></h3>
         <ul>
-          <li>Entertainment contract; book is thinner than the Favored lane — fun shelf, not deep signal.</li>
-          <li>Count methodology lives in the resolution text. No trading advice.</li>
+          <li>Thin book — fun label, not deep signal. No trading advice.</li>
         </ul>
       </article>
 
@@ -175,34 +221,53 @@
           <li>Venue: Polymarket International</li>
           <li>Contract: <em>Will the US confirm that aliens exist before 2027?</em></li>
           <li class="mono">conditionId 0x747dc809fb79e1b05be09c42d6179459a58de2ef3e40f02484a4e1260f741f75</li>
-          <li>Captured: 2026-09-07T21:30:01Z</li>
-          <li>YES mid <strong>~$0.0375</strong> · bid/ask $0.037/$0.038 · vol24hr ~$37k · liq ~$819k</li>
+          <li>Captured: 2026-09-07T21:30:46Z</li>
+          <li>YES mid <strong>~$0.0375</strong> · bid/ask $0.037/$0.038 · liq ~$823k</li>
           <li>endDate: 2027-01-01T04:59:00Z · still open</li>
+          <li>Yes if POTUS / Cabinet / JCS / federal agency definitively states ET life or tech by Dec 31, 2026</li>
         </ul>
         <h3><span class="badge hold">HOLD</span></h3>
         <ul>
-          <li>Longshot + resolution-language landmine (“confirm”). Favorite-longshot bias applies at the extremes.</li>
-          <li>No trading advice.</li>
+          <li>Longshot + “confirm” language landmine; longshot bias at extremes. No trading advice.</li>
         </ul>
       </article>
 
       <article class="card-block" id="openai-agi-announce-before-2027">
         <div class="tag">FUN · OpenAI AGI · captured ~4:30 PM CT</div>
         <h2>OpenAI announces it has achieved AGI before 2027?</h2>
-        <p>This one’s about what OpenAI <em>says</em> — and how the contract defines AGI — not whether AGI “is real.”</p>
+        <p>About what OpenAI <em>says</em> — and how the contract defines AGI — not whether AGI “is real.”</p>
         <h3><span class="badge fact">FACT</span></h3>
         <ul>
           <li>Venue: Polymarket International</li>
           <li>Contract: <em>OpenAI announces it has achieved AGI before 2027?</em></li>
           <li class="mono">conditionId 0x454005ba2b2a2f3bfeb354e18d8c0cb82136009c8f39589645f9cf2af25f0d25</li>
-          <li>Captured: 2026-09-07T21:30:01Z</li>
-          <li>YES mid <strong>~$0.225</strong> · bid/ask $0.22/$0.23 · d1 +~$0.04 · vol24hr ~$30k · liq ~$24k</li>
+          <li>Captured: 2026-09-07T21:30:46Z</li>
+          <li>YES mid <strong>~$0.225</strong> · bid/ask $0.22/$0.23 · d1 +0.04 · liq ~$24k</li>
           <li>endDate: 2026-12-31 · still open</li>
+          <li>Yes if OpenAI announces it created AGI by Dec 31, 2026 ET</li>
         </ul>
         <h3><span class="badge hold">HOLD</span></h3>
         <ul>
-          <li>Entirely about announcement + contract definition of AGI — not a truth claim about AGI itself.</li>
-          <li>No trading advice.</li>
+          <li>Announcement + definition — not a metaphysics claim. No trading advice.</li>
+        </ul>
+      </article>
+
+      <article class="card-block" id="openai-best-model-sep-2026">
+        <div class="tag">FUN · OpenAI vs arena · end of Sep</div>
+        <h2>OpenAI has best AI model end of Sep 2026?</h2>
+        <h3><span class="badge fact">FACT</span></h3>
+        <ul>
+          <li>Venue: Polymarket International</li>
+          <li>Contract: <em>OpenAI has best AI model end of Sep 2026?</em></li>
+          <li class="mono">conditionId 0xbce02d9a…142e0</li>
+          <li>Captured: 2026-09-07T21:30:46Z</li>
+          <li>YES mid <strong>~$0.105</strong> · bid/ask $0.101/$0.109 · d1 −0.04 · liq ~$39k</li>
+          <li>endDate: 2026-10-01T03:59:00Z · still open</li>
+          <li>Yes = highest arena.ai Text Arena Overall rank checked Sep 30, 2026 12:00 PM ET</li>
+        </ul>
+        <h3><span class="badge hold">HOLD</span></h3>
+        <ul>
+          <li>Fun ladder / ranking contract. No trading advice.</li>
         </ul>
       </article>
 
@@ -212,8 +277,8 @@
     <details class="fold">
       <summary>Quiet · expired / resolved (not the board face)</summary>
       <ul style="margin:0.5rem 0 0;padding-left:1.2rem;color:var(--muted);font-size:0.9rem;line-height:1.45">
-        <li>US×Iran “Effective Ceasefire” by Sep 4 — end date past while still trading (oracle-timing quirk) — off face per Billy</li>
-        <li>Sachsen-Anhalt AfD — abs. majority closed No / most seats Yes — resolved / oracle catching up — off face</li>
+        <li>US×Iran “Effective Ceasefire” by Sep 4 — past end date (oracle-timing quirk) — scrubbed from face; replaced by Oct 31 continues card</li>
+        <li>Sachsen-Anhalt AfD — resolved / oracle catching up — scrubbed from face</li>
       </ul>
     </details>
 
