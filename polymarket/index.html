@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Polymarket · Sachsen UPDATE · Daily Dossier</title>
-  <meta name="description" content="Polymarket sidebar — Sachsen-Anhalt AfD contracts closed/resolved update. Not a homepage lead. No trading advice." />
+  <title>Polymarket · Daily Dossier sidebar</title>
+  <meta name="description" content="Polymarket sidebar — priced deltas with FACT vs HOLD. Not a homepage lead. No trading advice." />
   <link rel="stylesheet" href="../css/style.css?v=ddbrand-20260907" />
   <link rel="icon" href="../img/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" href="../img/favicon-32.png" sizes="32x32" />
@@ -14,19 +14,22 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@DailyDossierHQ" />
   <meta name="twitter:image" content="https://billysnider-collab.github.io/Newsroom/img/og-daily-dossier.png" />
-
   <style>
     .badge { display:inline-block; font-size:0.68rem; font-weight:700; padding:0.12rem 0.4rem; border-radius:999px; margin-right:0.25rem; vertical-align:middle; }
-    .badge.fact { background:#e8eef5; color:#1a3a5c; }
+    .badge.fact { background:#152019; color:#6f9f7a; }
     .badge.infer { background:#221a1a; color:#e0c8c8; }
     .badge.hold { background:#2a1515; color:#a11; }
-    .card-block { background:var(--panel-2); border:1px solid var(--line); border-radius:14px; padding:1.1rem 1.2rem; margin:1rem 0; max-width:42rem; }
+    .card-block { background:var(--panel-2); border:1px solid var(--line); border-radius:2px; padding:1.1rem 1.2rem; margin:1rem 0; max-width:42rem; }
+    .card-block.lead { border-left:3px solid var(--priority); }
     .card-block h2 { margin:0.2rem 0 0.65rem; font-size:1.15rem; line-height:1.3; }
     .card-block h3 { margin:0.9rem 0 0.35rem; font-size:0.95rem; }
     .card-block ul { margin:0.25rem 0; padding-left:1.15rem; line-height:1.5; }
     .card-block li { margin:0.35rem 0; }
     .mono { font-size:0.75rem; color:var(--muted); word-break:break-all; }
     .disclaimer { font-size:0.85rem; color:var(--muted); margin-top:1rem; }
+    .glossary { background:var(--panel); border:1px solid var(--line); border-radius:2px; padding:0.85rem 1rem; margin:0.75rem 0 1.25rem; max-width:42rem; }
+    .glossary dt { font-weight:700; margin-top:0.5rem; }
+    .glossary dd { margin:0.15rem 0 0.35rem; color:var(--muted); }
   </style>
 </head>
 <body>
@@ -52,45 +55,103 @@
     <a href="../archive/index.html">Archive</a>
   </nav>
   <main class="wrap">
-    <div class="banner"><strong>Polymarket desk</strong> · Signal cards only · Joe-readable · <strong>No trading advice</strong></div>
-    <p class="muted" style="margin:0.35rem 0 0.85rem"><a href="../index.html">← Today’s Dossier</a></p>
+    <div class="banner"><strong>Polymarket desk</strong> · Sidebar signal only · FACT vs HOLD · <strong>No trading advice</strong> · never “market says X% chance”</div>
+    <p class="muted" style="margin:0.35rem 0 0.85rem"><a href="../index.html">← Today’s Dossier</a> · <a href="#how">How to read this ↓</a></p>
 
-    <article class="card-block" id="sachsen-2026-09-07">
-      <div class="tag">Family #1 / #3 · Sachsen UPDATE amend · ~10:14 AM CT</div>
-      <h2>AfD Sachsen-Anhalt books flip closed / resolved</h2>
-      <p>The election result was already out. What’s new is the <em>market plumbing</em>: some AfD seat contracts closed on Polymarket’s oracle path — not a fresh national primary.</p>
+    <details class="glossary" id="how">
+      <summary style="cursor:pointer;font-weight:750;letter-spacing:0.04em;text-transform:uppercase;font-size:0.82rem;color:var(--muted)">How to read this</summary>
+      <dl>
+        <dt>Mid / midpoint</dt>
+        <dd>Halfway between best bid and best ask — more robust than last trade.</dd>
+        <dt>Spread</dt>
+        <dd>Ask minus bid; the honest error bar. Wide spread = noisy “probability.”</dd>
+        <dt>Priced delta</dt>
+        <dd>How much the mid moved over a window — we flag big ones.</dd>
+        <dt>Liquidity / depth</dt>
+        <dd>Dollars sitting near the mid; thin books can be moved by one trader.</dd>
+        <dt>Resolution language</dt>
+        <dd>The exact Yes/No rules; misreads cause fake “mispricing.”</dd>
+        <dt>UMA / oracle</dt>
+        <dd>Polymarket International doesn’t decide outcomes; proposals/disputes can leave markets open after the event.</dd>
+        <dt>HOLD</dt>
+        <dd>We don’t know causation, or the number shouldn’t be treated as a forecast.</dd>
+        <dt>Sidebar not homepage</dt>
+        <dd>Market signal supports the dossier; spicy mids aren’t national leads alone.</dd>
+      </dl>
+    </details>
 
-      <h3><span class="badge fact">FACT</span> Venue &amp; capture</h3>
+    <article class="card-block lead" id="israel-airspace-2026-09-07">
+      <div class="tag">PM #2 family · UPDATE · captured ~4:21 PM CT</div>
+      <h2>Israel closes airspace by Sep 30? — mid slid to ~$0.585</h2>
+      <p>Big priced move vs morning Soft Publish prints. Still an open book — not a forecast of war or flights.</p>
+
+      <h3><span class="badge fact">FACT</span> Venue &amp; contract</h3>
       <ul>
         <li>Venue: Polymarket International</li>
-        <li>Captured: 2026-09-07T15:14:52Z (~10:14 AM CT)</li>
-        <li>Resolution language (abs. majority contract): absolute majority of Landtag seats from 6 Sep 2026 election</li>
+        <li>Contract: <em>Israel closes its airspace by September 30?</em></li>
+        <li class="mono">conditionId 0xcfbc2e5fbabb9e8a03bf234367244d4c97eaaf3ac33e2ba001541ee3e0e62416</li>
+        <li>Captured: 2026-09-07T21:21:09Z</li>
+        <li>endDate: 2026-10-01T03:59:00Z · still active</li>
       </ul>
 
-      <h3><span class="badge fact">FACT</span> What flipped</h3>
+      <h3><span class="badge fact">FACT</span> Book</h3>
       <ul>
-        <li><strong>Absolute majority of seats?</strong> <code>closed=true</code> · Yes=0 / No=1 · UMA status includes <code>proposed</code>. Prior Soft Publish #1 had <code>closed=false</code>, empty UMA, YES mid ~$0.0015.</li>
-        <li class="mono">conditionId 0x5187c6fefe08cf4513e08dd31a514b698aaebc18c259b9a98c8170cca2b7d6e8</li>
-        <li><strong>Most seats?</strong> <code>closed=true</code> · Yes=1 · UMA includes resolved. Sibling “CDU most seats” Yes=0 resolved.</li>
-        <li class="mono">conditionId 0x3716ed022361fd2aee486860484ba9b765e269838f42196e26e2cf3e7caf2d36</li>
+        <li>Midpoint (YES): <strong>~$0.585</strong> · bid/ask $0.58 / $0.59 (spread 1¢)</li>
+        <li>Prior desk captures: ~$0.80–$0.805 (morning) → ~$0.785 → now ~$0.585 (−~15 to −22¢ vs peak)</li>
+        <li>Gamma oneDayPriceChange at capture: −0.15</li>
+        <li>vol24hr ~$340k · liqClob ~$73k (usable two-sided book)</li>
       </ul>
 
-      <h3><span class="badge fact">FACT</span> Still-open cluster (same election — not a new Soft Publish)</h3>
+      <h3><span class="badge fact">FACT</span> Resolution (paraphrase)</h3>
       <ul>
-        <li>AfD 42–45% second votes — CLOB mid ~$0.999 · UMA proposed · still open</li>
-        <li>AfD margin ≥25% — CLOB mid ~$0.9995 · UMA proposed on condition pull</li>
-        <li>Sven Schulze next Ministerpräsident — CLOB mid ~$0.07 · bid/ask ~$0.06/$0.08 · forward swearing-in book</li>
+        <li>Yes only if Israel initiates a <strong>major</strong> civilian airspace closure by 11:59 PM ET on the date — broad suspension across all or a majority of Israeli civilian airspace.</li>
+        <li>Limited delays / ground stops / isolated regional closures do <strong>not</strong> count.</li>
+        <li>Weather-only or foreign airline/country restrictions alone do <strong>not</strong> count.</li>
       </ul>
 
       <h3><span class="badge infer">INFERENCE</span> / <span class="badge hold">HOLD</span></h3>
       <ul>
-        <li>Oracle path advanced: plurality certified; absolute-majority contract closed <strong>No</strong> — consistent with <strong>39/83 seats</strong> (threshold 42).</li>
-        <li>Open books left are vote-share/margin formalization and coalition/MP forward path.</li>
-        <li><strong>HOLD:</strong> Do not frame remaining mids as live election forecasts. Price ≠ outcome.</li>
+        <li>Material priced delta clears the UPDATE band (≥~7¢).</li>
+        <li>Causation <strong>not established</strong> — no timed CAA/NOTAM primary in this pull.</li>
+        <li>Do not write “market says 58% chance.” Do not treat mid as outcome. No trading advice.</li>
       </ul>
-
-      <p class="disclaimer">Prior desk context: election result already in circulation. This card is the UMA/closed flip. Not investment or trading advice.</p>
+      <p class="disclaimer">Sidebar only — not a homepage lead.</p>
     </article>
+
+    <h2 class="sec">Also on the board</h2>
+
+    <article class="card-block" id="ceasefire-context">
+      <div class="tag">Context · US × Iran</div>
+      <h2>“Effective Ceasefire” by September 4?</h2>
+      <ul>
+        <li><span class="badge fact">FACT</span> Mid ~$0.595 (+~12¢/day at last desk pull)</li>
+        <li><span class="badge hold">HOLD</span> End date already past while still trading → <strong>resolution / oracle-timing risk</strong>. Price may be about certification timing, not whether a ceasefire “is” happening.</li>
+      </ul>
+    </article>
+
+    <article class="card-block" id="fed-sep-context">
+      <div class="tag">Context · Fed September</div>
+      <h2>Near coin-flip on the September move</h2>
+      <ul>
+        <li><span class="badge fact">FACT</span> No change ~$0.475 vs +25 bps ~$0.515 — very thick books</li>
+        <li><span class="badge hold">HOLD</span> Near coin-flip is a book shape, not a tip. No trading advice.</li>
+      </ul>
+    </article>
+
+    <article class="card-block" id="sachsen-2026-09-07">
+      <div class="tag">Family #1 / #3 · Sachsen UPDATE · ~10:14 AM CT</div>
+      <h2>AfD Sachsen-Anhalt books flip closed / resolved</h2>
+      <p>The election result was already out. What’s new is the <em>market plumbing</em>: some AfD seat contracts closed on Polymarket’s oracle path.</p>
+      <ul>
+        <li><span class="badge fact">FACT</span> Absolute majority of seats? <code>closed=true</code> · Yes=0 / No=1</li>
+        <li><span class="badge fact">FACT</span> Most seats? <code>closed=true</code> · AfD Yes=1 resolved</li>
+        <li><span class="badge fact">FACT</span> Still open: vote-share / margin / Schulze MP path (priced deltas)</li>
+        <li><span class="badge hold">HOLD</span> Remaining mids are not live election forecasts. Price ≠ outcome.</li>
+      </ul>
+      <p class="disclaimer">Full prior Soft Publish context on this page’s earlier filing — oracle flip only.</p>
+    </article>
+
+    <p class="muted" style="font-size:0.82rem;margin-top:1.25rem">Desk: Polymarket Analyst · Sidebar doctrine · Joe/Brother plain · no trading advice</p>
   </main>
   <footer class="footer wrap">Daily Dossier · <a class="x-handle" href="https://x.com/DailyDossierHQ">@DailyDossierHQ</a> · <a href="https://github.com/billysnider-collab/Newsroom">Newsroom</a></footer>
 <!-- Cloudflare Web Analytics -->
