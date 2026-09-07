@@ -4,12 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Quantum — Daily Dossier</title>
-  <meta name="description" content="Quantum dossier card — brother-test open. D-Wave + Yale dual-rail erasure CZ." />
+  <meta name="description" content="Quantum dossier — D-Wave erasure CZ + IonQ Forte continuous logical Z." />
   <link rel="stylesheet" href="../css/style.css" />
   <style>
     .badge { display:inline-block; font-size:0.68rem; font-weight:700; padding:0.12rem 0.4rem; border-radius:999px; margin-right:0.25rem; }
     .badge.hold { background:#fde8e8; color:#a11; }
-    .badge.ok { background:#e3f6ea; color:#0a7a3e; }
     .open { background:#fff; border:2px solid #0f1419; border-radius:12px; padding:1rem 1.15rem; margin:1rem 0; }
   </style>
 </head>
@@ -17,7 +16,7 @@
   <header class="top">
     <div class="wrap">
       <h1>Daily Dossier</h1>
-      <p class="sub">Quantum · Mon Sep 7, 2026 · brother-test open</p>
+      <p class="sub">Quantum · Mon Sep 7, 2026 · brother-test opens</p>
     </div>
   </header>
   <nav class="nav wrap" aria-label="Primary">
@@ -31,49 +30,69 @@
     <a href="../archive/index.html">Archive</a>
   </nav>
   <main class="wrap">
-    <div class="banner"><strong>Quantum</strong> · Dossier card · not Soft Publish chrome</div>
+    <div class="banner"><strong>Quantum</strong> · Two dossier cards today · not Soft Publish chrome</div>
 
-    <section class="open">
-      <div class="tag">OPEN · brother test</div>
-      <h2>Visible mistakes beat invisible ones</h2>
-      <p>Most quantum errors hide. These qubits usually “lose the photon,” which the machine can <em>see</em>. D-Wave + Yale built a fast two-qubit gate that still mostly makes visible mistakes instead of invisible ones — which makes fixing mistakes much easier later.</p>
-    </section>
-
-    <article class="card list-card">
-      <div class="tag">What changed</div>
-      <h3>First hardware-validated ~500&nbsp;ns CZ on dual-rail cavity erasure qubits</h3>
-      <p>Superconducting dual-rail cavity erasure qubits that keep the erasure-over-Pauli hierarchy during two-qubit ops — not just at rest.</p>
+    <article class="open" id="ionq-forte">
+      <div class="tag">Card 2 · IonQ Forte · Mon Sep 7</div>
+      <h2>OPEN — Continuous twist on an encoded qubit</h2>
+      <p>Error-corrected qubits usually only get a small menu of exact turns (like 90°). This IonQ Forte experiment shows you can dial a continuous twist on an encoded qubit by twisting all the physical pieces the same way, then checking for errors — a baby step toward the fancy gates real algorithms need.</p>
+      <h3>What changed</h3>
+      <p>Proof-of-principle continuously tunable non-Clifford logical Z on [[7,1,3]] Steane via transversal RZ(θ) + error correction (not just discrete Clifford logical gates).</p>
+      <h3>Numbers</h3>
+      <ul>
+        <li>Code [[7,1,3]] Steane on Forte</li>
+        <li>Transversal θ + EC → syndrome-dependent logical Z</li>
+        <li>Two-round ±θ cancellation on trivial syndromes (cite paper figures for fidelities — no invented %)</li>
+      </ul>
+      <h3>HOLDs / does not mean</h3>
+      <ul>
+        <li><span class="badge hold">HOLD</span> Not FT universality at scale</li>
+        <li><span class="badge hold">HOLD</span> Not magic-state factory</li>
+        <li><span class="badge hold">HOLD</span> Not distance scaling</li>
+        <li><span class="badge hold">HOLD</span> Not production continuous SU(2)</li>
+      </ul>
+      <h3>Hype reject</h3>
+      <ul>
+        <li>“Universal FT gates”</li>
+        <li>“Continuous logical computing”</li>
+        <li>Any algorithm speedup claim</li>
+      </ul>
+      <p><strong>Primary:</strong> <a href="https://arxiv.org/abs/2608.20676" rel="noopener" target="_blank">arXiv:2608.20676</a> — submitted 21 Aug 2026</p>
     </article>
 
-    <h2 class="sec">Numbers</h2>
-    <div class="board">
-      <table>
-        <thead><tr><th>Metric</th><th>Value</th></tr></thead>
-        <tbody>
-          <tr><td>Gate</td><td>≈ 500 ns</td></tr>
-          <tr><td>Erasure</td><td>≈ 0.5% / gate</td></tr>
-          <tr><td>Residual Pauli</td><td>&lt; 0.1%</td></tr>
-          <tr><td>Bit-flips</td><td>~ 10⁻⁶</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <h2 class="sec">HOLDs / does not mean</h2>
-    <ul>
-      <li><span class="badge hold">HOLD</span> Not a logical qubit</li>
-      <li><span class="badge hold">HOLD</span> Not below-threshold QEC</li>
-      <li><span class="badge hold">HOLD</span> Not quantum advantage</li>
-      <li><span class="badge hold">HOLD</span> Sims ≠ experimental QEC cycles</li>
-    </ul>
-
-    <h2 class="sec">Hype reject</h2>
-    <ul>
-      <li>“99.9% fidelity” without separating erasure vs Pauli</li>
-      <li>“FT computer demonstrated”</li>
-      <li>“solves QEC overhead”</li>
-    </ul>
-
-    <p><strong>Primary:</strong> <a href="https://www.nature.com/articles/s41586-026-10822-y" rel="noopener" target="_blank">Nature, 5 Aug 2026</a> (DOI 10.1038/s41586-026-10822-y)</p>
+    <article class="open" id="dwave-yale">
+      <div class="tag">Card 1 · D-Wave + Yale · Mon Sep 7</div>
+      <h2>OPEN — Visible mistakes beat invisible ones</h2>
+      <p>Most quantum errors hide. These qubits usually “lose the photon,” which the machine can <em>see</em>. D-Wave + Yale built a fast two-qubit gate that still mostly makes visible mistakes instead of invisible ones — which makes fixing mistakes much easier later.</p>
+      <h3>What changed</h3>
+      <p>First hardware-validated ~500&nbsp;ns CZ on superconducting dual-rail cavity erasure qubits that keeps the erasure-over-Pauli hierarchy during two-qubit ops (not just at rest).</p>
+      <h3>Numbers</h3>
+      <div class="board">
+        <table>
+          <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+          <tbody>
+            <tr><td>Gate</td><td>≈ 500 ns</td></tr>
+            <tr><td>Erasure</td><td>≈ 0.5% / gate</td></tr>
+            <tr><td>Residual Pauli</td><td>&lt; 0.1%</td></tr>
+            <tr><td>Bit-flips</td><td>~ 10⁻⁶</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>HOLDs / does not mean</h3>
+      <ul>
+        <li><span class="badge hold">HOLD</span> Not a logical qubit</li>
+        <li><span class="badge hold">HOLD</span> Not below-threshold QEC</li>
+        <li><span class="badge hold">HOLD</span> Not quantum advantage</li>
+        <li><span class="badge hold">HOLD</span> Sims ≠ experimental QEC cycles</li>
+      </ul>
+      <h3>Hype reject</h3>
+      <ul>
+        <li>“99.9% fidelity” without separating erasure vs Pauli</li>
+        <li>“FT computer demonstrated”</li>
+        <li>“solves QEC overhead”</li>
+      </ul>
+      <p><strong>Primary:</strong> <a href="https://www.nature.com/articles/s41586-026-10822-y" rel="noopener" target="_blank">Nature, 5 Aug 2026</a> (DOI 10.1038/s41586-026-10822-y)</p>
+    </article>
   </main>
   <footer class="footer wrap">Daily Dossier · Quantum · Mon Sep 7, 2026</footer>
 </body>
