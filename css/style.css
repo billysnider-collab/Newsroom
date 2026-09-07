@@ -41,7 +41,7 @@ a:hover { color: #fff; text-decoration-color: var(--priority); }
 .top {
   background: var(--bg);
   color: var(--text);
-  padding: 1.1rem 0 0.9rem;
+  padding: 1.05rem 0 0.9rem;
   border-top: 3px solid var(--priority);
   border-bottom: 1px solid var(--line-strong);
   position: relative;
@@ -53,20 +53,39 @@ a:hover { color: #fff; text-decoration-color: var(--priority); }
   width: 2.5rem; height: 3px;
   background: var(--priority);
 }
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.brand img.dd-mark {
+  width: 2.65rem;
+  height: 2.65rem;
+  display: block;
+  flex-shrink: 0;
+  border-radius: 2px;
+}
+.brand .brand-text { min-width: 0; }
 .top h1 {
   margin: 0;
-  font-size: 1.2rem;
-  letter-spacing: 0.14em;
+  font-size: 1.15rem;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   font-weight: 750;
   color: var(--text);
 }
 .top .sub {
-  margin: 0.35rem 0 0;
+  margin: 0.3rem 0 0;
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   letter-spacing: 0.02em;
 }
+.footer a.x-handle {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+}
+.footer a.x-handle:hover { border-bottom-color: var(--priority); }
 
 .nav {
   display: flex; flex-wrap: wrap; gap: 0.45rem 0.95rem;
