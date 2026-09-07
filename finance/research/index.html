@@ -4,24 +4,23 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Researched stocks · Finance</title>
-  <meta name="description" content="Fast scan of completed Finance memos — one idea per ticker, then deep read." />
   <link rel="stylesheet" href="../../css/style.css" />
   <style>
-    .research-card { text-decoration:none; color:inherit; display:block; }
-    .research-card:hover { border-color:#0f1419; text-decoration:none; }
-    .how { background:#fff; border:1px solid var(--line); border-radius:12px; padding:0.9rem 1.1rem; margin:0.85rem 0 1.1rem; font-size:0.92rem; }
-    .how ol { margin:0.35rem 0 0; padding-left:1.2rem; }
-    .cta-row { display:flex; flex-wrap:wrap; gap:0.75rem; margin:0.75rem 0 1rem; }
-    .cta-row a { font-weight:700; }
+    .narrow { width: min(100% - 1.5rem, 42rem); margin-inline: auto; }
+    .how { background:#fff; border:1px solid var(--line); border-radius:14px; padding:1rem 1.15rem; margin:0.85rem 0 1.25rem; line-height:1.5; }
+    .how ol { margin:0.4rem 0 0; padding-left:1.2rem; }
+    .how li { margin:0.35rem 0; }
+    .cards { display:flex; flex-direction:column; gap:0.75rem; }
+    .rc { display:block; text-decoration:none; color:inherit; background:#fff; border:1px solid var(--line); border-radius:14px; padding:1.05rem 1.15rem; }
+    .rc:hover { border-color:#0f1419; text-decoration:none; }
+    .rc h3 { margin:0.25rem 0 0.4rem; font-size:1.12rem; line-height:1.3; letter-spacing:-0.015em; }
+    .rc p { margin:0; color:var(--muted); font-size:0.92rem; line-height:1.45; }
+    .rc .go { display:inline-block; margin-top:0.65rem; font-weight:750; font-size:0.88rem; color:var(--accent); }
+    .tag { font-size:0.72rem; font-weight:800; letter-spacing:0.06em; text-transform:uppercase; color:var(--accent); }
   </style>
 </head>
 <body>
-  <header class="top">
-    <div class="wrap">
-      <h1>Daily Dossier</h1>
-      <p class="sub">Finance · Researched stocks</p>
-    </div>
-  </header>
+  <header class="top"><div class="wrap"><h1>Daily Dossier</h1><p class="sub">Finance · Researched stocks</p></div></header>
   <nav class="nav wrap" aria-label="Primary">
     <a href="../../index.html">Today</a>
     <a href="../../briefs/index.html">Briefs</a>
@@ -33,60 +32,50 @@
     <a href="../../entertainment/index.html">Entertainment</a>
     <a href="../../archive/index.html">Archive</a>
   </nav>
-  <main class="wrap">
-    <div class="banner"><strong>Researched stocks</strong> · One idea per ticker · Not trading advice</div>
-    <p class="muted" style="margin:0.45rem 0"><a href="../index.html">← Finance briefing</a></p>
-
+  <main class="narrow wrap" style="width:min(100% - 1.5rem, 42rem)">
+    <div class="banner"><strong>Researched stocks</strong> · One question per name · Not tips</div>
+    <p class="muted" style="margin:0.5rem 0"><a href="../index.html">← Finance briefing</a> · <a href="watchlist/">Watchlist</a></p>
     <div class="how">
-      <strong>How to use this (fast)</strong>
+      <strong>How to read</strong>
       <ol>
-        <li>Read the one-line question on each card — that’s the neuron hook.</li>
-        <li>Open the memo: thesis first, then bull vs bear side-by-side.</li>
-        <li>Skim catalyst date + “what would change our mind.”</li>
-        <li>Tap <em>Coming to terms</em> only if a word blocks you.</li>
+        <li>Grab the question on the card.</li>
+        <li>Open → hold the one idea.</li>
+        <li>Skim bull, then bear (stacked, not side-by-side).</li>
+        <li>Note the date that matters + what would flip you.</li>
       </ol>
     </div>
-
-    <div class="cta-row">
-      <a href="watchlist/">Watchlist / database →</a>
-      <span class="muted">Growing log of every flagged name</span>
-    </div>
-
-    <h2 class="sec">Completed memos · Sep 7</h2>
     <div class="cards">
-        <a class="card research-card" href="ORCL/">
-          <div class="tag">ORCL · researched · Sep 7</div>
+        <a class="card rc" href="ORCL/">
+          <div class="tag">ORCL</div>
           <h3>Does AI backlog turn into cash — or stay a dilution story?</h3>
-          <p style="margin:0.35rem 0 0;color:var(--muted);font-size:0.9rem;line-height:1.35">Oracle is the cleanest near-term test of whether AI-infra demand converts into cash — or stays a backlog story funded by dilution. Contracted demand looks enormous; free-cash conve…</p>
-          <p style="margin:0.55rem 0 0;font-weight:700;font-size:0.88rem">Open memo →</p>
+          <p>Oracle is the cleanest near-term test of whether AI-infra demand converts into cash — or stays a backlog story funded by dilution. Contracte…</p>
+          <span class="go">Open →</span>
         </a>
-        <a class="card research-card" href="ADBE/">
-          <div class="tag">ADBE · researched · Sep 7</div>
+        <a class="card rc" href="ADBE/">
+          <div class="tag">ADBE</div>
           <h3>Does Creative still monetize under AI — with a new CEO?</h3>
-          <p style="margin:0.35rem 0 0;color:var(--muted);font-size:0.9rem;line-height:1.35">Adobe is a same-week, opposite failure-mode to Oracle: not “does AI backlog exist?” but “does Creative software still monetize under AI substitution — with a new CEO?” The multiple…</p>
-          <p style="margin:0.55rem 0 0;font-weight:700;font-size:0.88rem">Open memo →</p>
+          <p>Adobe is a same-week, opposite failure-mode to Oracle: not “does AI backlog exist?” but “does Creative software still monetize under AI subs…</p>
+          <span class="go">Open →</span>
         </a>
-        <a class="card research-card" href="XOM-CVX/">
-          <div class="tag">XOM-CVX · researched · Sep 7</div>
+        <a class="card rc" href="XOM-CVX/">
+          <div class="tag">XOM-CVX</div>
           <h3>How long does the Hormuz oil premium last?</h3>
-          <p style="margin:0.35rem 0 0;color:var(--muted);font-size:0.9rem;line-height:1.35">This is a Hormuz-premium pair, not a “buy oil forever” call. Weekend tanker strikes and May-low transit data raise the near-term crude risk premium; the research question is how lo…</p>
-          <p style="margin:0.55rem 0 0;font-weight:700;font-size:0.88rem">Open memo →</p>
+          <p>This is a Hormuz-premium pair, not a “buy oil forever” call. Weekend tanker strikes and May-low transit data raise the near-term crude risk …</p>
+          <span class="go">Open →</span>
         </a>
-        <a class="card research-card" href="MU/">
-          <div class="tag">MU · researched · Sep 7</div>
+        <a class="card rc" href="MU/">
+          <div class="tag">MU</div>
           <h3>HBM shortage plateau — or classic cycle peak?</h3>
-          <p style="margin:0.35rem 0 0;color:var(--muted);font-size:0.9rem;line-height:1.35">Micron is an AI-memory tightness story colliding with a classic cycle-peak trap. The shortage/HBM demand looks real in company numbers; the research question is whether peak earnin…</p>
-          <p style="margin:0.55rem 0 0;font-weight:700;font-size:0.88rem">Open memo →</p>
+          <p>Micron is an AI-memory tightness story colliding with a classic cycle-peak trap. The shortage/HBM demand looks real in company numbers; the …</p>
+          <span class="go">Open →</span>
         </a>
-        <a class="card research-card" href="KR/">
-          <div class="tag">KR · researched · Sep 7</div>
-          <h3>Comps &amp; margins vs Walmart on CPI morning</h3>
-          <p style="margin:0.35rem 0 0;color:var(--muted);font-size:0.9rem;line-height:1.35">Kroger is a consumer/inflation optics name into the same Friday as CPI — not a “cheap defensive” slogan. The live question is identical-sales and margin quality vs Walmart price co…</p>
-          <p style="margin:0.55rem 0 0;font-weight:700;font-size:0.88rem">Open memo →</p>
+        <a class="card rc" href="KR/">
+          <div class="tag">KR</div>
+          <h3>Comps &amp; margins vs Walmart on CPI morning?</h3>
+          <p>Kroger is a consumer/inflation optics name into the same Friday as CPI — not a “cheap defensive” slogan. The live question is identical-sale…</p>
+          <span class="go">Open →</span>
         </a>
     </div>
-
-    <p class="muted" style="margin-top:1.25rem"><strong>Connections — coming later.</strong> Cross-ticker mapping deferred.</p>
   </main>
   <footer class="wrap foot"><p>Daily Dossier · Finance research</p></footer>
 </body>
