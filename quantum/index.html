@@ -3,273 +3,57 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Quantum — Daily Dossier</title>
-  <meta name="description" content="Quantum dossier — D-Wave erasure CZ + IonQ Forte continuous logical Z." />
-  <link rel="stylesheet" href="../css/style.css?v=ddbrand-20260907" />
-<link rel="icon" type="image/png" href="../img/favicon-32.png" sizes="32x32" />
+  <title>Quantum — Signal Over Noise</title>
+  <meta name="description" content="Signal Over Noise — news, briefed like intel." />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" type="image/png" href="../img/favicon-32.png" sizes="32x32" />
   <link rel="apple-touch-icon" href="../img/apple-touch-icon.png" />
-  <meta property="og:site_name" content="Daily Dossier" />
-  <meta property="og:image" content="https://billysnider-collab.github.io/Newsroom/img/og-daily-dossier.png" />
+  <meta property="og:site_name" content="Signal Over Noise" />
+  <meta property="og:image" content="https://billysnider-collab.github.io/Newsroom/img/og-signal.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@DailyDossierHQ" />
-  <meta name="twitter:image" content="https://billysnider-collab.github.io/Newsroom/img/og-daily-dossier.png" />
-
-  <style>
-    .badge { display:inline-block; font-size:0.68rem; font-weight:700; padding:0.12rem 0.4rem; border-radius:999px; margin-right:0.25rem; }
-    .badge.hold { background:#2a1515; color:#a11; }
-    .open { background:var(--panel-2); border:1px solid var(--line); border-radius:12px; padding:1rem 1.15rem; margin:1rem 0; }
-  </style>
+  <meta name="twitter:image" content="https://billysnider-collab.github.io/Newsroom/img/og-signal.png" />
 </head>
 <body>
   <header class="top">
     <div class="wrap">
       <div class="brand">
-        <img class="dd-mark" src="../img/dd-mark-80.png" width="80" height="80" alt="Daily Dossier" />
+        <img class="mark" src="../img/signal-mark-80.png" width="80" height="80" alt="Signal Over Noise" />
         <div class="brand-text">
-          <h1>Daily Dossier</h1>
-          <p class="sub">Quantum · Mon Sep 7, 2026 · brother-test opens</p>
+          <h1>Signal Over Noise</h1>
+          <p class="sub">News, briefed like intel · Friday, September 11, 2026 — Evening edition</p>
         </div>
       </div>
     </div>
   </header>
-    <nav class="nav wrap" aria-label="Primary">
-    <a href="../index.html">Today</a>
-    <a href="../briefs/index.html">Briefs</a>
-    <a href="../national/index.html">National</a>
-    <a href="../quantum/index.html" aria-current="page">Quantum</a>
-    <a href="../finance/index.html">Finance</a>
-    <a href="../polymarket/index.html">Polymarket</a>
-    <a href="../sports/index.html">Sports</a>
-    <a href="../entertainment/index.html">Entertainment</a>
-    <a href="../lift/index.html">Lift</a>
-    <a href="../archive/index.html">Archive</a>
-  </nav>
+<nav class="nav wrap" aria-label="Primary">
+<a href="../index.html">Today</a>
+<a href="../briefs/index.html">Briefs</a>
+<a href="../national/index.html">National</a>
+<a href="../quantum/index.html" aria-current="page">Quantum</a>
+<a href="../finance/index.html">Finance</a>
+<a href="../polymarket/index.html">Polymarket</a>
+<a href="../sports/index.html">Sports</a>
+<a href="../entertainment/index.html">Entertainment</a>
+<a href="../lift/index.html">Lift</a>
+<a href="../about/index.html">About</a>
+</nav>
   <main class="wrap">
-
-    <div class="banner"><strong>Quantum</strong> · Six cards today · separate headlines, one race</div>
-    <p class="muted" style="font-size:0.9rem;margin:0.25rem 0 0.75rem"><a href="#thread">How these connect ↓</a> · <a href="#terms">Coming to terms ↓</a></p>
-
-    <section class="open" id="thread" style="margin-bottom:1.25rem">
-      <div class="tag">The thread · why these cards belong together</div>
-      <h2>Separate news. Same fight.</h2>
-      <p>Each lab is chasing a different headline — a gate here, a code there, a calibration trick. What makes Quantum unique on this dossier is that <strong>they’re all working the same problem from different angles: discovering how to build the machine, and breaking what still fails</strong> (noise, drift, invisible errors, fake scorekeeping).</p>
-      <p style="margin-bottom:0.35rem"><strong>How today’s six lock together:</strong></p>
-      <ol style="margin:0;padding-left:1.2rem;line-height:1.5">
-        <li><strong>D-Wave + Yale</strong> — make mistakes <em>visible</em> (erasures) so later codes can fix them.</li>
-        <li><strong>IonQ</strong> — twist an already-protected qubit continuously (the hard “non-Clifford” direction).</li>
-        <li><strong>IBM / Lidar</strong> — run error correction on chips that aren’t textbook grids — and call out metrics that can fake progress.</li>
-        <li><strong>USTC/Pan</strong> — move and entangle protected patches (surgery), not just park memory.</li>
-        <li><strong>Quantinuum</strong> — pack two protected qubits densely + cheap Clifford logic; bridge toward harder ingredients.</li>
-        <li><strong>Google Willow</strong> — retune while the computer keeps running (calibration that doesn’t stop the show).</li>
-      </ol>
-      <p style="margin:0.75rem 0 0;color:var(--muted);font-size:0.92rem">Read any card alone for the news. Read them as a set to see the field pushing the same frontier: quieter errors, smarter codes, real logical operations — without the hype.</p>
-    </section>
-<article class="open" id="google-willow">
-      <div class="tag">Card 6 · Google Willow · Mon Sep 7</div>
-      <h2>OPEN — Retune while the music keeps playing</h2>
-      <p>Quantum chips drift out of tune. Usually you stop the show to retune. Google taught an AI to retune from the same error beeps the computer already listens to — so the music can keep playing.</p>
-      <h3>What changed</h3>
-      <p>RL steers &gt;1,000 Willow control params from QEC syndrome rates <em>during</em> computation — calibration no longer stop-the-world. ~20% LER cut vs expert calib; up to 3.5× stability under injected drift (with decoder steering).</p>
-      <h3>Numbers</h3>
-      <ul>
-        <li>Surface d=7 LER 7.72×10⁻⁴/cycle</li>
-        <li>Color d=5 8.19×10⁻³</li>
-        <li>~20% post-expert RL fine-tune</li>
-        <li>2.4× control-only / 3.5× with decoder under injected drift</li>
-      </ul>
-      <h3>HOLDs / does not mean</h3>
-      <ul>
-        <li><span class="badge hold">HOLD</span> Not a new code</li>
-        <li><span class="badge hold">HOLD</span> Injected drift ≠ all natural drift</li>
-        <li><span class="badge hold">HOLD</span> “Never stops computing” is paradigm, not a months-long algorithm run</li>
-      </ul>
-      <h3>Hype reject</h3>
-      <ul>
-        <li>“AI solves quantum error correction”</li>
-      </ul>
-      <p><strong>Primary:</strong> <a href="https://www.nature.com/articles/s41586-026-10759-2" rel="noopener" target="_blank">Nature 655, 879–884 (8 Jul 2026)</a></p>
-    </article>
-
-    <article class="open" id="quantinuum-helix">
-      <div class="tag">Card 5 · Quantinuum Helix · Mon Sep 7</div>
-      <h2>OPEN — Two protected qubits in 20, cheap Clifford logic</h2>
-      <p>Protecting quantum info usually costs many spare qubits. Quantinuum’s Helix packs two protected qubits into 20 physical ones and can do the “easy” (Clifford) logic cheaply — and talk to a different code family that might supply the hard ingredients.</p>
-      <h3>What changed</h3>
-      <p>Early-FT <em>architecture</em> on Helios (not memory-only): [[20,2,6]] C₄-Helix memory + 2-logical Clifford RB under active correction + heterogeneous GHZ to d=5 surface code — beating physical baselines without postselection.</p>
-      <h3>Numbers</h3>
-      <ul>
-        <li>Memory ε₆ ≈ 4.6×10⁻⁵/cycle</li>
-        <li>Logical Clifford ε_C ≈ 2.8×10⁻⁴ vs physical ~1.2×10⁻³</li>
-        <li>GHZ LB ~99.925% vs physical ~99.54%</li>
-      </ul>
-      <h3>HOLDs / does not mean</h3>
-      <ul>
-        <li><span class="badge hold">HOLD</span> No T/magic-state injection</li>
-        <li><span class="badge hold">HOLD</span> Not universal FT</li>
-        <li><span class="badge hold">HOLD</span> Company preprint; thin independent media</li>
-        <li><span class="badge hold">HOLD</span> 10⁻⁶–10⁻⁸ targets are sims</li>
-      </ul>
-      <h3>Hype reject</h3>
-      <ul>
-        <li>Naked “breakthrough”</li>
-        <li>“Universal FT computer demonstrated”</li>
-        <li>“3.5× better than surface” without metric</li>
-      </ul>
-      <p><strong>Primary:</strong> <a href="https://arxiv.org/pdf/2609.03194" rel="noopener" target="_blank">arXiv:2609.03194</a> — submitted 2 Sep 2026</p>
-    </article>
-
-    <article class="open" id="ustc-pan">
-      <div class="tag">Card 4 · USTC/Pan · Mon Sep 7</div>
-      <h2>OPEN — Moving and entangling protected patches, not just parking them</h2>
-      <p>Instead of only parking information in protected memory, USTC/Pan moved and entangled error-corrected “patches” on a 107-qubit chip using surgery-like operations — the toolkit for computation, not just storage — though the gate quality is still modest.</p>
-      <h3>What changed</h3>
-      <p>No-postselection Clifford layer (H, S, CNOT) via lattice-surgery/deformation on d=3 surface-code patches with multi-round syndrome extraction + neural decoding — memory → active compute primitives.</p>
-      <h3>Numbers</h3>
-      <ul>
-        <li>107 physical qubits · d=3 · no post-selection</li>
-        <li>Logical CNOT F <strong>0.643(2)</strong></li>
-        <li>Bell F <strong>0.550–0.624</strong></li>
-      </ul>
-      <h3>HOLDs / does not mean</h3>
-      <ul>
-        <li><span class="badge hold">HOLD</span> Not high-fidelity FT gates</li>
-        <li><span class="badge hold">HOLD</span> Not below-threshold</li>
-        <li><span class="badge hold">HOLD</span> Not universal (no non-Clifford without magic)</li>
-      </ul>
-      <h3>Hype reject</h3>
-      <ul>
-        <li>QuantumZeitgeist “92.7% logical CNOT” (wrong)</li>
-        <li>“Fault-tolerant processor”</li>
-        <li>Conflating with postselected magic-gate papers</li>
-      </ul>
-      <p><strong>Primary:</strong> <a href="https://arxiv.org/abs/2607.01473" rel="noopener" target="_blank">arXiv:2607.01473</a> — 1 Jul 2026</p>
-    </article>
-
-    <article class="open" id="ibm-heron">
-      <div class="tag">Card 3 · IBM Heron · Mon Sep 7</div>
-      <h2>OPEN — Error correction on a chip that isn’t a textbook grid</h2>
-      <p>IBM chips aren’t wired like a textbook surface-code grid. This USC/Lidar team still ran error correction on them by clever routing and noise-canceling pulses, showed that making the code taller or wider helps protect specific kinds of information, and warned that some popular scorekeeping methods can fake success.</p>
-      <h3>What changed</h3>
-      <p>Anisotropic surface-code scaling on IBM Heron heavy-hex (not isotropic below-threshold Λ): fold–unfold SWAP embedding + gap-aware DD; directional protection (3,5)/(5,3); DD kills spurious subthreshold claims; EF metric exposes misleading Λ fits.</p>
-      <h3>Numbers</h3>
-      <ul>
-        <li>37-qubit d=3 → 65-qubit (3,5) and (5,3) embeddings</li>
-        <li>On 156-qubit Heron (6 short of isotropic 5,5)</li>
-        <li>~30% noise cut → (5,5) within reach (authors’ estimate)</li>
-      </ul>
-      <h3>HOLDs / does not mean</h3>
-      <ul>
-        <li><span class="badge hold">HOLD</span> Not Google-style isotropic below-threshold</li>
-        <li><span class="badge hold">HOLD</span> ~30% is projection</li>
-        <li><span class="badge hold">HOLD</span> Not logical gates/algorithms</li>
-      </ul>
-      <h3>Hype reject</h3>
-      <ul>
-        <li>“IBM surface code below threshold”</li>
-        <li>“Subthreshold scaling” without anisotropic/EF caveats</li>
-      </ul>
-      <p><strong>Primary:</strong> <a href="https://www.nature.com/articles/s41467-026-76090-6" rel="noopener" target="_blank">Nat Comm, 29 Jul 2026</a> (arXiv:2510.18847)</p>
-    </article>
-
-    <article class="open" id="ionq-forte">
-      <div class="tag">Card 2 · IonQ Forte · Mon Sep 7</div>
-      <h2>OPEN — Continuous twist on an encoded qubit</h2>
-      <p>Error-corrected qubits usually only get a small menu of exact turns (like 90°). This IonQ Forte experiment shows you can dial a continuous twist on an encoded qubit by twisting all the physical pieces the same way, then checking for errors — a baby step toward the fancy gates real algorithms need.</p>
-      <h3>What changed</h3>
-      <p>Proof-of-principle continuously tunable non-Clifford logical Z on [[7,1,3]] Steane via transversal RZ(θ) + error correction (not just discrete Clifford logical gates).</p>
-      <h3>Numbers</h3>
-      <ul>
-        <li>Code [[7,1,3]] Steane on Forte</li>
-        <li>Transversal θ + EC → syndrome-dependent logical Z</li>
-        <li>Two-round ±θ cancellation on trivial syndromes (cite paper figures for fidelities — no invented %)</li>
-      </ul>
-      <h3>HOLDs / does not mean</h3>
-      <ul>
-        <li><span class="badge hold">HOLD</span> Not FT universality at scale</li>
-        <li><span class="badge hold">HOLD</span> Not magic-state factory</li>
-        <li><span class="badge hold">HOLD</span> Not distance scaling</li>
-        <li><span class="badge hold">HOLD</span> Not production continuous SU(2)</li>
-      </ul>
-      <h3>Hype reject</h3>
-      <ul>
-        <li>“Universal FT gates”</li>
-        <li>“Continuous logical computing”</li>
-        <li>Any algorithm speedup claim</li>
-      </ul>
-      <p><strong>Primary:</strong> <a href="https://arxiv.org/abs/2608.20676" rel="noopener" target="_blank">arXiv:2608.20676</a> — submitted 21 Aug 2026</p>
-    </article>
-
-    <article class="open" id="dwave-yale">
-      <div class="tag">Card 1 · D-Wave + Yale · Mon Sep 7</div>
-      <h2>OPEN — Visible mistakes beat invisible ones</h2>
-      <p>Most quantum errors hide. These qubits usually “lose the photon,” which the machine can <em>see</em>. D-Wave + Yale built a fast two-qubit gate that still mostly makes visible mistakes instead of invisible ones — which makes fixing mistakes much easier later.</p>
-      <h3>What changed</h3>
-      <p>First hardware-validated ~500&nbsp;ns CZ on superconducting dual-rail cavity erasure qubits that keeps the erasure-over-Pauli hierarchy during two-qubit ops (not just at rest).</p>
-      <h3>Numbers</h3>
-      <div class="board">
-        <table>
-          <thead><tr><th>Metric</th><th>Value</th></tr></thead>
-          <tbody>
-            <tr><td>Gate</td><td>≈ 500 ns</td></tr>
-            <tr><td>Erasure</td><td>≈ 0.5% / gate</td></tr>
-            <tr><td>Residual Pauli</td><td>&lt; 0.1%</td></tr>
-            <tr><td>Bit-flips</td><td>~ 10⁻⁶</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <h3>HOLDs / does not mean</h3>
-      <ul>
-        <li><span class="badge hold">HOLD</span> Not a logical qubit</li>
-        <li><span class="badge hold">HOLD</span> Not below-threshold QEC</li>
-        <li><span class="badge hold">HOLD</span> Not quantum advantage</li>
-        <li><span class="badge hold">HOLD</span> Sims ≠ experimental QEC cycles</li>
-      </ul>
-      <h3>Hype reject</h3>
-      <ul>
-        <li>“99.9% fidelity” without separating erasure vs Pauli</li>
-        <li>“FT computer demonstrated”</li>
-        <li>“solves QEC overhead”</li>
-      </ul>
-      <p><strong>Primary:</strong> <a href="https://www.nature.com/articles/s41586-026-10822-y" rel="noopener" target="_blank">Nature, 5 Aug 2026</a> (DOI 10.1038/s41586-026-10822-y)</p>
-    </article>
-
-    <details id="terms" style="background:var(--panel-2);border:1px solid var(--line);border-radius:12px;padding:0.75rem 1rem;margin:1.5rem 0 1rem">
-      <summary style="cursor:pointer;font-weight:700;list-style:none">Coming to terms — living Quantum glossary <span style="font-weight:500;color:var(--muted)">(grows over time)</span></summary>
-      <div style="margin-top:0.75rem">
-        <p class="muted" style="margin:0 0 0.65rem;font-size:0.9rem">Plain English for the words that keep showing up. This list is meant to grow as new cards land.</p>
-        <dl>
-          <dt style="font-weight:700;margin-top:0.55rem">Qubit</dt>
-          <dd style="margin:0.15rem 0 0.35rem;color:var(--muted)">The basic unit of quantum information — fragile compared with a normal computer bit.</dd>
-          <dt style="font-weight:700;margin-top:0.55rem">Noise / errors</dt>
-          <dd style="margin:0.15rem 0 0.35rem;color:var(--muted)">Random flips and leaks that corrupt quantum states. The whole field is a fight against noise.</dd>
-          <dt style="font-weight:700;margin-top:0.55rem">QEC (quantum error correction)</dt>
-          <dd style="margin:0.15rem 0 0.35rem;color:var(--muted)">Spreading one “logical” qubit across many physical qubits so you can detect and fix mistakes.</dd>
-          <dt style="font-weight:700;margin-top:0.55rem">Logical qubit</dt>
-          <dd style="margin:0.15rem 0 0.35rem;color:var(--muted)">The protected information after error correction — what you’d actually want to compute with.</dd>
-          <dt style="font-weight:700;margin-top:0.55rem">Surface code</dt>
-          <dd style="margin:0.15rem 0 0.35rem;color:var(--muted)">A popular grid-like error-correcting layout. Many experiments target it; not every chip is wired for it.</dd>
-          <dt style="font-weight:700;margin-top:0.55rem">Clifford vs non-Clifford</dt>
-          <dd style="margin:0.15rem 0 0.35rem;color:var(--muted)">Clifford = the “easy” gate set for codes. Non-Clifford (magic) = the hard extras real algorithms need.</dd>
-          <dt style="font-weight:700;margin-top:0.55rem">Erasure error</dt>
-          <dd style="margin:0.15rem 0 0.35rem;color:var(--muted)">A mistake the machine can <em>see</em> (like knowing a photon was lost) — usually easier to fix than a silent flip.</dd>
-          <dt style="font-weight:700;margin-top:0.55rem">Pauli error</dt>
-          <dd style="margin:0.15rem 0 0.35rem;color:var(--muted)">A silent bit/phase flip — invisible until you check carefully.</dd>
-          <dt style="font-weight:700;margin-top:0.55rem">Lattice surgery</dt>
-          <dd style="margin:0.15rem 0 0.35rem;color:var(--muted)">Joining/splitting error-corrected patches to move or entangle logical information — compute, not just memory.</dd>
-          <dt style="font-weight:700;margin-top:0.55rem">Calibration / drift</dt>
-          <dd style="margin:0.15rem 0 0.35rem;color:var(--muted)">Hardware slowly goes out of tune. Retuning usually stops work; “live” calibration tries to tune without stopping.</dd>
-          <dt style="font-weight:700;margin-top:0.55rem">Below threshold</dt>
-          <dd style="margin:0.15rem 0 0.35rem;color:var(--muted)">The regime where bigger codes actually make errors <em>rarer</em> — the milestone hype often claims early.</dd>
-          <dt style="font-weight:700;margin-top:0.55rem">HOLD</dt>
-          <dd style="margin:0.15rem 0 0.35rem;color:var(--muted)">Our tag for “don’t over-read this result” — open questions, caveats, or what the paper does <em>not</em> prove.</dd>
-        </dl>
-      </div>
-    </details>
-
+<div class="banner"><strong>Quantum</strong> — one qubit at a time, zero hype.</div>
+<div class="story">
+<p class="kicker">Watch status · Fri Sep 11</p>
+<h3>No qualifying story today</h3>
+<ul>
+<li>The daily watch scanned for lab demos, papers, and real advances. Nothing cleared the bar.</li>
+<li>This desk doesn't publish press-release breakthroughs, unreviewed claims, or funding dressed as science.</li>
+<li>When something real moves, it leads the page. Until then: silence is the signal.</li>
+</ul>
+<h4>Standing rule <span class="confpill">PRINCIPLE</span></h4>
+<ul><li>Company assertions are labeled as claims. Hype gets debunked, not amplified.</li></ul>
+</div>
   </main>
-  <footer class="footer wrap">Daily Dossier · <a class="x-handle" href="https://x.com/DailyDossierHQ">@DailyDossierHQ</a> · <a href="https://github.com/billysnider-collab/Newsroom">Newsroom</a></footer>
-<!-- Cloudflare Web Analytics -->
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "de79f2c03d32458e811a918f0cfe1890"}'></script>
-<!-- End Cloudflare Web Analytics -->
+  <footer class="footer wrap">
+    <p>Signal Over Noise — Follow the Signal. Every claim graded: CONFIRMED / CORRECTED / CONTRADICTED / UNVERIFIED / MISLEADING. HOLDs stay visible.</p>
+    <p class="muted">Last updated: Fri Sep 11, 2026 · 4:45 PM CT · Evening edition · Next: tomorrow morning</p>
+  </footer>
 </body>
 </html>

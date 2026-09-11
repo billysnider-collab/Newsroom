@@ -1,15 +1,7 @@
-# The Newsroom
+# Signal Over Noise — Newsroom site
 
-Public site for Billy’s national news intelligence paper.
+Living news page, updated twice daily (morning + evening, America/Chicago).
+Every claim graded: CONFIRMED / CORRECTED / CONTRADICTED / UNVERIFIED / MISLEADING.
+HOLDs stay visible. No hype.
 
-**Live path:** GitHub Pages from `main` (root).
-
-**Pipeline:** Verification clears → Editor locks → Web Builder ships.
-
-## Structure
-- `index.html` — front page
-- `national/` · `quantum/` · `sports/` — section pages
-- `about/` — standards
-- `css/style.css` — shared design
-
-Placeholders mark “awaiting locked copy.” Do not invent facts.
+Brand: amber signal wave on dark navy. Follow the Signal.

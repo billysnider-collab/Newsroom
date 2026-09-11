@@ -3,295 +3,54 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Polymarket · Current edges + fun · Daily Dossier</title>
-  <!-- pack aae3e47 live-only -->
-  <meta name="description" content="Polymarket in plain English — sharp situations + crowd-pleasers. Hints, not tips. No trading advice." />
-  <link rel="stylesheet" href="../css/style.css?v=ddbrand-20260907" />
+  <title>Polymarket — Signal Over Noise</title>
+  <meta name="description" content="Signal Over Noise — news, briefed like intel." />
+  <link rel="stylesheet" href="../css/style.css" />
   <link rel="icon" type="image/png" href="../img/favicon-32.png" sizes="32x32" />
   <link rel="apple-touch-icon" href="../img/apple-touch-icon.png" />
-  <meta property="og:site_name" content="Daily Dossier" />
-  <meta property="og:image" content="https://billysnider-collab.github.io/Newsroom/img/og-daily-dossier.png" />
+  <meta property="og:site_name" content="Signal Over Noise" />
+  <meta property="og:image" content="https://billysnider-collab.github.io/Newsroom/img/og-signal.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@DailyDossierHQ" />
-  <style>
-    .badge { display:inline-block; font-size:0.68rem; font-weight:700; padding:0.12rem 0.4rem; border-radius:999px; margin-right:0.25rem; vertical-align:middle; }
-    .badge.fact { background:#152019; color:#6f9f7a; }
-    .badge.infer { background:#221a1a; color:#e0c8c8; }
-    .badge.hold { background:#2a1515; color:#a11; }
-    .card-block { background:var(--panel-2); border:1px solid var(--line); border-radius:2px; padding:1.1rem 1.2rem; margin:1rem 0; max-width:42rem; }
-    .card-block.lead { border-left:3px solid var(--priority); }
-    .card-block h2 { margin:0.2rem 0 0.65rem; font-size:1.15rem; line-height:1.3; }
-    .card-block h3 { margin:0.9rem 0 0.35rem; font-size:0.95rem; }
-    .card-block ul { margin:0.25rem 0; padding-left:1.15rem; line-height:1.5; }
-    .card-block li { margin:0.35rem 0; }
-    .mono { font-size:0.75rem; color:var(--muted); word-break:break-all; }
-    .glossary { background:var(--panel); border:1px solid var(--line); border-radius:2px; padding:0.85rem 1rem; margin:0.75rem 0 1.25rem; max-width:42rem; }
-    .glossary dt { font-weight:700; margin-top:0.5rem; }
-    .glossary dd { margin:0.15rem 0 0.35rem; color:var(--muted); }
-    .lane-head {
-      display:flex; align-items:baseline; gap:0.75rem; flex-wrap:wrap;
-      border-bottom:1px solid var(--line-strong); padding-bottom:0.45rem; margin:1.5rem 0 0.85rem;
-    }
-    .lane-head .mark { font-size:0.72rem; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; }
-    .lane-head .mark::before {
-      content:""; display:inline-block; width:0.45rem; height:0.45rem;
-      background:var(--priority); border-radius:50%; margin-right:0.45rem; vertical-align:0.05rem;
-    }
-    .lane-head .when { color:var(--muted); font-size:0.85rem; }
-    .empty { color:var(--muted); font-size:0.92rem; max-width:42rem; }
-    details.fold { background:var(--panel); border:1px solid var(--line); border-radius:2px; padding:0.65rem 0.95rem; margin:1rem 0; max-width:42rem; }
-    details.fold summary { cursor:pointer; font-weight:750; font-size:0.82rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--muted); list-style:none; }
-    details.fold summary::-webkit-details-marker { display:none; }
-    .hint {
-      margin:0.55rem 0 0.35rem; padding:0.55rem 0.75rem;
-      border-left:2px solid var(--muted); color:var(--cream, #e8e4d9);
-      font-size:0.95rem; line-height:1.45; max-width:40rem;
-      background:rgba(232,228,217,0.04);
-    }
-    .hint strong { letter-spacing:0.04em; font-size:0.78rem; text-transform:uppercase; color:var(--muted); display:block; margin-bottom:0.2rem; }
-    .price-plain { font-size:1.05rem; margin:0.35rem 0 0.55rem; }
-    .price-plain .num { font-weight:750; }
-    .fine { font-size:0.78rem; color:var(--muted); }
-  </style>
+  <meta name="twitter:image" content="https://billysnider-collab.github.io/Newsroom/img/og-signal.png" />
 </head>
 <body>
   <header class="top">
     <div class="wrap">
       <div class="brand">
-        <img class="dd-mark" src="../img/dd-mark-80.png" width="80" height="80" alt="Daily Dossier" />
+        <img class="mark" src="../img/signal-mark-80.png" width="80" height="80" alt="Signal Over Noise" />
         <div class="brand-text">
-          <h1>Daily Dossier</h1>
-          <p class="sub">Polymarket · evening UPDATE · Israel ~95¢ · Mon Sep 7, 2026</p>
+          <h1>Signal Over Noise</h1>
+          <p class="sub">News, briefed like intel · Friday, September 11, 2026 — Evening edition</p>
         </div>
       </div>
     </div>
   </header>
-  <nav class="nav wrap" aria-label="Primary">
-    <a href="../index.html">Today</a>
-    <a href="../briefs/index.html">Briefs</a>
-    <a href="../national/index.html">National</a>
-    <a href="../quantum/index.html">Quantum</a>
-    <a href="../finance/index.html">Finance</a>
-    <a href="index.html" aria-current="page">Polymarket</a>
-    <a href="../sports/index.html">Sports</a>
-    <a href="../entertainment/index.html">Entertainment</a>
-    <a href="../lift/index.html">Lift</a>
-    <a href="../archive/index.html">Archive</a>
-  </nav>
+<nav class="nav wrap" aria-label="Primary">
+<a href="../index.html">Today</a>
+<a href="../briefs/index.html">Briefs</a>
+<a href="../national/index.html">National</a>
+<a href="../quantum/index.html">Quantum</a>
+<a href="../finance/index.html">Finance</a>
+<a href="../polymarket/index.html" aria-current="page">Polymarket</a>
+<a href="../sports/index.html">Sports</a>
+<a href="../entertainment/index.html">Entertainment</a>
+<a href="../lift/index.html">Lift</a>
+<a href="../about/index.html">About</a>
+</nav>
   <main class="wrap">
-    <div class="banner"><strong>Polymarket</strong> · What’s moving (and what’s weird) · <strong>No trading advice</strong> — just what the board is saying</div>
-    <p class="muted" style="margin:0.35rem 0 0.85rem">
-      <a href="../index.html">← Today</a> ·
-      <a href="#favored">Sharp situations</a> ·
-      <a href="#funny">Crowd-pleasers</a> ·
-      <a href="#how">Coming to terms ↓</a>
-    </p>
-
-    <p style="max-width:42rem;line-height:1.5;margin:0 0 1rem">
-      Think of these like sports lines for news. A price near <strong>$0.50</strong> means the crowd is roughly split.
-      Near <strong>$0.80</strong> means “most people think yes.” Near <strong>$0.05</strong> means “almost nobody thinks yes.”
-      We flag moves and weird books — <em>not</em> what you should buy.
-    </p>
-
-    <details class="glossary" id="how">
-      <summary style="cursor:pointer;font-weight:750;letter-spacing:0.04em;text-transform:uppercase;font-size:0.82rem;color:var(--muted)">Coming to terms ↓</summary>
-      <dl>
-        <dt>Price (mid)</dt>
-        <dd>Rough “crowd odds” for Yes, in dollars from $0 to $1. $0.60 ≈ “about 60% of the crowd’s money is on Yes.” Not a crystal ball.</dd>
-        <dt>Spread (bid vs ask)</dt>
-        <dd>Gap between what buyers will pay and sellers will take. Tight (1¢) = clean read. Wide (10¢+) = the number is mushy — don’t trust one figure.</dd>
-        <dt>Move today (d1)</dt>
-        <dd>How much that mid jumped or dropped in about a day. Big move = something got people’s attention.</dd>
-        <dt>Liquidity</dt>
-        <dd>How much money is parked near the price. High = harder to shove around. Low = one loud trader can fake a “signal.”</dd>
-        <dt>Resolution text</dt>
-        <dd>The fine print for what actually counts as Yes. Misreading it is how people invent fake drama.</dd>
-        <dt>FACT vs HOLD</dt>
-        <dd><strong>FACT</strong> = we measured it. <strong>HOLD</strong> = we won’t pretend we know <em>why</em>, or that the number is a forecast.</dd>
-        <dt>Hint</dt>
-        <dd>A plain-English “notice this” — still not a bet tip.</dd>
-      </dl>
-    </details>
-
-    <section id="favored">
-      <div class="lane-head">
-        <span class="mark">Favored / edges</span>
-        <span class="when">Sharp situations — big news, contested books, real money</span>
-      </div>
-
-      <article class="card-block lead" id="israel-airspace-2026-09-07">
-        <div class="tag">LIVE · Israel airspace · evening UPDATE · captured ~5:10 PM CT</div>
-        <h2>Israel closes airspace by Sep 30? — whipped back near the ceiling</h2>
-        <p class="price-plain">Crowd on Yes: about <span class="num">95–96¢</span> — book tight again (1¢ spread).</p>
-        <p>Whip-saw day: sold hard into the mid-50s / messy 17¢ spread this afternoon, then ripped back toward the top. Still open through early Oct.</p>
-        <div class="hint"><strong>Hint</strong>Huge move both ways in one day = volatile signal, not a settled forecast. Until a real major-closure order shows up, don’t treat 95¢ like destiny.</div>
-        <h3><span class="badge fact">FACT</span></h3>
-        <ul>
-          <li>Venue: Polymarket International</li>
-          <li>Contract: <em>Israel closes its airspace by September 30?</em></li>
-          <li class="mono">conditionId 0xcfbc2e5fbabb9e8a03bf234367244d4c97eaaf3ac33e2ba001541ee3e0e62416</li>
-          <li>Captured: 2026-09-07T22:10:14Z · closed=false · acceptingOrders</li>
-          <li>CLOB mid YES <strong>~$0.955</strong> · bid/ask $0.95/$0.96 (1¢) · Gamma YES 0.955</li>
-          <li>oneHourPriceChange <strong>+0.39</strong> · oneDayPriceChange <strong>+0.23</strong></li>
-          <li>Prior desk: ~$0.585 afternoon → ~$0.565 Gamma with stressed 17¢ spread → <strong>now ~$0.955</strong></li>
-          <li>vol24hr ~$695k · liq ~$186k · endDate 2026-10-01T03:59:00Z</li>
-          <li>Yes only on a <strong>major</strong> civilian airspace closure — limited delays don’t count</li>
-        </ul>
-        <h3><span class="badge hold">HOLD</span></h3>
-        <ul>
-          <li>Material priced delta — causation <strong>not established</strong> (no timed CAA/NOTAM in this pull).</li>
-          <li>Do not write “market says 95%.” No trading advice.</li>
-        </ul>
-      </article>
-
-      <article class="card-block" id="fed-sep-2026">
-        <div class="tag">LIVE · Fed · September meeting</div>
-        <h2>Will the Fed hold rates — or cut 0.25%?</h2>
-        <p class="price-plain">Basically a <span class="num">coin flip</span>: hold ~<strong>47.5¢</strong> · cut 25 bps ~<strong>51.5¢</strong>.</p>
-        <p>Two thick books, penny-tight spreads. Tons of money on both sides. The crowd is arguing — not stampeding.</p>
-        <div class="hint"><strong>Hint</strong>When both sides have deep books and the prices sit near 50/50, the “story” is the disagreement itself. Wait for the Sep FOMC if you care about the outcome — not for a tip from us.</div>
-        <h3><span class="badge fact">FACT</span></h3>
-        <ul>
-          <li>Resolves on the upper bound of the fed funds target range after the September meeting</li>
-          <li>No change: ~$0.475 (bid/ask 47–48¢) · ~$670k liquidity · ends Sep 16</li>
-          <li>+25 bps: ~$0.515 (bid/ask 51–52¢) · ~$637k liquidity · ends Sep 16</li>
-          <li class="fine mono">captured 2026-09-07T21:30:46Z</li>
-        </ul>
-        <h3><span class="badge hold">HOLD</span></h3>
-        <ul>
-          <li>Interesting structure, not a forecast. No trading advice.</li>
-        </ul>
-      </article>
-
-      <article class="card-block" id="israel-iran-ceasefire-oct31">
-        <div class="tag">LIVE · Israel × Iran · through Oct 31</div>
-        <h2>Does the ceasefire still hold through Halloween?</h2>
-        <p class="price-plain">Crowd on Yes: about <span class="num">76–77¢</span> (up ~7¢ on the day).</p>
-        <p>This replaced the old “ceasefire by Sep 4” card, which already expired. New question: is it <em>still</em> in effect through Oct 31?</p>
-        <div class="hint"><strong>Hint</strong>High Yes price = crowd mostly expects the pause to last into fall. Watch actual fighting / official statements — the market is a mood check, not a NOTAM.</div>
-        <h3><span class="badge fact">FACT</span></h3>
-        <ul>
-          <li>Mid ~$0.765 · tight 1¢ spread · ~$82k liquidity</li>
-          <li>Ends 2026-10-31 · still open</li>
-          <li>Breaks to No if hostilities resume per the contract’s definition (IRST calendar)</li>
-          <li class="fine mono">cid 0xc3d57087…b44d · captured 2026-09-07T21:30:46Z</li>
-        </ul>
-        <h3><span class="badge hold">HOLD</span></h3>
-        <ul>
-          <li>Mood / structure only. No trading advice.</li>
-        </ul>
-      </article>
-
-      <article class="card-block" id="lula-brazil-2026">
-        <div class="tag">LIVE · Brazil 2026</div>
-        <h2>Does Lula win Brazil’s presidential race?</h2>
-        <p class="price-plain">Crowd on Yes: about <span class="num">58–59¢</span> — favored, not a lock.</p>
-        <p>Deep book (~$326k parked). Includes a possible runoff. Ends early October.</p>
-        <div class="hint"><strong>Hint</strong>Think “slight favorite on the board,” not destiny. Election markets swing with polls and debates — this is a snapshot.</div>
-        <h3><span class="badge fact">FACT</span></h3>
-        <ul>
-          <li>Mid ~$0.585 · bid/ask 58–59¢ · ~$326k liquidity</li>
-          <li>Ends 2026-10-04 · still open</li>
-          <li>Yes if the listed candidate wins, including any second round</li>
-          <li class="fine mono">cid 0xdf8e2dc5…d4a8 · captured 2026-09-07T21:30:46Z</li>
-        </ul>
-        <h3><span class="badge hold">HOLD</span></h3>
-        <ul>
-          <li>Snapshot only. No trading advice.</li>
-        </ul>
-      </article>
-
-      <p class="empty">More sharp situations land here when the desk files them.</p>
-    </section>
-
-    <section id="funny">
-      <div class="lane-head">
-        <span class="mark">Funny / unique</span>
-        <span class="when">Crowd-pleasers — weird, viral, delightful (still open)</span>
-      </div>
-
-      <article class="card-block" id="elon-tweets-sep1-8-2026">
-        <div class="tag">FUN · Elon tweet derby · late tick</div>
-        <h2>Will Elon post 180–199 times this week (Sep 1–8)?</h2>
-        <p class="price-plain">Hottest bracket slid to about <span class="num">~25¢</span> late (was ~40¢ earlier) — window almost done.</p>
-        <p>Only main posts / quotes / reposts count. Replies don’t. Window is Eastern Time. Book is thinner than the news cards above — treat as entertainment.</p>
-        <div class="hint"><strong>Hint</strong>Fun scoreboard energy near the finish line — not a deep signal.</div>
-        <h3><span class="badge fact">FACT</span></h3>
-        <ul>
-          <li>Mid <strong>~$0.2515</strong> · bid/ask ~0.248/0.255 · liq ~$12k thin</li>
-          <li>Ends 2026-09-08T16:00:00Z · still open</li>
-          <li class="fine mono">cid 0xc405ac9f…2c59 · captured 2026-09-08T01:57:03Z</li>
-        </ul>
-        <h3><span class="badge hold">HOLD</span></h3>
-        <ul>
-          <li>Thin fun book. Count rules live in the fine print. No trading advice.</li>
-        </ul>
-      </article>
-
-      <article class="card-block" id="aliens-confirm-before-2027">
-        <div class="tag">FUN · Aliens</div>
-        <h2>Will the US “confirm” aliens exist before 2027?</h2>
-        <p class="price-plain">Crowd on Yes: about <span class="num">3.7¢</span> — longshot — but there’s a ton of money parked (~$800k+).</p>
-        <p>The trap word is <strong>confirm</strong>. It has to be a definitive statement from POTUS, Cabinet, Joint Chiefs, or a federal agency — not a podcast guest or a leak.</p>
-        <div class="hint"><strong>Hint</strong>Cheap Yes tickets look sexy on longshots; the fine print is where these usually die. Read “confirm,” not “rumor.”</div>
-        <h3><span class="badge fact">FACT</span></h3>
-        <ul>
-          <li>Mid ~$0.0375 · tight spread · ends Jan 1, 2027</li>
-          <li class="fine mono">cid 0x747dc809…1f75 · captured 2026-09-07T21:30:46Z</li>
-        </ul>
-        <h3><span class="badge hold">HOLD</span></h3>
-        <ul>
-          <li>Longshot + language landmine. Extremes warp intuition. No trading advice.</li>
-        </ul>
-      </article>
-
-      <article class="card-block" id="openai-agi-announce-before-2027">
-        <div class="tag">FUN · OpenAI · AGI announce</div>
-        <h2>Does OpenAI announce it has AGI before 2027?</h2>
-        <p class="price-plain">Crowd on Yes: about <span class="num">22–23¢</span> (up a bit today).</p>
-        <p>This is about what OpenAI <em>says</em> — and how the contract defines AGI — not whether AGI “is real” in some cosmic sense.</p>
-        <div class="hint"><strong>Hint</strong>You’re betting on a press release / blog post meeting lawyerly wording — not on sci-fi becoming true overnight.</div>
-        <h3><span class="badge fact">FACT</span></h3>
-        <ul>
-          <li>Mid ~$0.225 · ~$24k liquidity · ends Dec 31, 2026</li>
-          <li class="fine mono">cid 0x454005ba…0d25 · captured 2026-09-07T21:30:46Z</li>
-        </ul>
-        <h3><span class="badge hold">HOLD</span></h3>
-        <ul>
-          <li>Announcement contract, not metaphysics. No trading advice.</li>
-        </ul>
-      </article>
-
-      <article class="card-block" id="openai-best-model-sep-2026">
-        <div class="tag">FUN · OpenAI · arena ranking</div>
-        <h2>Does OpenAI have the #1 AI model at end of September?</h2>
-        <p class="price-plain">Crowd on Yes: about <span class="num">10–11¢</span> — crowd mostly doubts it — down a bit today.</p>
-        <p>Scoreboard is arena.ai’s Text Arena Overall rank, checked Sep 30 at noon Eastern. Not vibes — a specific leaderboard snapshot.</p>
-        <div class="hint"><strong>Hint</strong>Low Yes price = most money thinks someone else sits on top that day. Fun tech scoreboard; still not advice.</div>
-        <h3><span class="badge fact">FACT</span></h3>
-        <ul>
-          <li>Mid ~$0.105 · ~$39k liquidity · ends ~Oct 1</li>
-          <li class="fine mono">cid 0xbce02d9a…142e0 · captured 2026-09-07T21:30:46Z</li>
-        </ul>
-        <h3><span class="badge hold">HOLD</span></h3>
-        <ul>
-          <li>Ranking snapshot contract. No trading advice.</li>
-        </ul>
-      </article>
-
-      <p class="empty">More weird / viral books land here when the desk files them.</p>
-    </section>
-    <details class="fold">
-      <summary>Quiet · expired / resolved (not on this board)</summary>
-      <ul style="margin:0.5rem 0 0;padding-left:1.2rem;color:var(--muted);font-size:0.9rem;line-height:1.45">
-        <li>US×Iran “ceasefire by Sep 4” — date already passed → off the face (replaced by the Oct 31 “still holding?” card)</li>
-        <li>Sachsen-Anhalt AfD race — resolved / oracle catching up → off the face</li>
-      </ul>
-    </details>
-
-    <p class="muted" style="font-size:0.82rem;margin-top:1.25rem">Desk: Polymarket Analyst · own section · current only · not homepage lead · no trading advice</p>
+<div class="banner"><strong>Polymarket</strong> — its own desk. Favored edges + funny shelf.</div>
+<div class="story">
+<p class="kicker">Desk status · Fri Sep 11</p>
+<h3>On pause — back with fresh numbers</h3>
+<ul>
+<li>The prediction-market desk is being rebuilt under the new verification rules.</li>
+<li>It returns when every price shown is current and sourced — no stale boards.</li>
+</ul>
+</div>
   </main>
-  <footer class="footer wrap">Daily Dossier · <a class="x-handle" href="https://x.com/DailyDossierHQ">@DailyDossierHQ</a> · <a href="https://github.com/billysnider-collab/Newsroom">Newsroom</a></footer>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "de79f2c03d32458e811a918f0cfe1890"}'></script>
+  <footer class="footer wrap">
+    <p>Signal Over Noise — Follow the Signal. Every claim graded: CONFIRMED / CORRECTED / CONTRADICTED / UNVERIFIED / MISLEADING. HOLDs stay visible.</p>
+    <p class="muted">Last updated: Fri Sep 11, 2026 · 4:45 PM CT · Evening edition · Next: tomorrow morning</p>
+  </footer>
 </body>
 </html>

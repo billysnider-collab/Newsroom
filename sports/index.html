@@ -3,297 +3,86 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sports + Fantasy — NOW / LATER · Daily Dossier</title>
-  <meta name="description" content="Sports board: what’s happening NOW vs LATER. Odds + Fantasy/DFS." />
-  <link rel="stylesheet" href="../css/style.css?v=ddbrand-20260907" />
-<link rel="icon" type="image/png" href="../img/favicon-32.png" sizes="32x32" />
+  <title>Sports — Signal Over Noise</title>
+  <meta name="description" content="Signal Over Noise — news, briefed like intel." />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" type="image/png" href="../img/favicon-32.png" sizes="32x32" />
   <link rel="apple-touch-icon" href="../img/apple-touch-icon.png" />
-  <meta property="og:site_name" content="Daily Dossier" />
-  <meta property="og:image" content="https://billysnider-collab.github.io/Newsroom/img/og-daily-dossier.png" />
+  <meta property="og:site_name" content="Signal Over Noise" />
+  <meta property="og:image" content="https://billysnider-collab.github.io/Newsroom/img/og-signal.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@DailyDossierHQ" />
-  <meta name="twitter:image" content="https://billysnider-collab.github.io/Newsroom/img/og-daily-dossier.png" />
-
-  <style>
-    .lane { margin: 1.25rem 0 1.75rem; }
-    .lane-head {
-      display: flex; align-items: baseline; gap: 0.75rem; flex-wrap: wrap;
-      border-bottom: 1px solid var(--line-strong);
-      padding-bottom: 0.45rem; margin-bottom: 0.9rem;
-    }
-    .lane-head .mark {
-      font-size: 0.72rem; font-weight: 800; letter-spacing: 0.18em;
-      text-transform: uppercase; color: var(--text);
-    }
-    .lane-head .mark::before {
-      content: ""; display: inline-block; width: 0.45rem; height: 0.45rem;
-      background: var(--priority); border-radius: 50%; margin-right: 0.45rem; vertical-align: 0.05rem;
-    }
-    .lane-head .when { color: var(--muted); font-size: 0.85rem; }
-    .kick {
-      background: var(--panel-2); border: 1px solid var(--line); border-left: 3px solid var(--priority);
-      border-radius: 2px; padding: 0.9rem 1.05rem; margin: 0 0 0.75rem;
-    }
-    .kick h3 { margin: 0 0 0.25rem; font-size: 1.05rem; }
-    .kick .meta { color: var(--muted); font-size: 0.88rem; margin: 0; }
-    .act-now {
-      background: var(--panel-2); border: 1px solid var(--line); border-radius: 2px;
-      padding: 0.95rem 1.1rem; margin: 0.85rem 0;
-    }
-    .act-now h3 { margin: 0 0 0.55rem; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
-    .act-now ol { margin: 0; padding-left: 1.2rem; }
-    .act-now li { margin: 0.45rem 0; line-height: 1.45; }
-    .subnav { display:flex; flex-wrap:wrap; gap:0.5rem 1rem; margin:0.5rem 0 0.25rem; font-size:0.82rem; font-weight:700; letter-spacing:0.04em; text-transform:uppercase; }
-    .subnav a { color: var(--muted); text-decoration: none; }
-    .subnav a:hover { color: var(--text); }
-    details.fold {
-      background: var(--panel); border: 1px solid var(--line); border-radius: 2px;
-      padding: 0.65rem 0.95rem; margin: 0.75rem 0;
-    }
-    details.fold summary {
-      cursor: pointer; font-weight: 750; font-size: 0.82rem; letter-spacing: 0.06em;
-      text-transform: uppercase; list-style: none; color: var(--muted);
-    }
-    details.fold summary::-webkit-details-marker { display: none; }
-    details.fold summary::before { content: "▸ "; color: var(--priority); }
-    details.fold[open] summary::before { content: "▾ "; }
-    details.fold[open] summary { color: var(--text); margin-bottom: 0.65rem; }
-    .quiet { margin-top: 2rem; padding-top: 0.5rem; border-top: 1px solid var(--line); }
-    .terms dt { font-weight: 700; margin-top: 0.55rem; }
-    .terms dd { margin: 0.15rem 0 0.35rem; color: var(--muted); }
-  </style>
+  <meta name="twitter:image" content="https://billysnider-collab.github.io/Newsroom/img/og-signal.png" />
 </head>
 <body>
   <header class="top">
     <div class="wrap">
       <div class="brand">
-        <img class="dd-mark" src="../img/dd-mark-80.png" width="80" height="80" alt="Daily Dossier" />
+        <img class="mark" src="../img/signal-mark-80.png" width="80" height="80" alt="Signal Over Noise" />
         <div class="brand-text">
-          <h1>Daily Dossier</h1>
-          <p class="sub">Sports + Fantasy · Mon Sep 7, 2026 · CT</p>
+          <h1>Signal Over Noise</h1>
+          <p class="sub">News, briefed like intel · Friday, September 11, 2026 — Evening edition</p>
         </div>
       </div>
     </div>
   </header>
-  <nav class="nav wrap" aria-label="Primary">
-    <a href="../index.html">Today</a>
-    <a href="../briefs/index.html">Briefs</a>
-    <a href="../national/index.html">National</a>
-    <a href="../quantum/index.html">Quantum</a>
-    <a href="../finance/index.html">Finance</a>
-    <a href="../polymarket/index.html">Polymarket</a>
-    <a href="../sports/index.html" aria-current="page">Sports</a>
-    <a href="../entertainment/index.html">Entertainment</a>
-    <a href="../lift/index.html">Lift</a>
-    <a href="../archive/index.html">Archive</a>
-  </nav>
+<nav class="nav wrap" aria-label="Primary">
+<a href="../index.html">Today</a>
+<a href="../briefs/index.html">Briefs</a>
+<a href="../national/index.html">National</a>
+<a href="../quantum/index.html">Quantum</a>
+<a href="../finance/index.html">Finance</a>
+<a href="../polymarket/index.html">Polymarket</a>
+<a href="../sports/index.html" aria-current="page">Sports</a>
+<a href="../entertainment/index.html">Entertainment</a>
+<a href="../lift/index.html">Lift</a>
+<a href="../about/index.html">About</a>
+</nav>
   <main class="wrap">
-    <div class="banner"><strong>Sports + Fantasy</strong> · 8pm delta ~8:15 CT · TOR@ATH + NE@SEA NOW · NO EDGE · not a Soft Publish dump</div>
-    <p class="subnav">
-      <a href="#now">Now</a>
-      <a href="#fantasy">Fantasy Football</a>
-      <a href="#later">Later</a>
-      <a href="#quiet">Quiet shelves</a>
-    </p>
-
-    <!-- ========== NOW ========== -->
-    <section class="lane" id="now">
-      <div class="lane-head">
-        <span class="mark">Now</span>
-        <span class="when">8:56 PM CT stamp · TOR still pre-pitch · odds only · ≤3</span>
-      </div>
-
-      <div class="kick" style="border-left-color: var(--priority)">
-        <h3>TOR @ ATH · MLB · tonight lead</h3>
-        <p class="meta">~<strong>9:05 PM CT</strong> · Cease vs Lopez · Sutter Health Park · 8pm delta ~8:15 CT · <strong>NO EDGE</strong></p>
-        <div class="board" style="margin:0.65rem 0 0.5rem">
-          <table>
-            <thead><tr><th>Book</th><th>ML</th><th>RL</th><th>Total</th></tr></thead>
-            <tbody>
-              <tr><td>ESPN</td><td>TOR <strong>−208</strong></td><td>—</td><td>—</td></tr>
-              <tr><td>FanDuel</td><td>TOR <strong>−196</strong> / ATH <strong>+164</strong></td><td>TOR −1.5 (−111) / ATH +1.5 (−108)</td><td><strong>8.5</strong> (O −102 / U −120)</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p style="margin:0.45rem 0 0;line-height:1.45;font-size:0.95rem"><strong>Take:</strong> Late West MLB — Cease vs last-place ATH. Lines-only. <em>Not a pick.</em></p>
-      </div>
-
-      <div class="kick">
-        <h3>NE @ SEA · NFL · Opening Night</h3>
-        <p class="meta"><strong>Wed Sep 9 · 7:20 PM CT</strong> · NBC · Lumen Field · promoted from LATER (~48h) · <strong>NO EDGE</strong></p>
-        <div class="board" style="margin:0.65rem 0 0.5rem">
-          <table>
-            <thead><tr><th>Market</th><th>Line</th></tr></thead>
-            <tbody>
-              <tr><td>Spread</td><td>SEA <strong>−3.5</strong></td></tr>
-              <tr><td>Total</td><td><strong>44.5</strong> (some 45.5)</td></tr>
-              <tr><td>ML shop</td><td>SEA <strong>−175 to −201</strong> / NE <strong>+145 to +167</strong></td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p style="margin:0.45rem 0 0;line-height:1.45;font-size:0.95rem"><strong>Take:</strong> Super Bowl rematch / Opening Night. Lines-only. Fantasy monitors under <a href="#fantasy">Fantasy</a>.</p>
-      </div>
-
-      <div class="act-now" id="edges" style="border-left:3px solid var(--priority)">
-        <h3>Edges · BettingChief · ~8:56 PM CT · no calibrated EDGE</h3>
-        <p style="margin:0 0 0.55rem;line-height:1.45"><strong>NO EDGE</strong> TOR@ATH · NE@SEA · residual cards — lines-only. No picks.</p>
-        <p style="margin:0 0 0.25rem;font-size:0.78rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)">Story strip · odds off</p>
-        <ul style="margin:0;padding-left:1.2rem;line-height:1.45">
-          <li><strong>SMU@FSU</strong> — past kick · prior shop SMU −2.5/−3 · ML ~−142/−155 · total 52.5–54.5</li>
-          <li><strong>STL@SF</strong> — live mid-4th SF 2–0 NBC — odds pulled</li>
-          <li><strong>CIN@LAD</strong> — mid-1st — odds pulled</li>
-        </ul>
-        <p class="muted" style="font-size:0.82rem;margin:0.55rem 0 0"><strong>PULL:</strong> all CFL quiet shelf · afternoon MLB finals folded</p>
-      </div>
-
-<div class="kick" id="fantasy" style="border-left-color: var(--priority)">
-        <h3>Fantasy Football · evening</h3>
-        <p class="meta">NOW = Wed 9/9 NE@SEA (~48h) · max 3 · Mon Sep 7 CT · <strong>no flip</strong> on Henderson (still no practice)</p>
-        <div class="board" style="margin:0.65rem 0 0.5rem">
-          <table>
-            <thead><tr><th>Call</th><th>Player</th><th>Why</th></tr></thead>
-            <tbody>
-              <tr><td class="pos">START</td><td><strong>Rhamondre Stevenson</strong></td><td>Henderson (ankle) still no practice since Aug 24; Mon still not cleared (Vrabel “we’ll see how he feels”); even if active Wed, full workload unlikely after ~2 weeks missed. Reiss: PS elevation (Larison/Haskins) likely behind Kiner.</td></tr>
-              <tr><td class="pos">START</td><td><strong>Price (SEA)</strong> as flex/RB2</td><td>Charbonnet PUP; Holani still eats GL/3rd-down risk.</td></tr>
-              <tr><td>FADE</td><td>TreVeyon Henderson</td><td>Until real practice + Wed inactive list — don’t limp-start chalk.</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p style="margin:0.45rem 0 0;line-height:1.45;font-size:0.95rem"><strong>Board:</strong> Stevenson W1 volume still the clear NOW edge. Monitors under <a href="#later">LATER</a>.</p>
-      </div>
-
-
-      <details class="fold" id="odds">
-        <summary>Quiet / folded (not NOW face)</summary>
-        <div class="board" style="margin-top:0.55rem">
-          <table>
-            <thead><tr><th>Game</th><th>Note</th></tr></thead>
-            <tbody>
-              <tr><td>SMU@FSU / STL@SF / CIN@LAD</td><td>Odds off — past kick or live</td></tr>
-              <tr><td>All CFL</td><td><strong>quiet shelf</strong></td></tr>
-              <tr><td>Afternoon MLB finals</td><td>Folded</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="muted" style="font-size:0.82rem;margin:0.5rem 0 0">Edges: none calibrated. No picks.</p>
-      </details>
-    </section>
-
-    <!-- ========== LATER ========== -->
-    <section class="lane" id="later">
-      <div class="lane-head">
-        <span class="mark">Later</span>
-        <span class="when">This week after NOW · not competing with next kick</span>
-      </div>
-
-      <div class="cards">
-        <article class="card">
-          <div class="tag">LATER · Thu 9/10 · SF @ LAR Melbourne</div>
-          <h3>Travel slate · monitors</h3>
-          <ul>
-            <li>Kittle practiced Melbourne — trending active; snap-count risk</li>
-            <li>CMC early side work = management, not sit</li>
-            <li>Bosa caution only</li>
-          </ul>
-        </article>
-        <article class="card">
-          <div class="tag">LATER · Thu–Sun + monitors</div>
-          <h3>Not competing with Wed kick</h3>
-          <ul>
-            <li><strong>Jeanty:</strong> still no full practice confirmation; Kubiak optimistic Sun vs MIA → Washington contingency. Next data: Wed–Fri LV practice</li>
-            <li><strong>Etienne:</strong> Kamara MCL ≥~1 month unchanged — ride early weeks</li>
-            <li><strong>Jacobs:</strong> still Exempt; court Thu 9/10 ≠ auto-return — don’t crown Lloyd</li>
-          </ul>
-        </article>
-        <article class="card">
-          <div class="tag">LATER · rest of Week 1</div>
-          <h3>NE@SEA promoted to NOW · Mon 9/14 DEN@KC watch</h3>
-          <ul>
-            <li>NE@SEA is on the <a href="#now">NOW</a> board (Opening Night)</li>
-            <li>Mon 9/14 DEN@KC — KC −2.5/−3 · ~43.5 · LATER only</li>
-            <li>Tue MLB = next-day monitor — don’t invent full board</li>
-          </ul>
-        </article>
-      </div>
-
-      <h2 class="sec" style="margin-top:1.25rem">Monitors · next data only</h2>
-      <div class="board">
-        <table>
-          <thead><tr><th>Player</th><th>Issue</th><th>Next data</th><th>If this → do that</th></tr></thead>
-          <tbody>
-            <tr><td>Henderson</td><td>Ankle · still no practice since Aug 24 (Mon not cleared)</td><td>Tue/Wed practice + Wed inactive list</td><td>OUT → smash Stevenson; Active+limited → still start Stevenson, FADE Henderson</td></tr>
-            <tr><td>Jeanty</td><td>Ankle · not cleared</td><td>Wed–Fri LV practice</td><td>Out/limited → Washington; Full → handcuff only</td></tr>
-            <tr><td>Kittle</td><td>Achilles recovery</td><td>Thu inactive / snaps</td><td>Active → TE1; Inactive → Tonges dart</td></tr>
-            <tr><td>CMC</td><td>Workload managed</td><td>Tue–Wed Aus practice</td><td>Start unless true DNP streak + Shanahan red flag</td></tr>
-            <tr><td>Jacobs</td><td>Exempt list</td><td>Sep 10 court</td><td>Stays Exempt → Lloyd/Brooks shares</td></tr>
-            <tr><td>Okada</td><td>Hamstring DNP</td><td>Wed game status</td><td>Not game-status yet — NE pass-game note only</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- ========== QUIET ========== -->
-    <section class="quiet" id="quiet">
-      <div class="lane-head">
-        <span class="mark">Quiet shelves</span>
-        <span class="when">Reference — not competing with NOW</span>
-      </div>
-
-      <details class="fold">
-        <summary>Prior-call scoreboard</summary>
-        <div class="board">
-          <table>
-            <thead><tr><th>Call</th><th>Result</th><th>Note</th></tr></thead>
-            <tbody>
-              <tr><td>Etienne W1–2 near-workhorse</td><td class="pos">HIT</td><td>Kamara MCL ≥1 month; still tracks ~RB17</td></tr>
-              <tr><td>Henderson DNP → Stevenson smash</td><td class="pos">HIT</td><td>Process holds — Mon still DNP / not cleared; Showdown FADE until practice + inactive list</td></tr>
-              <tr><td>Lloyd overpriced as bellcow</td><td>TOO EARLY</td><td>Committee thesis intact; no snaps yet</td></tr>
-              <tr><td>Price fair flex (~ADP 65)</td><td>MARKET MOVE</td><td>Now ~RB24; Holani caps pure RB2 chase</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </details>
-
-      <details class="fold">
-        <summary>Buy / sell / dominoes (full list)</summary>
-        <div class="cards" style="margin-top:0.5rem">
-          <article class="card"><div class="tag">START</div><h3>Stevenson W1 · Price flex · Etienne early · Kittle if active Thu</h3><p class="muted" style="margin:0">Tonges only if Kittle out.</p></article>
-          <article class="card"><div class="tag">FADE</div><h3>Henderson W1 · Lloyd as bellcow</h3><p class="muted" style="margin:0">No flip Mon — Henderson still no practice.</p></article>
-          <article class="card"><div class="tag">STASH</div><h3>Washington (if Jeanty slips) · Holani deep</h3><p class="muted" style="margin:0">Escalate Washington FAAB only after Wed–Fri LV practice confirms.</p></article>
-          <article class="card"><div class="tag">Dominoes</div><h3>Absent → who gains</h3>
-            <ul>
-              <li>Henderson → Stevenson → Kiner scraps</li>
-              <li>Charbonnet PUP → Price → Holani</li>
-              <li>Kamara → Etienne · Jacobs Exempt → Lloyd/Brooks · Jeanty out → Washington</li>
-            </ul>
-          </article>
-        </div>
-      </details>
-
-      <details class="fold terms-fold" id="terms">
-        <summary>Coming to terms</summary>
-        <div class="terms">
-          <dl>
-            <dt>NOW vs LATER</dt>
-            <dd>NOW = next kick / next ~48h decisions. LATER = rest of the week until it becomes NOW.</dd>
-            <dt>GPP / Showdown</dt>
-            <dd>GPP = big-field tournament. Showdown = single-game DFS (Wed NE@SEA).</dd>
-            <dt>Chalk / leverage</dt>
-            <dd>Chalk = high-ownership play. Leverage = fading or pivoting when the field piles on.</dd>
-            <dt>DNP / PUP</dt>
-            <dd>DNP = did not practice. PUP = out at least Weeks 1–4 (opens a volume vacuum).</dd>
-            <dt>Arb</dt>
-            <dd>Book-vs-book price disagreement you can theoretically lock both sides — not a pick; residuals matter.</dd>
-          </dl>
-        </div>
-      </details>
-    </section>
-
-    <p class="muted" style="font-size:0.82rem;margin-top:1.25rem">Sources: BettingChief 8pm delta ~8:15 CT · Fantasy+DFS evening Mon Sep 7 CT (Action Network · DK/NBC · FanDuel · ESPN) · Fantasy + DFS. No calibrated edges · no picks. No invented ownership %. Desks: file into <strong>NOW</strong> or <strong>LATER</strong> — don’t dump equal-weight walls.</p>
+<div class="banner"><strong>Sports + Fantasy</strong> — roles over vibes. Every take graded in public.</div>
+<div class="story">
+<p class="kicker">Patriots · A.J. Brown</p>
+<h3>To IR — high-ankle sprain, out at least four games</h3>
+<h4>What we know <span class="confpill">CONFIRMED</span></h4>
+<ul><li>MRI confirmed high-ankle sprain, no fracture; placed on injured reserve (Schefter via Patriots Wire) — minimum four missed games.</li>
+<li>Rapoport: expected out at least four weeks; Schultz: internal belief 3–6 weeks.</li>
+<li>Fantasy: Mack Hollins is the waiver add; Romeo Doubs (0/3 with a bad drop) is unplayable.</li>
+<li>Deeper: without Brown, Maye's efficiency dips even if volume rises — the question is who becomes the answer when Pittsburgh removes the first read.</li></ul>
+<h4>Still unconfirmed <span class="holdpill">HOLD</span></h4>
+<ul><li>Patriots–Steelers post-injury line — the −4.5 / 43.5 was a look-ahead number; do not treat it as post-injury.</li></ul>
+</div><div class="story">
+<p class="kicker">Tight ends</p>
+<h3>Bowers OUT — Mayer starts, and the fade is on the clock</h3>
+<h4>What we know <span class="confpill">CONFIRMED</span></h4>
+<ul><li>Brock Bowers ruled OUT Week 1 (meniscus trim) — Michael Mayer is the near-every-down starter vs MIA (USA Today).</li>
+<li>The “Mayer finishes outside the top-12 TEs” fade grades Sunday/Monday — underwater going in, needs a collapse to survive.</li>
+<li>Juwan Johnson profiles as a weekly TE1 with Tyson on IR (min 4 games).</li></ul>
+<h4>Still unconfirmed <span class="holdpill">HOLD</span></h4>
+<ul><li>Bowers' return timeline — watch the Friday report.</li></ul>
+</div><div class="story">
+<p class="kicker">The scoreboard</p>
+<h3>Graded this week — misses owned, tracking open</h3>
+<h4>What we know <span class="confpill">CONFIRMED</span></h4>
+<ul><li><strong>MISS:</strong> CMC top-5 PPR RB call — 13.8 PPR (10/68 rush + 5/20 rec); Kaelon Black's real role was the miss in the read.</li>
+<li><strong>MISS:</strong> Stribling must-add stash — carted off (non-contact ankle), 0 catches.</li>
+<li><strong>MISS:</strong> Holani-over-Price (opener) — Price clearly the better back (5.2 YPC).</li>
+<li><strong>TRACKING:</strong> Kamara “will play barring setback” (Underhill) — active = PPR flex; Henderson “good chance” back vs PIT.</li>
+<li><strong>TOO EARLY:</strong> Davante Adams take — stat line unconfirmed in the research window; no grade without numbers.</li></ul>
+<h4>Still unconfirmed <span class="holdpill">HOLD</span></h4>
+<ul><li>Friday final designations (Henderson, Kamara, Darnold, Egbuka, McConkey, Jeanty) — the pre-Sunday board.</li>
+<li>Sunday inactives ~11am CT — the final word.</li></ul>
+</div><div class="board"><table>
+<tr><th>Player</th><th>Status</th><th>Next data point</th></tr>
+<tr><td>Henderson (ankle)</td><td>Inactive W1; “good chance” back vs PIT</td><td>Fri designations</td></tr>
+<tr><td>Kamara (MCL)</td><td>Limited Wed+Thu; “will play barring setback”</td><td>Fri / Sun inactives</td></tr>
+<tr><td>Darnold (hip)</td><td>Fracture out; MRI unpublished <span class="holdpill">HOLD</span></td><td>Fri practice</td></tr>
+<tr><td>A.J. Brown (ankle)</td><td>IR — min 4 games</td><td>Return timeline</td></tr>
+<tr><td>Egbuka (toe)</td><td>Practicing; “appears fine”</td><td>Fri designation</td></tr>
+<tr><td>McConkey (minor)</td><td>Tue DNP; “extremely minor”</td><td>Fri report</td></tr>
+</table></div>
   </main>
-  <footer class="footer wrap">Daily Dossier · <a class="x-handle" href="https://x.com/DailyDossierHQ">@DailyDossierHQ</a> · <a href="https://github.com/billysnider-collab/Newsroom">Newsroom</a></footer>
-<!-- Cloudflare Web Analytics -->
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "de79f2c03d32458e811a918f0cfe1890"}'></script>
-<!-- End Cloudflare Web Analytics -->
+  <footer class="footer wrap">
+    <p>Signal Over Noise — Follow the Signal. Every claim graded: CONFIRMED / CORRECTED / CONTRADICTED / UNVERIFIED / MISLEADING. HOLDs stay visible.</p>
+    <p class="muted">Last updated: Fri Sep 11, 2026 · 4:45 PM CT · Evening edition · Next: tomorrow morning</p>
+  </footer>
 </body>
 </html>

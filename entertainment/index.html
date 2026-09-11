@@ -3,211 +3,54 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Entertainment — Stories + Tonight · Daily Dossier</title>
-  <meta name="description" content="What changed · why it matters · curated tonight. Mon Sep 7, 2026." />
-  <link rel="stylesheet" href="../css/style.css?v=ddbrand-20260907" />
-<link rel="icon" type="image/png" href="../img/favicon-32.png" sizes="32x32" />
+  <title>Entertainment — Signal Over Noise</title>
+  <meta name="description" content="Signal Over Noise — news, briefed like intel." />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" type="image/png" href="../img/favicon-32.png" sizes="32x32" />
   <link rel="apple-touch-icon" href="../img/apple-touch-icon.png" />
-  <meta property="og:site_name" content="Daily Dossier" />
-  <meta property="og:image" content="https://billysnider-collab.github.io/Newsroom/img/og-daily-dossier.png" />
+  <meta property="og:site_name" content="Signal Over Noise" />
+  <meta property="og:image" content="https://billysnider-collab.github.io/Newsroom/img/og-signal.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@DailyDossierHQ" />
-  <meta name="twitter:image" content="https://billysnider-collab.github.io/Newsroom/img/og-daily-dossier.png" />
-
-  <style>
-    .lane { margin: 1.25rem 0 1.75rem; }
-    .lane-head {
-      display: flex; align-items: baseline; gap: 0.75rem; flex-wrap: wrap;
-      border-bottom: 1px solid var(--line-strong);
-      padding-bottom: 0.45rem; margin-bottom: 0.9rem;
-    }
-    .lane-head .mark {
-      font-size: 0.72rem; font-weight: 800; letter-spacing: 0.18em;
-      text-transform: uppercase; color: var(--text);
-    }
-    .lane-head .mark::before {
-      content: ""; display: inline-block; width: 0.45rem; height: 0.45rem;
-      background: var(--priority); border-radius: 50%; margin-right: 0.45rem; vertical-align: 0.05rem;
-    }
-    .lane-head .when { color: var(--muted); font-size: 0.85rem; }
-    .story {
-      background: var(--panel-2); border: 1px solid var(--line); border-radius: 2px;
-      padding: 0.95rem 1.1rem; margin: 0 0 0.75rem;
-    }
-    .story.lead { border-left: 3px solid var(--priority); }
-    .story h3 { margin: 0 0 0.55rem; font-size: 1.08rem; }
-    .story .lbl {
-      font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em;
-      text-transform: uppercase; color: var(--muted); margin: 0.45rem 0 0.15rem;
-    }
-    .story p { margin: 0; line-height: 1.45; }
-    .pick {
-      background: var(--panel-2); border: 1px solid var(--line); border-left: 3px solid var(--priority);
-      border-radius: 2px; padding: 0.85rem 1.05rem; margin: 0 0 0.65rem;
-    }
-    .pick h3 { margin: 0 0 0.2rem; font-size: 1.02rem; }
-    .pick .meta { color: var(--muted); font-size: 0.88rem; margin: 0 0 0.4rem; }
-    .pick .why { margin: 0; line-height: 1.45; font-size: 0.95rem; }
-    .badge {
-      display: inline-block; font-size: 0.68rem; font-weight: 700;
-      padding: 0.1rem 0.4rem; border-radius: 999px; margin-right: 0.25rem;
-      background: #221a1a; color: #e0c8c8; vertical-align: middle;
-    }
-    .badge.lead-tag { background: #2a1515; color: var(--priority); }
-    .subnav {
-      display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; margin: 0.5rem 0 0.25rem;
-      font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase;
-    }
-    .subnav a { color: var(--muted); text-decoration: none; }
-    .subnav a:hover { color: var(--text); }
-    details.fold {
-      background: var(--panel); border: 1px solid var(--line); border-radius: 2px;
-      padding: 0.65rem 0.95rem; margin: 0.75rem 0;
-    }
-    details.fold summary {
-      cursor: pointer; font-weight: 750; font-size: 0.82rem; letter-spacing: 0.06em;
-      text-transform: uppercase; list-style: none; color: var(--muted);
-    }
-    details.fold summary::-webkit-details-marker { display: none; }
-    details.fold summary::before { content: "▸ "; color: var(--priority); }
-    details.fold[open] summary::before { content: "▾ "; }
-    details.fold[open] summary { color: var(--text); margin-bottom: 0.65rem; }
-  </style>
+  <meta name="twitter:image" content="https://billysnider-collab.github.io/Newsroom/img/og-signal.png" />
 </head>
 <body>
   <header class="top">
     <div class="wrap">
       <div class="brand">
-        <img class="dd-mark" src="../img/dd-mark-80.png" width="80" height="80" alt="Daily Dossier" />
+        <img class="mark" src="../img/signal-mark-80.png" width="80" height="80" alt="Signal Over Noise" />
         <div class="brand-text">
-          <h1>Daily Dossier</h1>
-          <p class="sub">Entertainment · evening refresh · Mon Sep 7, 2026 ~5:10 PM CT</p>
+          <h1>Signal Over Noise</h1>
+          <p class="sub">News, briefed like intel · Friday, September 11, 2026 — Evening edition</p>
         </div>
       </div>
     </div>
   </header>
-  <nav class="nav wrap" aria-label="Primary">
-    <a href="../index.html">Today</a>
-    <a href="../briefs/index.html">Briefs</a>
-    <a href="../national/index.html">National</a>
-    <a href="../quantum/index.html">Quantum</a>
-    <a href="../finance/index.html">Finance</a>
-    <a href="../polymarket/index.html">Polymarket</a>
-    <a href="../sports/index.html">Sports</a>
-    <a href="../entertainment/index.html" aria-current="page">Entertainment</a>
-    <a href="../lift/index.html">Lift</a>
-    <a href="../archive/index.html">Archive</a>
-  </nav>
+<nav class="nav wrap" aria-label="Primary">
+<a href="../index.html">Today</a>
+<a href="../briefs/index.html">Briefs</a>
+<a href="../national/index.html">National</a>
+<a href="../quantum/index.html">Quantum</a>
+<a href="../finance/index.html">Finance</a>
+<a href="../polymarket/index.html">Polymarket</a>
+<a href="../sports/index.html">Sports</a>
+<a href="../entertainment/index.html" aria-current="page">Entertainment</a>
+<a href="../lift/index.html">Lift</a>
+<a href="../about/index.html">About</a>
+</nav>
   <main class="wrap">
-    <div class="banner"><strong>Entertainment</strong> · What changed · why it matters · curated tonight — not a trade dump</div>
-    <p class="subnav">
-      <a href="#tonight">Watch tonight</a>
-      <a href="#stories">Stories</a>
-      <a href="#quiet">Quiet shelves</a>
-    </p>
-
-    <section class="lane" id="stories">
-      <div class="lane-head">
-        <span class="mark">Stories of the day</span>
-        <span class="when">Max 3 · what changed + why · Mon Sep 7</span>
-      </div>
-
-      <article class="story lead">
-        <div class="tag"><span class="badge lead-tag">LEAD</span> Cancel · Prime Video</div>
-        <h3>Spider-Noir canceled after one season</h3>
-        <p class="lbl">What changed</p>
-        <p>Prime Video canceled Spider-Noir after one season.</p>
-        <p class="lbl">Why it matters</p>
-        <p>Cage’s Marvel show is done; no Season 2 coming.</p>
-        <p style="margin-top:0.55rem"><a class="more" href="https://deadline.com/2026/09/spider-noir-canceled-prime-video-marvel-characters-series-1237068437/" rel="noopener" target="_blank">Deadline →</a></p>
-      </article>
-
-      <article class="story">
-        <div class="tag">Renewal · Paramount+</div>
-        <h3>MobLand renewed for Season 3 — before Season 2 airs</h3>
-        <p class="lbl">What changed</p>
-        <p>Paramount+ renewed MobLand for Season 3 ahead of the Season 2 premiere (Sep 18).</p>
-        <p class="lbl">Why it matters</p>
-        <p>Hardy/Brosnan/Mirren keep going.</p>
-        <p style="margin-top:0.55rem"><a class="more" href="https://deadline.com/2026/09/mobland-renewed-season-3-tom-hardy-mirren-brosnan-1237066505/" rel="noopener" target="_blank">Deadline →</a></p>
-      </article>
-
-      <article class="story">
-        <div class="tag">Cameras rolling · Netflix</div>
-        <h3>Inbetweeners reunion film: cameras rolling + first look</h3>
-        <p class="lbl">What changed</p>
-        <p>Netflix confirmed the reunion film; production starts today with a first look of Bird, Buckley, Harrison, and Thomas.</p>
-        <p class="lbl">Why it matters</p>
-        <p>Cameras are rolling — not a rumor cycle.</p>
-        <p style="margin-top:0.55rem"><a class="more" href="https://deadline.com/2026/09/netflix-confirms-inbetweeners-reunion-movie-cast-1237070074/" rel="noopener" target="_blank">Deadline →</a></p>
-      </article>
-    </section>
-
-    <section class="lane" id="tonight">
-      <div class="lane-head">
-        <span class="mark">Watch tonight</span>
-        <span class="when">≤4 · WHY · CT · no sports live</span>
-      </div>
-
-      <div class="pick">
-        <h3><span class="badge">FINALE</span> Beat Shazam · Season 8</h3>
-        <p class="meta">7:00 PM CT · Fox</p>
-        <p class="why"><strong>Why:</strong> End of the run, including the 100th episode.</p>
-      </div>
-      <div class="pick">
-        <h3><span class="badge">SPECIAL</span> America’s Tailgate</h3>
-        <p class="meta">7:00 PM CT · CBS</p>
-        <p class="why"><strong>Why:</strong> Live Labor Day music special (Burleson &amp; Collins).</p>
-      </div>
-      <div class="pick">
-        <h3><span class="badge">FINALE</span> The Librarians: The Next Chapter · Season 2</h3>
-        <p class="meta">8:00 PM CT · TNT</p>
-        <p class="why"><strong>Why:</strong> Last new episode of the season.</p>
-      </div>
-      <div class="pick">
-        <h3><span class="badge">PREMIERE</span> O.J. Unseen: Exploitation of Evil</h3>
-        <p class="meta">8:00 PM CT · ID / HBO Max</p>
-        <p class="why"><strong>Why:</strong> New series opens tonight.</p>
-      </div>
-    </section>
-
-    <section class="lane" id="quiet">
-      <div class="lane-head">
-        <span class="mark">Quiet shelves</span>
-        <span class="when">Awards / trade / niche — folded</span>
-      </div>
-      <details class="fold">
-        <summary>Quiet shelves</summary>
-        <ul style="margin:0.35rem 0 0;padding-left:1.2rem;line-height:1.5;font-size:0.92rem">
-          <li>Creative Arts Emmys N2: Cardellini first Emmy (DTF St. Louis); Reiner posthumous Guest Actor (The Bear); Gilpin Guest Actress (Widow’s Bay) · <a href="https://deadline.com/2026/09/linda-cardellini-emmy-winner-dtf-st-louis-1237069032/" rel="noopener" target="_blank">Deadline</a></li>
-          <li>Sony fired Wheel announcer Jim Thornton; interim voice for Sep 14 return · <a href="https://variety.com/2026/tv/news/wheel-of-fortune-announcer-jim-thornton-fired-sony-1236852104/" rel="noopener" target="_blank">Variety</a></li>
-          <li>Fan Level Midnight: The Office (6-ep) drops on Peacock today · <a href="https://deadline.com/2026/09/peacock-acquires-the-office-doc-series-fan-level-midnight-1237064743/" rel="noopener" target="_blank">Deadline</a></li>
-        </ul>
-      </details>
-      <details class="fold">
-        <summary>Full listings (not face)</summary>
-        <div class="board" style="margin-top:0.55rem">
-          <table>
-            <thead><tr><th>Show</th><th>Where</th><th>CT</th></tr></thead>
-            <tbody>
-              <tr><td>Top of the World</td><td>CNN</td><td>7:00</td></tr>
-              <tr><td>History’s Greatest Mysteries S7 finale</td><td>History</td><td>7:00</td></tr>
-              <tr><td>All American</td><td>The CW</td><td>7:00</td></tr>
-              <tr><td>Hitler’s DNA</td><td>History</td><td>8:00</td></tr>
-              <tr><td>It’s Always Sunny</td><td>FX</td><td>8:00</td></tr>
-              <tr><td>POV: Remake</td><td>PBS</td><td>9:00 local</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="muted" style="font-size:0.82rem;margin:0.5rem 0 0">Sports lead: <a href="../sports/index.html#now">SMU@FSU →</a> · HOLD: Last Meals S2; FOX quiz · Futon Critic</p>
-      </details>
-    </section>
-
-<p class="muted" style="font-size:0.82rem;margin-top:1.1rem">Entertainment desk evening refresh ~5:10 PM CT · Mentor bar · Stories 3 · Tonight 4 · no sports live</p>
+<div class="banner"><strong>Entertainment</strong> — what changed, not what trended.</div>
+<div class="story">
+<p class="kicker">Desk status · Fri Sep 11</p>
+<h3>Back tomorrow morning</h3>
+<ul>
+<li>The entertainment desk returns with the morning edition — premieres, finales, and what actually changed.</li>
+<li>No filler in the evening slot. News desks lead tonight.</li>
+</ul>
+</div>
   </main>
-  <footer class="footer wrap">Daily Dossier · <a class="x-handle" href="https://x.com/DailyDossierHQ">@DailyDossierHQ</a> · <a href="https://github.com/billysnider-collab/Newsroom">Newsroom</a></footer>
-<!-- Cloudflare Web Analytics -->
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "de79f2c03d32458e811a918f0cfe1890"}'></script>
-<!-- End Cloudflare Web Analytics -->
+  <footer class="footer wrap">
+    <p>Signal Over Noise — Follow the Signal. Every claim graded: CONFIRMED / CORRECTED / CONTRADICTED / UNVERIFIED / MISLEADING. HOLDs stay visible.</p>
+    <p class="muted">Last updated: Fri Sep 11, 2026 · 4:45 PM CT · Evening edition · Next: tomorrow morning</p>
+  </footer>
 </body>
 </html>
