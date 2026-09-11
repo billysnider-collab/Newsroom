@@ -1,5 +1,5 @@
 /* Signal Over Noise — brand system (locked 2026-09-11)
-   Dark navy / amber signal. */
+   Dark navy / amber signal. No Daily Dossier red. */
 :root {
   --bg: #0a0f1e;
   --panel: #0e1526;
@@ -28,11 +28,24 @@ a:hover { color: #fff; text-decoration-color: var(--priority); }
 .brand img.mark { width: 2.65rem; height: 2.65rem; display: block; flex-shrink: 0; border-radius: 6px; }
 .top h1 { margin: 0; font-size: 1.15rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 750; }
 .top .sub { margin: 0.3rem 0 0; color: var(--muted); font-size: 0.8rem; }
+.util { display: flex; flex-wrap: wrap; gap: 0.3rem 0.9rem; align-items: center; padding: 0.55rem 0 0; font-size: 0.76rem; color: var(--muted); }
+.util .stamp { color: var(--text); font-weight: 700; }
+.util .stamp::before { content: ""; display: inline-block; width: 0.45rem; height: 0.45rem; border-radius: 50%; background: var(--good); margin-right: 0.4rem; vertical-align: 0.05rem; }
+.util a { color: var(--muted); text-decoration: none; font-weight: 650; }
+.util a:hover { color: var(--text); }
 .nav { display: flex; flex-wrap: wrap; gap: 0.45rem 0.95rem; padding: 0.7rem 0; border-bottom: 1px solid var(--line); font-size: 0.78rem; font-weight: 650; letter-spacing: 0.04em; text-transform: uppercase; }
-.nav a { color: var(--muted); text-decoration: none; }
+.nav a { color: var(--muted); text-decoration: none; padding: 0.55rem 0.1rem; }
 .nav a:hover { color: var(--text); }
 .nav a[aria-current="page"] { color: var(--text); box-shadow: inset 0 -2px 0 var(--priority); }
 .banner { background: var(--panel); border: 1px solid var(--line); border-left: 3px solid var(--priority); border-radius: 2px; padding: 0.8rem 1rem; margin: 1.1rem 0; font-size: 0.9rem; }
+.gradehero { background: var(--panel); border: 1px solid var(--line-strong); border-radius: 2px; padding: 0.9rem 1.1rem; margin: 1.1rem 0 0; font-size: 0.88rem; }
+.gradehero .row { display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem; align-items: baseline; margin-top: 0.45rem; }
+.gradehero .def { color: var(--muted); }
+.gradehero .def strong { color: var(--text); }
+.gradehero .counts { font-weight: 800; letter-spacing: 0.02em; }
+.gradehero .counts .c { color: var(--good); }
+.gradehero .counts .h { color: var(--hold); }
+.gradehero a.how { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
 h2.sec { font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin: 1.75rem 0 0.85rem; border-bottom: 1px solid var(--line-strong); padding-bottom: 0.4rem; }
 .cards { display: grid; gap: 0.9rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
 .card { background: var(--panel-2); border: 1px solid var(--line); border-radius: 2px; padding: 0.95rem 1.05rem; }
@@ -55,7 +68,11 @@ h2.sec { font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; 
 .muted { color: var(--muted); }
 .holdpill { display: inline-block; font-size: 0.68rem; font-weight: 700; padding: 0.12rem 0.45rem; border-radius: 999px; background: #2a1a12; color: var(--hold); letter-spacing: 0.06em; }
 .confpill { display: inline-block; font-size: 0.68rem; font-weight: 700; padding: 0.12rem 0.45rem; border-radius: 999px; background: #12241a; color: var(--good); letter-spacing: 0.06em; }
-.story { background: var(--panel-2); border: 1px solid var(--line); border-radius: 2px; padding: 1rem 1.15rem; margin-bottom: 1rem; }
+.story { background: var(--panel-2); border: 1px solid var(--line); border-radius: 2px; padding: 1rem 1.15rem; margin-bottom: 1rem; scroll-margin-top: 1rem; }
+.story-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 0.75rem; }
+.story-head .kicker { margin-bottom: 0.25rem; }
+.copylink { flex-shrink: 0; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); background: transparent; border: 1px solid var(--line-strong); border-radius: 2px; padding: 0.5rem 0.7rem; min-height: 44px; cursor: pointer; font-family: inherit; }
+.copylink:hover { color: var(--text); border-color: var(--priority); }
 .story h3 { margin: 0 0 0.5rem; font-size: 1.15rem; }
 .story h4 { margin: 0.9rem 0 0.35rem; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
 .story ul { margin: 0.2rem 0 0; padding-left: 1.15rem; font-size: 0.93rem; }
@@ -64,5 +81,24 @@ table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
 .board { overflow-x: auto; background: var(--panel-2); border: 1px solid var(--line); border-radius: 2px; margin-bottom: 1rem; }
 th, td { padding: 0.65rem 0.75rem; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
 th { background: var(--panel); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 750; }
+.emailbox { background: var(--panel); border: 1px solid var(--line-strong); border-left: 3px solid var(--priority); border-radius: 2px; padding: 1rem 1.15rem; margin: 1.75rem 0 0; }
+.emailbox h3 { margin: 0 0 0.25rem; font-size: 1.02rem; }
+.emailbox p { margin: 0 0 0.7rem; color: var(--muted); font-size: 0.88rem; max-width: 40rem; }
+.emailbox form { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.emailbox input[type="email"] { flex: 1 1 16rem; min-height: 44px; background: var(--bg); border: 1px solid var(--line-strong); border-radius: 2px; color: var(--text); padding: 0.55rem 0.8rem; font-size: 0.95rem; font-family: inherit; }
+.emailbox button { min-height: 44px; background: var(--priority); color: #111; border: none; border-radius: 2px; font-weight: 800; font-size: 0.85rem; letter-spacing: 0.04em; text-transform: uppercase; padding: 0.55rem 1.2rem; cursor: pointer; font-family: inherit; }
+.emailbox button:hover { filter: brightness(1.08); }
 .footer { margin: 2.25rem 0 1.5rem; color: var(--muted); font-size: 0.75rem; text-align: center; letter-spacing: 0.04em; }
-@media (max-width: 600px) { html { font-size: 16px; } .top h1 { font-size: 1.02rem; letter-spacing: 0.08em; } }
+.footer .flinks { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem 1.1rem; margin: 0.6rem 0; font-size: 0.78rem; font-weight: 650; }
+.footer .flinks a { color: var(--muted); text-decoration: none; }
+.footer .flinks a:hover { color: var(--text); }
+.corr { background: var(--panel-2); border: 1px dashed var(--line-strong); border-radius: 2px; padding: 1.2rem 1.3rem; margin: 1rem 0; color: var(--muted); }
+@media (max-width: 600px) {
+  html { font-size: 16px; }
+  .top h1 { font-size: 1.02rem; letter-spacing: 0.08em; }
+  .lead h2 { font-size: 1.18rem; }
+  .story h3 { font-size: 1.05rem; }
+  .nav { gap: 0.2rem 0.7rem; }
+  .emailbox form { flex-direction: column; }
+  .emailbox button { width: 100%; }
+}

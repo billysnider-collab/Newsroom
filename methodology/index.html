@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Methodology — Signal Over Noise</title>
+  <meta name="description" content="How Signal Over Noise grades claims as CONFIRMED or HOLD — evidence, sources, corroboration." />
+  <link rel="canonical" href="https://billysnider-collab.github.io/Newsroom/methodology/index.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Signal Over Noise" />
+  <meta property="og:title" content="Methodology — Signal Over Noise" />
+  <meta property="og:description" content="How Signal Over Noise grades claims as CONFIRMED or HOLD — evidence, sources, corroboration." />
+  <meta property="og:url" content="https://billysnider-collab.github.io/Newsroom/methodology/index.html" />
+  <meta property="og:image" content="https://billysnider-collab.github.io/Newsroom/img/og-signal.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Methodology — Signal Over Noise" />
+  <meta name="twitter:description" content="How Signal Over Noise grades claims as CONFIRMED or HOLD — evidence, sources, corroboration." />
+  <meta name="twitter:image" content="https://billysnider-collab.github.io/Newsroom/img/og-signal.png" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" type="image/png" href="../img/favicon-32.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="../img/apple-touch-icon.png" />
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <div class="brand">
+        <img class="mark" src="../img/signal-mark-80.png" width="80" height="80" alt="Signal Over Noise" />
+        <div class="brand-text">
+          <h1>Signal Over Noise</h1>
+          <p class="sub">News, briefed like intel · Friday, September 11, 2026 — Evening edition</p>
+        </div>
+      </div>
+    </div>
+<div class="util wrap"><span class="stamp">Updated Sep 11, 2026 · 6:04 PM CT</span><span aria-hidden="true">·</span><a href="../methodology/index.html">How we grade</a><span aria-hidden="true">·</span><a href="../corrections/index.html">Corrections</a></div>
+  </header>
+<nav class="nav wrap" aria-label="Primary">
+<a href="../index.html">Today</a>
+<a href="../briefs/index.html">Briefs</a>
+<a href="../national/index.html">National</a>
+<a href="../quantum/index.html">Quantum</a>
+<a href="../finance/index.html">Finance</a>
+<a href="../polymarket/index.html">Polymarket</a>
+<a href="../sports/index.html">Sports</a>
+<a href="../entertainment/index.html">Entertainment</a>
+<a href="../lift/index.html">Lift</a>
+<a href="../about/index.html">About</a>
+</nav>
+  <main class="wrap">
+<div class="banner"><strong>How we grade</strong> — the rules behind every CONFIRMED and HOLD on this site.</div>
+<div class="story">
+<div class="story-head"><p class="kicker">The loop</p></div>
+<h3>Claim → Evidence → Grade → What remains unknown</h3>
+<ul>
+<li>Every factual claim on this site passes through the same loop. The grade is printed next to the claim, and what we still don't know is printed right below it.</li>
+<li>Grades are not decorations. They are counted mechanically from the page markup — the totals on the homepage come from the claims themselves, not from an editor's summary.</li>
+</ul>
+<h4>What CONFIRMED means <span class="confpill">CONFIRMED</span></h4>
+<ul>
+<li><strong>Evidence:</strong> supported by sufficient primary or credible evidence — an official statement, a data release, a wire report from the scene, or direct documentation.</li>
+<li><strong>Source quality:</strong> primary sources first. Named officials and on-the-record material outrank anonymous sourcing; established wires outrank aggregators.</li>
+<li><strong>Corroboration:</strong> material claims are confirmed by at least two independent credible reports, or one primary source of record.</li>
+<li><strong>Attribution:</strong> company and government claims are labeled as claims — "Iran said," "CENTCOM reports" — not stated as unattributed fact.</li>
+</ul>
+<h4>What HOLD means <span class="holdpill">HOLD</span></h4>
+<ul>
+<li><strong>HOLD does not mean false.</strong> It means the evidence isn't sufficient to call it confirmed — yet.</li>
+<li>Single-source reports, anonymous sourcing without corroboration, numbers that are still moving, meetings that are reported but unconfirmed by the named parties.</li>
+<li>HOLDs stay visible on the page. Nothing gets quietly dropped when it's inconvenient.</li>
+</ul>
+<h4>What would change a grade</h4>
+<ul>
+<li>HOLD → CONFIRMED: a second independent report, an official confirmation, or the release of the underlying data.</li>
+<li>CONFIRMED → CORRECTED: new evidence showing the original claim was partially wrong — the correction is logged publicly.</li>
+<li>Any grade → CONTRADICTED: credible evidence against the claim. Contradictions are printed, not buried.</li>
+</ul>
+<h4>The full scale</h4>
+<ul>
+<li><strong>CONFIRMED</strong> — cleared the bar above. <strong>CORRECTED</strong> — was wrong, now fixed, logged. <strong>CONTRADICTED</strong> — evidence weighs against it. <strong>UNVERIFIED</strong> — cannot be checked with available sources. <strong>MISLEADING</strong> — technically true but framed to deceive.</li>
+<li>On story pages we use CONFIRMED / HOLD as working shorthand. The full scale applies everywhere the desk publishes.</li>
+</ul>
+</div>
+  </main>
+  <footer class="footer wrap">
+    <div class="flinks">
+      <a href="../methodology/index.html">How we grade</a>
+      <a href="../corrections/index.html">Corrections</a>
+      <a href="../about/index.html">About</a>
+    </div>
+    <p>Signal Over Noise — Follow the Signal. Every claim graded: CONFIRMED / CORRECTED / CONTRADICTED / UNVERIFIED / MISLEADING. HOLDs stay visible.</p>
+    <p class="muted">Updated Sep 11, 2026 · 6:04 PM CT · Friday, September 11, 2026 — Evening edition · Next: tomorrow morning</p>
+  </footer>
+<script>
+document.addEventListener('click', function(e) {
+  var b = e.target.closest('[data-copy]');
+  if (!b) return;
+  var done = function(ok) {
+    b.textContent = ok ? 'Copied' : 'Copy failed';
+    setTimeout(function() { b.textContent = 'Copy link'; }, 1500);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(b.getAttribute('data-copy')).then(function() { done(true); }, function() { done(false); });
+  } else { done(false); }
+});
+</script>
+</body>
+</html>
