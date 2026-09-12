@@ -102,6 +102,16 @@ th { background: var(--panel); font-size: 0.68rem; letter-spacing: 0.08em; text-
 .locmap svg { display: block; width: 100%; height: auto; }
 .locmap figcaption { padding: 0.45rem 0.8rem; font-size: 0.7rem; letter-spacing: 0.05em; color: var(--muted); border-top: 1px solid var(--line); }
 .footer .flinks a:hover { color: var(--text); }
+.footer .socialrow { margin: 0.4rem 0 0.9rem; font-size: 0.78rem; color: var(--muted); }
+.footer .socialrow a { color: var(--muted); text-decoration: none; font-weight: 650; }
+.footer .socialrow a:hover { color: var(--text); }
+.bizcard { max-width: 26rem; margin: 1.6rem 0; padding: 1.4rem 1.5rem; border: 1px solid var(--line-strong); border-top: 3px solid var(--priority); border-radius: 3px; background: var(--panel); }
+.bizcard__kicker { margin: 0 0 0.5rem; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+.bizcard__name { margin: 0; font-size: 1.25rem; font-weight: 750; }
+.bizcard__tag { margin: 0.15rem 0 1rem; color: var(--muted); font-size: 0.88rem; }
+.bizcard__rows { list-style: none; margin: 0; padding: 0; }
+.bizcard__rows li { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: 0.5rem 0; border-top: 1px solid var(--line); font-size: 0.9rem; }
+.bizcard__rows li span { color: var(--muted); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; }
 .corr { background: var(--panel-2); border: 1px dashed var(--line-strong); border-radius: 2px; padding: 1.2rem 1.3rem; margin: 1rem 0; color: var(--muted); }
 @media (max-width: 600px) {
   html { font-size: 16px; }
