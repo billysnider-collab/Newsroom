@@ -98,6 +98,9 @@ th { background: var(--panel); font-size: 0.68rem; letter-spacing: 0.08em; text-
 .watch-status__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.45rem 0.6rem; margin: 0 0 1rem; font-size: 0.75rem; letter-spacing: 0.03em; color: var(--muted); }
 .watch-status__link { font-size: 0.88rem; }
 .watch-status__signoff { margin: 1.25rem 0 0; font-size: 0.85rem; color: var(--muted); }
+.locmap { margin: 1rem 0 1.1rem; border: 1px solid var(--line); border-radius: 3px; background: #0b1224; overflow: hidden; }
+.locmap svg { display: block; width: 100%; height: auto; }
+.locmap figcaption { padding: 0.45rem 0.8rem; font-size: 0.7rem; letter-spacing: 0.05em; color: var(--muted); border-top: 1px solid var(--line); }
 .footer .flinks a:hover { color: var(--text); }
 .corr { background: var(--panel-2); border: 1px dashed var(--line-strong); border-radius: 2px; padding: 1.2rem 1.3rem; margin: 1rem 0; color: var(--muted); }
 @media (max-width: 600px) {
