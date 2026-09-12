@@ -1,5 +1,5 @@
 /* Signal Over Noise — brand system (locked 2026-09-11)
-   Dark navy / amber signal. */
+   Dark navy / amber signal. No Daily Dossier red. */
 :root {
   --bg: #0a0f1e;
   --panel: #0e1526;
@@ -31,8 +31,6 @@ a:hover { color: #fff; text-decoration-color: var(--priority); }
 .util { display: flex; flex-wrap: wrap; gap: 0.3rem 0.9rem; align-items: center; padding: 0.55rem 0 0; font-size: 0.76rem; color: var(--muted); }
 .util .stamp { color: var(--text); font-weight: 700; }
 .util .stamp::before { content: ""; display: inline-block; width: 0.45rem; height: 0.45rem; border-radius: 50%; background: var(--good); margin-right: 0.4rem; vertical-align: 0.05rem; }
-.util .dstamp { color: var(--muted); font-weight: 600; }
-.util .dstamp::before { content: ""; display: inline-block; width: 0.4rem; height: 0.4rem; border-radius: 50%; background: var(--priority); margin-right: 0.4rem; vertical-align: 0.05rem; }
 .util a { color: var(--muted); text-decoration: none; font-weight: 650; }
 .util a:hover { color: var(--text); }
 .nav { display: flex; flex-wrap: wrap; gap: 0.45rem 0.95rem; padding: 0.7rem 0; border-bottom: 1px solid var(--line); font-size: 0.78rem; font-weight: 650; letter-spacing: 0.04em; text-transform: uppercase; }
