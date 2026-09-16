@@ -1,6 +1,6 @@
 # Signal Over Noise — site
 
-Living news page, updated twice daily (morning + evening, America/Chicago).
+Living news page, updated three times daily (morning, midday, evening, America/Chicago).
 Every claim graded: CONFIRMED / CORRECTED / CONTRADICTED / UNVERIFIED / MISLEADING.
 HOLDs stay visible. No hype.
 
