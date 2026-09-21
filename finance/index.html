@@ -22,7 +22,7 @@
 </head>
 <body>
   <header class="top">
-    <div class="wrap">
+    <div class="wrap topbar">
       <div class="brand">
         <img class="mark" src="../img/avatar-80.png" width="80" height="80" alt="Signal Over Noise" />
         <div class="brand-text">
@@ -30,8 +30,11 @@
           <p class="sub">News, briefed like intel · Monday, September 21, 2026 — Midday update</p>
         </div>
       </div>
+      <div class="searchbar" role="search">
+        <input type="search" id="site-search" placeholder="Search for news" aria-label="Search stories on this page" autocomplete="off" />
+      </div>
     </div>
-<div class="util wrap"><span class="stamp">Updated Sep 21, 2026 · 12:52 PM CT</span><span aria-hidden="true">·</span><a href="../methodology/index.html">How we grade</a><span aria-hidden="true">·</span><a href="../corrections/index.html">Corrections</a></div>
+<div class="util wrap"><span class="stamp">Updated Sep 21, 2026 · 3:09 PM CT</span><span aria-hidden="true">·</span><a href="../methodology/index.html">How we grade</a><span aria-hidden="true">·</span><a href="../corrections/index.html">Corrections</a></div>
   </header>
 <nav class="nav wrap" aria-label="Primary">
 <a href="../index.html">Today</a>
@@ -46,7 +49,7 @@
 <a href="../about/index.html">About</a>
 </nav>
   <main class="wrap">
-<div class="banner"><strong>Finance</strong> — questions, not stock tips.</div><div class="story" id="monday-premarket-0921">
+<div class="banner"><strong>Finance</strong> — questions, not stock tips.</div><div class="wire-head"><span class="wire-bar" aria-hidden="true"></span>WIRE <span class="wire-dot" aria-hidden="true">•</span> <span class="wire-count">5 STORIES</span></div><div class="story" id="monday-premarket-0921">
 <div class="story-head"><p class="kicker">Monday · premarket</p><button class="copylink" data-copy="https://billysnider-collab.github.io/Newsroom/finance/index.html#monday-premarket-0921" aria-label="Copy link to this story">Copy link</button></div>
 <h3>The 5% print faded — and oil priced the diplomacy branch</h3>
 <h4>What we know <span class="confpill">CONFIRMED</span></h4>
@@ -124,7 +127,7 @@
     </div>
     <p class="socialrow"><span>Follow the Signal —</span> <a href="https://www.tiktok.com/@findthesignal">TikTok</a> · <a href="https://x.com/dailydossierhq">X</a> · <a href="mailto:billysnider@gmail.com">Email</a></p>
     <p>Signal Over Noise — Follow the Signal. Every claim graded: CONFIRMED / CORRECTED / CONTRADICTED / UNVERIFIED / MISLEADING. HOLDs stay visible.</p>
-    <p class="muted">Updated Sep 21, 2026 · 12:52 PM CT · Monday, September 21, 2026 — Midday update · Next: evening edition</p>
+    <p class="muted">Updated Sep 21, 2026 · 3:09 PM CT · Monday, September 21, 2026 — Midday update · Next: evening edition</p>
   </footer>
 <script>
 document.addEventListener('click', function(e) {
@@ -138,6 +141,17 @@ document.addEventListener('click', function(e) {
     navigator.clipboard.writeText(b.getAttribute('data-copy')).then(function() { done(true); }, function() { done(false); });
   } else { done(false); }
 });
+var sq = document.getElementById('site-search');
+if (sq) {
+  sq.addEventListener('input', function() {
+    var q = sq.value.trim().toLowerCase();
+    var items = document.querySelectorAll('.story, .lead article, .card');
+    for (var i = 0; i < items.length; i++) {
+      var el = items[i];
+      el.style.display = (!q || el.textContent.toLowerCase().indexOf(q) !== -1) ? '' : 'none';
+    }
+  });
+}
 </script>
 </body>
 </html>

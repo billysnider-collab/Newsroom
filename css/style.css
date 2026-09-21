@@ -1,4 +1,4 @@
-/* Signal Over Noise — brand system (locked 2026-09-11)
+/* Signal Over Noise — brand system (locked 2026-09-11; wire-style reskin 2026-09-21)
    Dark navy / amber signal. No off-brand red. */
 :root {
   --bg: #0a0f1e;
@@ -14,6 +14,7 @@
   --hold: #e08a8a;
   --max: 70rem;
   --sans: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+  --serif: Georgia, "Times New Roman", "Nimbus Roman No9 L", serif;
   --ink: var(--text); --paper: var(--bg); --card: var(--panel-2); --accent: var(--priority);
 }
 * { box-sizing: border-box; }
@@ -26,7 +27,7 @@ a:hover { color: #fff; text-decoration-color: var(--priority); }
 .top::before { content: ""; position: absolute; left: 0; top: 0; width: 2.5rem; height: 3px; background: var(--priority); }
 .brand { display: flex; align-items: center; gap: 0.75rem; }
 .brand img.mark { width: 2.65rem; height: 2.65rem; display: block; flex-shrink: 0; border-radius: 6px; }
-.top h1 { margin: 0; font-size: 1.15rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 750; }
+.top h1 { margin: 0; font-family: var(--serif); font-size: 1.5rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 700; }
 .top .sub { margin: 0.3rem 0 0; color: var(--muted); font-size: 0.8rem; }
 .util { display: flex; flex-wrap: wrap; gap: 0.3rem 0.9rem; align-items: center; padding: 0.55rem 0 0; font-size: 0.76rem; color: var(--muted); }
 .util .stamp { color: var(--text); font-weight: 700; }
@@ -34,9 +35,9 @@ a:hover { color: #fff; text-decoration-color: var(--priority); }
 .util a { color: var(--muted); text-decoration: none; font-weight: 650; }
 .util a:hover { color: var(--text); }
 .nav { display: flex; flex-wrap: wrap; gap: 0.45rem 0.95rem; padding: 0.7rem 0; border-bottom: 1px solid var(--line); font-size: 0.78rem; font-weight: 650; letter-spacing: 0.04em; text-transform: uppercase; }
-.nav a { color: var(--muted); text-decoration: none; padding: 0.55rem 0.1rem; }
-.nav a:hover { color: var(--text); }
-.nav a[aria-current="page"] { color: var(--text); box-shadow: inset 0 -2px 0 var(--priority); }
+.nav a { color: var(--muted); text-decoration: none; padding: 0.5rem 1.05rem; border: 1px solid var(--line-strong); border-radius: 999px; background: transparent; }
+.nav a:hover { color: var(--text); border-color: var(--muted); }
+.nav a[aria-current="page"] { color: #14100a; background: var(--priority); border-color: var(--priority); font-weight: 800; box-shadow: none; }
 .banner { background: var(--panel); border: 1px solid var(--line); border-left: 3px solid var(--priority); border-radius: 2px; padding: 0.8rem 1rem; margin: 1.1rem 0; font-size: 0.9rem; }
 .gradehero { background: var(--panel); border: 1px solid var(--line-strong); border-radius: 2px; padding: 0.9rem 1.1rem; margin: 1.1rem 0 0; font-size: 0.88rem; }
 .gradehero .row { display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem; align-items: baseline; margin-top: 0.45rem; }
@@ -48,32 +49,32 @@ a:hover { color: #fff; text-decoration-color: var(--priority); }
 .gradehero a.how { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
 h2.sec { font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin: 1.75rem 0 0.85rem; border-bottom: 1px solid var(--line-strong); padding-bottom: 0.4rem; }
 .cards { display: grid; gap: 0.9rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
-.card { background: var(--panel-2); border: 1px solid var(--line); border-radius: 2px; padding: 0.95rem 1.05rem; }
-.card h3 { margin: 0 0 0.4rem; font-size: 1.02rem; font-weight: 700; letter-spacing: -0.01em; }
+.card { background: var(--panel-2); border: 1px solid var(--line); border-radius: 14px; padding: 1.05rem 1.15rem; box-shadow: 0 8px 24px rgba(0,0,0,0.25); }
+.card h3 { margin: 0 0 0.4rem; font-family: var(--serif); font-size: 1.12rem; font-weight: 700; letter-spacing: 0; line-height: 1.3; }
 .card .tag { display: inline-block; font-size: 0.66rem; font-weight: 750; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.4rem; }
 .card .tag::before { content: ""; display: inline-block; width: 0.4rem; height: 0.4rem; background: var(--priority); border-radius: 50%; margin-right: 0.4rem; vertical-align: 0.05rem; }
 .card ul { margin: 0.4rem 0 0.6rem; padding-left: 1.1rem; font-size: 0.9rem; }
 .card li { margin-bottom: 0.3rem; }
 .card .more { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; text-decoration: none; }
 .card .more:hover { box-shadow: inset 0 -2px 0 var(--priority); }
-.lead { background: var(--panel-2); border: 1px solid var(--line); border-left: 3px solid var(--priority); border-radius: 2px; padding: 1.1rem 1.2rem; margin: 0.85rem 0 1.35rem; }
-.lead h2 { margin: 0 0 0.75rem; font-size: 1.35rem; letter-spacing: -0.02em; }
+.lead { background: var(--panel-2); border: 1px solid var(--line); border-left: 3px solid var(--priority); border-radius: 14px; padding: 1.1rem 1.2rem; margin: 0.85rem 0 1.35rem; box-shadow: 0 8px 24px rgba(0,0,0,0.25); }
+.lead h2 { margin: 0 0 0.75rem; font-family: var(--serif); font-size: 1.5rem; letter-spacing: 0; }
 .lead article { margin: 0 0 0.9rem; padding-bottom: 0.85rem; border-bottom: 1px solid var(--line); }
 .lead article:last-child { margin: 0; padding-bottom: 0; border-bottom: none; }
 .kicker { margin: 0 0 0.25rem; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--priority); }
 .kicker.dim { color: var(--muted); }
-.lead h3 { margin: 0 0 0.35rem; font-size: 1.1rem; }
+.lead h3 { margin: 0 0 0.35rem; font-family: var(--serif); font-size: 1.3rem; font-weight: 700; line-height: 1.3; }
 .lead p.body { margin: 0; line-height: 1.5; max-width: 44rem; }
 .lead p.links { margin: 0.45rem 0 0; font-size: 0.88rem; }
 .muted { color: var(--muted); }
 .holdpill { display: inline-block; font-size: 0.68rem; font-weight: 700; padding: 0.12rem 0.45rem; border-radius: 999px; background: #2a1a12; color: var(--hold); letter-spacing: 0.06em; }
 .confpill { display: inline-block; font-size: 0.68rem; font-weight: 700; padding: 0.12rem 0.45rem; border-radius: 999px; background: #12241a; color: var(--good); letter-spacing: 0.06em; }
-.story { background: var(--panel-2); border: 1px solid var(--line); border-radius: 2px; padding: 1rem 1.15rem; margin-bottom: 1rem; scroll-margin-top: 1rem; }
+.story { background: var(--panel-2); border: 1px solid var(--line); border-radius: 14px; padding: 1.15rem 1.3rem; margin-bottom: 1rem; scroll-margin-top: 1rem; box-shadow: 0 8px 24px rgba(0,0,0,0.25); }
 .story-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 0.75rem; }
 .story-head .kicker { margin-bottom: 0.25rem; }
-.copylink { flex-shrink: 0; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); background: transparent; border: 1px solid var(--line-strong); border-radius: 2px; padding: 0.5rem 0.7rem; min-height: 44px; cursor: pointer; font-family: inherit; }
+.copylink { flex-shrink: 0; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); background: transparent; border: 1px solid var(--line-strong); border-radius: 999px; padding: 0.5rem 0.85rem; min-height: 44px; cursor: pointer; font-family: inherit; }
 .copylink:hover { color: var(--text); border-color: var(--priority); }
-.story h3 { margin: 0 0 0.5rem; font-size: 1.15rem; }
+.story h3 { margin: 0 0 0.5rem; font-family: var(--serif); font-size: 1.35rem; font-weight: 700; line-height: 1.3; letter-spacing: 0; }
 .story h4 { margin: 0.9rem 0 0.35rem; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
 .story ul { margin: 0.2rem 0 0; padding-left: 1.15rem; font-size: 0.93rem; }
 .story li { margin-bottom: 0.3rem; }
@@ -113,7 +114,20 @@ th { background: var(--panel); font-size: 0.68rem; letter-spacing: 0.08em; text-
 .bizcard__rows li { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: 0.5rem 0; border-top: 1px solid var(--line); font-size: 0.9rem; }
 .bizcard__rows li span { color: var(--muted); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; }
 .corr { background: var(--panel-2); border: 1px dashed var(--line-strong); border-radius: 2px; padding: 1.2rem 1.3rem; margin: 1rem 0; color: var(--muted); }
+/* WH-app reskin (2026-09-21): wire header, search field, chip nav */
+.topbar { display: flex; align-items: center; gap: 1rem; }
+.searchbar { margin-left: auto; flex-shrink: 0; }
+.searchbar input { width: 15rem; max-width: 44vw; background: var(--panel-2); border: 1px solid var(--line-strong); border-radius: 999px; color: var(--text); font-size: 0.88rem; font-family: inherit; padding: 0.6rem 1rem 0.6rem 2.5rem; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239aa3b5' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='M21 21l-4.3-4.3'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: 0.85rem center; background-size: 1.05rem; }
+.searchbar input::placeholder { color: var(--muted); }
+.searchbar input:focus { outline: none; border-color: var(--priority); }
+.wire-head { display: flex; align-items: center; gap: 0.6rem; margin: 1.75rem 0 1rem; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.14em; color: var(--text); }
+.wire-head .wire-bar { width: 0.28rem; height: 1.2rem; background: var(--priority); border-radius: 2px; flex-shrink: 0; }
+.wire-head .wire-dot { color: var(--priority); }
+.wire-head .wire-count { color: var(--muted); font-weight: 600; }
 @media (max-width: 600px) {
+  .topbar { flex-wrap: wrap; }
+  .searchbar { margin-left: 0; width: 100%; }
+  .searchbar input { width: 100%; max-width: none; }
   html { font-size: 16px; }
   .top h1 { font-size: 1.02rem; letter-spacing: 0.08em; }
   .lead h2 { font-size: 1.18rem; }
